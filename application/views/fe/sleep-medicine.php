@@ -20,7 +20,7 @@
     
     <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/style.min.css');?>" type="text/css" media="all">
     <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/style.css');?>" type="text/css" media="all">
-    <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/css');?>" type="text/css" media="all">
+    <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/font.css');?>" type="text/css" media="all">
     <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/public.css');?>" type="text/css" media="all">
     <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/caldera-forms-front.min.css');?>" type="text/css" media="all">
     <link rel="stylesheet" href="<?php echo base_url('assets/frontend/css/style(1).css');?>" type="text/css" media="all">

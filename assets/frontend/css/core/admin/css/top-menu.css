@@ -1,0 +1,277 @@
+#main-header.et-fixed-header {
+    background-color: #ffffff;
+}
+
+.medicus-popup .mfp-close {
+    background: #00c3c6 !important;
+    color: #ffffff !important;
+}
+
+.medicus-mfp .mfp-container .medicus-popup .mfp-close:hover {
+    background: rgba(0, 195, 198, 0.8) !important;
+}
+
+.mfp-bg.mfp-fade.medicus-mfp-bg.mfp-ready {
+    background: rgba(9, 28, 37, 0.9) !important;
+}
+
+.mfp-wrap .mfp-container .medicus-popup button.et_pb_button:hover {
+    background: #00c3c6 !important;
+    border-color: #00c3c6 !important;
+}
+
+/* .mfp-bg.mfp-ready */
+.et_mobile_menu {
+    background-color: #002d35 !important;
+}
+
+.et_mobile_menu li a {
+    color: #ffffff;
+}
+
+.secondary-heading h1,
+.secondary-heading h2,
+.secondary-heading h3,
+.secondary-heading h4,
+.secondary-heading h5,
+.secondary-heading h6 {
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+}
+
+#top-menu li li a:hover:before {
+    width: 4px;
+    background: #00c3c6;
+}
+
+#et-top-navigation nav>ul>li:not(.menu-item-has-children)>a:before {
+    height: 1px;
+}
+
+#et-top-navigation nav>ul>li>a:hover:before {
+    background-color: #ffffff;
+}
+
+@media (min-width: 980px) {
+    #top-menu>li>ul:after {
+        border-bottom: 10px solid #ffffff;
+    }
+
+    .et-fixed-header#main-header .nav li ul {
+        background: #ffffff !important;
+    }
+
+    .ghost-header #top-menu>li>ul:after {
+        border-bottom: 10px solid #002d35;
+    }
+
+    .ghost-header #main-header .nav li ul {
+        background: #002d35 !important;
+    }
+
+    .ghost-header #main-header .nav li ul a {
+        color: rgba(240, 245, 245, 0.6) !important;
+    }
+}
+
+
+#top-header {
+    z-index: 9;
+}
+
+#main-header {
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#main-header.et-fixed-header {
+    top: 0 !important;
+}
+
+body.admin-bar #main-header.et-fixed-header {
+    top: 32px !important;
+}
+
+.et_fixed_nav #top-header.et-fixed-header {
+    position: absolute !important;
+}
+
+/* Accent Color */
+h1 mark,
+h2 mark,
+h3 mark,
+h4 mark,
+h5 mark,
+h6 mark,
+.secondary-heading h1,
+.secondary-heading h2,
+.secondary-heading h3,
+.secondary-heading h4,
+.secondary-heading h5,
+.secondary-heading h6,
+#top-header .et-social-icon a:hover:before {
+    color: #00c3c6 !important;
+}
+
+#top-header .et-social-icon a:hover {
+    border-color: #00c3c6;
+}
+
+.accent-bg {
+    background-color: #00c3c6;
+}
+
+/* Dark Color */
+.dark-bg {
+    background-color: #002d35;
+}
+
+/* Light Color */
+.light-bg {
+    background-color: #f0f5f5;
+}
+
+/* Ghost Header */
+.et_search_form_container input {
+    font-family: Montserrat;
+}
+
+.ghost-header #main-header,
+.ghost-header #top-header {
+    background-color: #ffffff;
+}
+
+.ghost-header #main-header.et-fixed-header,
+.ghost-header #top-header.et-fixed-header {
+    background: #ffffff !important;
+}
+
+.ghost-header #main-header #top-menu>a,
+.ghost-header #main-header #et_search_icon:before,
+.ghost-header #main-header span.et_close_search_field:after,
+.ghost-header #main-header .et_search_form_container input,
+.ghost-header #main-header .mobile_menu_bar:before {
+    color: rgba(0, 45, 53, 0.6) !important;
+}
+
+.ghost-header #main-header .et_search_form_container input:-ms-input-placeholder {
+    color: rgba(0, 45, 53, 0.6);
+}
+
+.ghost-header #main-header .et_search_form_container input::placeholder {
+    color: rgba(0, 45, 53, 0.6);
+}
+
+.ghost-header #main-header #top-menu>li.current_page_item>a {
+    color: #002d35 !important;
+}
+
+.ghost-header #main-header.et-fixed-header #top-menu>a,
+.ghost-header #main-header.et-fixed-header #et_search_icon:before,
+.ghost-header #main-header.et-fixed-header span.et_close_search_field:after,
+.ghost-header #main-header.et-fixed-header .et_search_form_container input,
+.ghost-header #main-header.et-fixed-header .mobile_menu_bar:before,
+.ghost-header #top-header.et-fixed-header {
+    color: rgba(0, 45, 53, 0.6);
+}
+
+.ghost-header #main-header.et-fixed-header #top-menu>li.current_page_item>a {
+    color: #002d35 !important;
+}
+
+.ghost-header #main-header.et-fixed-header .et_search_form_container input {
+    font-family: rgba(0, 45, 53, 0.6);
+}
+
+.ghost-header #main-header.et-fixed-header .et_search_form_container input:-ms-input-placeholder {
+    color: rgba(0, 45, 53, 0.6);
+}
+
+.ghost-header #main-header.et-fixed-header .et_search_form_container input::placeholder {
+    color: rgba(0, 45, 53, 0.6);
+}
+
+
+.ghost-header .et-fixed-header #top-menu a:not(:last-child) {
+    color: rgba(0, 45, 53, 0.6) !important;
+}
+
+.ghost-header #top-menu a {
+    color: rgba(0, 45, 53, 0.6) !important;
+}
+
+.ghost-header #top-menu li.current-menu-ancestor>a {
+    color: #002d35;
+}
+
+.ghost-header #top-menu ul li a:hover:before {
+    background: #00c3c6;
+}
+
+.ghost-header #top-header .et-social-icon a:hover:before {
+    color: #002d35 !important;
+}
+
+.ghost-header #top-header .et-social-icon a:hover {
+    border-color: #002d35 !important;
+}
+
+.ghost-header #top-header .et-social-icon a:before,
+.ghost-header #top-header,
+.ghost-header #top-header a {
+    color: rgba(0, 45, 53, 0.6) !important;
+}
+
+.ghost-header #top-header .et-social-icon a {
+    border-color: rgba(0, 45, 53, 0.6) !important;
+}
+
+
+#top-header.et-fixed-header {
+    color: #777d96;
+}
+
+@media (max-width: 1200px) {
+    #et_top_search {
+        margin-top: 9px !important;
+    }
+}
+
+@media (max-width: 980px) {
+    #et_top_search {
+        margin-top: 0px !important;
+    }
+
+    #et-top-navigation #et_search_icon::before {
+        margin-top: 0px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    #et_search_icon::before {
+        margin-top: 15px !important;
+    }
+}
+
+[data-columns]::before {
+    visibility: hidden;
+    position: absolute;
+    font-size: 1px;
+}
+
+.fluid-width-video-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.fluid-width-video-wrapper iframe,
+.fluid-width-video-wrapper object,
+.fluid-width-video-wrapper embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

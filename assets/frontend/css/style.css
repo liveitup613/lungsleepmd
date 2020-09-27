@@ -1,0 +1,1635 @@
+/*
+ Theme Name:   Medicus
+ Theme URI:    https://medicus.b3multimedia.ie/
+ Description:  Medicus | Premium Divi Child Theme
+ Author:       B3 Multimedia Solutions
+ Author URI:   https://www.b3multimedia.ie
+ Template:     Divi
+ Version:      1.0
+ Text Domain:  medicus-child
+*/
+/* Vertical Align */
+.medicus_vertical_align { display: flex; flex-direction: column; justify-content: center;}
+
+/*FAQ Question */
+.mc_question .number {transition: all 1s ease-in-out;}
+.mc_question:hover .number {transform: scale(1.2);}
+.mc_question:hover .number{transition: all 1s ease-in-out;}
+.mc_question h3  {transition: all .5s ease-in-out;}
+.mc_question h3:hover  {transition: all .5s ease-in-out;}
+
+/* Main Home Hero */
+@media only screen and (min-width: 1920px){
+.mc_hero_1 h1 { font-size: 100px!important;}}
+
+/* Contact Blurbs Under Contact Form */
+.mc_blurb_4 .et-pb-icon {border-width: 1px;}
+
+/* Text and image section */
+.mc_text_and_image .et_pb_number_counter {transition: all 1s ease-in-out;}
+.mc_text_and_image:hover .et_pb_number_counter {transform: scale(1.2);}
+.mc_text_and_image:hover .et_pb_number_counter {transition: all 1s ease-in-out;}
+
+/* Blurb 1 */
+.mc_blurb_1 .et_pb_blurb_content {text-align: right;}
+
+/* Blurb 2 */
+.mc_blurb_2 .et_pb_blurb_content {text-align: left;}
+
+/* Sign Up Form in Footer */
+.et_pb_newsletter_form p.et_pb_newsletter_field {margin-bottom: 0px!important;}
+
+/* Caldera Contact Form */
+.caldera-grid .control-label {color: #0B1024; font-weight: 600 !important;}
+.caldera-grid input {height: 50px !important; border-radius: 5px !important; margin-bottom: 50px !important;}
+.caldera-grid select {height: 50px !important;margin-bottom: 50px !important;}
+.caldera-grid input[type="submit"] {-webkit-appearance: button; cursor: pointer; color: white; background: #00A1FF; font-weight: 800; padding: 15px 30px; border-radius: 50px !important; border: 0px; transition: .5s all;}
+.caldera-grid .contact_form_button {text-align: center; margin-top: 50px;}
+
+/* Team Members Carousel Icon */
+.medicus-person-carousel .medicus-prev .et-pb-icon {color: white!important;}
+
+/* Pricing Nursing Home */
+.mc_pricing {transition: all .4s ease-in-out!important;}
+.mc_pricing:hover {margin-top: -10px; transition: all .4s ease-in-out;}
+.mc_pricing:hover .et_pb_button {transform: scale(1.1);transition: all .4s ease-in-out;}
+.mc_pricing .et_pb_button {transition: all .4s ease-in-out;}
+
+/* 404 Fullwidth Layout */
+.error404 #main-content .container, .error404 #content-area, .error404 #left-area {padding: 0 !important; margin: 0; width: 100% !important; max-width: none;}
+.error404 #sidebar {display: none;}
+.error404 .et_pb_post:last-child {margin-bottom: 0;}
+
+/* Testimonial Nursing Home*/
+.mc_testimonial:hover .et_pb_blurb .et_pb_main_blurb_image {margin-bottom: 20px;transform: scale(1.1);transition: all .5s ease-in-out;}
+.mc_testimonial .et_pb_blurb .et_pb_main_blurb_image {transition: all .5s ease-in-out;}
+
+/*Blurb three */
+.medicus_blurb_three img {
+-webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    -o-transform-origin: bottom;
+    transform-origin: bottom;
+}
+
+/* MC Pricing Popup */
+.mc_pricing-popup.et_pb_row.et_pb_row_8.et_pb_gutters1 { 
+    background: transparent!important;
+}
+
+/* Team Carousel */
+.owl-carousel.medicus-person-carousel .owl-nav button.owl-prev { 
+    margin-top: 80px!important;
+}
+
+.owl-carousel.medicus-person-carousel .owl-nav button.owl-next { 
+    margin-top: 80px!important;
+}
+
+/*Caldera Form Styling */
+.caldera-grid .form-control {
+    background-color: #f0f5f5 !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+/* Button Animation/Icon Size Fix */
+.et_pb_button:after {line-height: inherit !important;font-size: inherit !important;}
+.et_pb_button:hover {/*letter-spacing: inherit !important;*/transition: all .3s ease-in-out !important;}
+.et_pb_button {transition: all .3s ease-in-out !important;}
+/* Mobile Menu Responsive Fix */
+#et-info-phone {font-size: larger;}
+@media (max-width: 1400px) {
+.container.et_menu_container, #top-header .container {width: 95%;}
+}
+.et_header_style_split .mobile_menu_bar, .et_header_style_left .mobile_menu_bar {z-index: 9999;}
+
+
+/* Widget Sidebar */
+@media (max-width: 980px) {
+    .et_pb_column .et_pb_widget {width: 100% !important;}
+}
+.widget_search input#searchsubmit {border: none !important;color: #fff !important;}
+body .widget_search input#s,body .widget_search input#searchsubmit {height: 50px !important;}
+.widget_search #searchsubmit {background-color: #00A1FF !important;border-radius: 5px !important;}
+.widget_search input#s {border-radius: 5px !important; box-shadow:  rgba(217, 233, 249, 0.7)!important; border: 0px!important; }
+/* Widget Category */
+.widget_categories .widgettitle:before {
+    content: '';
+    z-index:1;
+    position: absolute;
+    left: 30px;
+    top: 100%;
+    border: 15px solid transparent;
+    border-top-width: 13px;
+    border-top-color: #00A1FF;    
+}
+.widget_categories ul li:hover a {color: #00a1ff;}
+.widget_categories .widgettitle {background: #00A1FF;padding: 20px 30px;position: relative; color: white; font-weight: 800; border-radius: 8px 8px 0 0;}
+.widget_categories ul li {margin-bottom: 0 !important;padding: 20px 30px;background-color: #f6f6f7;border-bottom: 1px solid #eee;position: relative;transition: .2s; font-weight: 300;}
+.widget_categories ul li:hover {padding: 20px 40px;transition: .2s;}
+.widget_categories ul li a:before {position: absolute;opacity: 0;font-weight: 100;left: 0;transition: .1s;font-family: 'ETmodules';content: "\24";font-size: 18px;}
+.widget_categories ul li:hover a:before {opacity: 1;left: 15px;transition: .5s;}
+/* Search Field */
+.et_pb_widget_area .widget_search input#s {
+    border-radius: 100px !important;
+}
+
+.et_pb_widget_area .widget_search input[type=text] {
+    background-color: #f2f2f2 !important;
+}
+.et_pb_widget_area .widget_search #searchsubmit {
+    border-radius: 0 50px 50px 0 !important;
+}
+.widgettitle {font-weight: 800;}
+.et_pb_widget li a {
+    font-weight: 300;
+}
+
+/* RPWWT Widget */
+.rpwwt-widget ul li:hover a {color: #00a1ff;}
+.rpwwt-widget .widgettitle {padding: 20px 30px; font-weight: 800;}
+.rpwwt-widget {background-color: #F7FBFF!important;padding-bottom: 20px; border-radius: 10px; box-shadow: rgb(217, 233, 249, 0.7)!important;}
+.rpwwt-widget ul li {padding: 10px 20px 0 30px;margin-bottom: 0 !important;}
+/* Widget Tags */
+.tagcloud a {padding: 8px 20px !important;-webkit-border-radius: 5px !important;-moz-border-radius: 0px !important;border-radius: 0px !important;font-size: 13px !important;}
+.tagcloud a:hover {background: #00A1FF !important;color:white !important;}
+/* LAWYER PAGE */
+.medicus_year {background-color: #1b213a;padding: 5px 10px;color: #fff !important;position: absolute;}
+.medicus_experience p {padding-left: 70px;}
+@media only screen and (max-width: 640px) {
+    .medicus_year {display: inline-block;position: relative;}
+    .medicus_experience p {padding-left: 0px; padding-top: 15px;}
+}
+.medicus_lawyer_box {overflow:hidden;}
+.medicus_lawyer_box:hover .et_pb_image {transform: scale(1.05);transition: all .3s ease-in-out 0s;}
+.medicus_lawyer_box .et_pb_image {
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    -o-transform-origin: bottom;
+    transform-origin: bottom;
+    transition: all .3s ease-in-out 0s;
+}
+/* Social Follow */
+.medicus_social_follow_lawyer .et_pb_social_media_follow_network_0 a.icon,
+.medicus_social_follow_lawyer .et_pb_social_media_follow_network_1 a.icon,
+.medicus_social_follow_lawyer .et_pb_social_media_follow_network_2 a.icon,
+.medicus_social_follow_lawyer .et_pb_social_media_follow_network_3 a.icon,
+.medicus_social_follow_lawyer .et_pb_social_media_follow_network_4 a.icon {
+    background-color: #ffffff30!important;
+}
+.medicus_social_follow_lawyer li a.icon {border-radius: 0px !important;width: 35px;height: 35px;transition: all .3s ease-in-out 0s;}
+.medicus_social_follow_lawyer li a.icon::before {width: 35px;height: 35px;color: #dadbdf;line-height: 35px;box-shadow: 0 2px 20px rgba(11, 16, 36, 0.05);}
+/* Social Hover */
+.medicus_social_follow_lawyer li a.icon:hover {transform: translateY(-2px);transition: all .3s ease-in-out 0s; background-color: #ffffff !important;}
+.medicus_social_follow_lawyer li a.icon:hover::before {color: #0e142b !important; transition: all .3s ease-in-out 0s;}
+/* medicus KEN BURNS */
+@media only screen and (min-width: 767px) {
+    .medicusKenBurnsIn .et_parallax_bg {animation: medicusKenburnsIn 45s forwards;}
+    .medicusKenBurnsOut .et_parallax_bg {animation: medicusKenburnsOut 45s forwards;}
+}
+@media only screen and (min-width: 767px) {
+    .medicusKenBurnsSectionIn .et_parallax_bg {
+        animation: medicusKenburnsIn 30s forwards;
+        -webkit-animation: medicusKenburnsIn 30s forwards;
+        -moz-animation: medicusKenburnsIn 30s forwards;
+        -o-animation: medicusKenburnsIn 30s forwards;
+        -ms-animation: medicusKenburnsIn 30s forwards;
+    }
+    .medicusKenBurnsSectionOut .et_parallax_bg {
+        animation: medicusKenburnsIn 30s forwards;
+        -webkit-animation: medicusKenburnsOut 30s forwards;
+        -moz-animation: medicusKenburnsOut 30s forwards;
+        -o-animation: medicusKenburnsOut 30s forwards;
+        -ms-animation: medicusKenburnsOut 30s forwards;
+    }
+}
+@keyframes medicusKenburnsIn {
+    0% {
+        opacity: 0;
+        -ms-transform: scale3d(1, 1, 1) translate3d(0px, 100px, 0px);
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0px, 100px, 0px);
+        transform: scale3d(1, 1, 1) translate3d(0px, 100px, 0px);
+        -o-transform: scale3d(1, 1, 1) translate3d(0px, 100px, 0px);
+        -moz-transform: scale3d(1, 1, 1) translate3d(0px, 100px, 0px);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        -ms-transform: scale3d(1.3, 1.3, 1.3) translate3d(-50px, 150px, 0px);
+        -webkit-transform: scale3d(1.3, 1.3, 1.3) translate3d(-50px, 150px, 0px);
+        transform: scale3d(1.3, 1.3, 1.3) translate3d(-50px, 150px, 0px);
+        -o-transform: scale3d(1.3, 1.3, 1.3) translate3d(-50px, 150px, 0px);
+        -moz-transform: scale3d(1.3, 1.3, 1.3) translate3d(-50px, 150px, 0px);
+    }
+}
+@keyframes medicusKenburnsOut {
+    0% {
+        opacity: 0;
+        -ms-transform: scale3d(1.3, 1.3, 1.3) translate3d(50px, -50px, 0px);
+        -webkit-transform: scale3d(1.3, 1.3, 1.3) translate3d(50px, -50px, 0px);
+        transform: scale3d(1.3, 1.3, 1.3) translate3d(50px, -50px, 0px);
+        -o-transform: scale3d(1.3, 1.3, 1.3) translate3d(50px, -50px, 0px);
+        -moz-transform: scale3d(1.3, 1.3, 1.3) translate3d(50px, -50px, 0px);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        -ms-transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+        transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+        -o-transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+        -moz-transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+    }
+}
+/* FULLWIDTH SLIDER */
+.medicus_slider:hover .et-pb-arrow-next, .medicus_slider .et_mobile_device .et-pb-arrow-next {
+    right: 22px;
+    opacity: .6;
+    background-color: rgba(255,255,255,.15);
+    color: white !important;
+    border:solid 1px transparent;
+    transform: scale(1);
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.medicus_slider:hover .et-pb-arrow-prev, .medicus_slider .et_mobile_device .et-pb-arrow-prev {
+    left: 22px !important;
+    opacity: .6;
+    background-color: rgba(255,255,255,.15);
+    color: white !important;
+    border:solid 1px transparent;
+    transform: scale(1);
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.medicus_slider .et-pb-arrow-prev:hover, .medicus_slider .et-pb-arrow-next:hover {
+    text-decoration: none;
+    border: solid 1px #fff !important;
+    background-color: rgba(255,255,255,0) !important;
+    transition: all .6s ease-in-out;
+}
+.medicus_slider .et-pb-arrow-prev {
+    left: -100px;
+    border: solid 1px transparent;
+    transform: scale(0.6);
+    transition: all .6s ease-in-out;
+}
+.medicus_slider .et-pb-arrow-next {
+    right: -100px;
+    border: solid 1px transparent;
+    transform: scale(0.6);
+    transition: all .6s ease-in-out;
+}
+.medicus_slider .et-pb-active-slide .et_pb_slide_description {animation-name: gridFadeIn;}
+.medicus_slider .slider-img {display: block;margin-top: 30px;}
+.medicus_slider .et-pb-controllers a {
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    margin-right: 10px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-indent: -9999px;
+    transition: all .6s ease-in-out;
+}
+.medicus_slider .et-pb-controllers .et-pb-active-control {background-color: #fff !important; width: 50px;transition: all .6s ease-in-out;}
+.et-pb-controllers a:last-child {margin-right: 0 !important;}
+/* IMAGE ANIMATION */
+#cover-section .et_pb_slider .et_pb_slide {
+    -webkit-animation: scale-up 1s forwards cubic-bezier(0.7, 0, 0.3, 1);
+    animation: scale-up 1s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+#cover-section .et_pb_slider .et_pb_slide.et-pb-active-slide {
+    -webkit-animation: scale-up-down 2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+    animation: scale-up-down 2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+/* Animations */
+@-webkit-keyframes scale-up {
+  from { -webkit-transform: scale(1.0); }
+  to { -webkit-transform: scale(1.4); }
+}
+@keyframes scale-up {
+  from { transform: scale(1.0); }
+  to { transform: scale(1.4); }
+}
+@-webkit-keyframes scale-up-down {
+  from { -webkit-transform: scale(1.2); }
+  to { -webkit-transform: scale(1.0); }
+}
+@keyframes scale-up-down {
+  from { transform: scale(1.2); }
+  to { transform: scale(1.0); }
+}
+/* Peloader Styling */
+.preloader {position: fixed;top: 0;left: 0;right: 0;bottom: 0;background-color: #fefefe;z-index: 99999;height: 100%;width: 100%;overflow: hidden !important;}
+.preloader .status {margin: -35px 0 0 -35px;position: absolute;left: 50%;top: 50%;background-repeat: no-repeat;background-position: center;-webkit-background-size: cover;background-size: cover;}
+/* Contact Form */
+.medicus_contact_form .et_pb_button {margin-right: 3%;}
+.medicus_contact_form .et_pb_contact_right {display: inline-grid;}
+.medicus_contact_form .input, .medicus_contact_form .input[type="checkbox"] + label i, .medicus_contact_form .input[type="radio"] + label i {background-color: #ffffff;}
+.medicus_contact_form .et_pb_contact_form_container {color: #002129;}
+.medicus_contact_form  .et_pb_contact_form_container input {padding: 20px 20px 20px 55px !important;}
+.medicus_contact_form .et_contact_bottom_container .et_pb_contact_right p:before {display: none !important;}
+.medicus_contact_form .et_pb_contact_form {margin-left: 0 !important;}
+.medicus_contact_form p.et_pb_contact_field {padding: 1% 3% 3% 1% !important;margin-bottom: 0;}
+.medicus_contact_form .et_pb_contact_form .et_contact_bottom_container {margin-top: 0 !important;width: 100%;}
+#page-container .medicus_contact_form .et_pb_contact_form textarea::-webkit-input-placeholder,
+#page-container .medicus_contact_form .et_pb_contact_form input::-webkit-input-placeholder {color: transparent !important;}
+#page-container .medicus_contact_form .et_pb_contact_form textarea::-moz-placeholder,
+#page-container .medicus_contact_form .et_pb_contact_form input::-moz-placeholder {color: transparent !important;}
+#page-container .medicus_contact_form .et_pb_contact_form textarea:-ms-input-placeholder,
+#page-container .medicus_contact_form .et_pb_contact_form input:-ms-input-placeholder {color: transparent !important;}
+#page-container .medicus_contact_form .et_pb_contact_form textarea:-moz-placeholder,
+#page-container .medicus_contact_form .et_pb_contact_form input:-moz-placeholder {color: transparent !important;}
+.medicus_contact_form .et_pb_row:first-child .et_pb_promo_description p:last-child {line-height: 200%;}
+.medicus_contact_form .et_pb_row:first-child .et_pb_promo_description p:last-child a {width: 85%;display: inline-block;}
+.medicus_contact_form .et_pb_row:last-child .et_pb_promo p:last-child {padding-bottom: 0 !important;}
+.medicus_contact_form .et_pb_row:last-child .et_pb_promo p {padding-bottom: 27px !important;}
+.medicus_contact_form .et_pb_row:last-child .et_pb_text {float: right;margin-top: -92px;margin-right: 2vw;}
+#page-container .medicus_contact_form p a:hover {opacity: 0.4;}
+.medicus_contact_form .et_pb_contact_form_container .et_pb_contact_message {padding: 20px 55px !important;}
+.medicus_contact_form .et_pb_contact_form_container .et-pb-contact-message ul {padding-bottom: 10px !important;}
+.medicus_contact_form .et_pb_contact_form p textarea.et_contact_error ,.medicus_contact_form .et_pb_contact_form p input.et_contact_error {border: 1px solid #f00 !important;}
+.medicus_contact_form .et_pb_contact_form p input.et_contact_error {margin-bottom: 5px !important;}
+.medicus_contact_form .et_pb_contact_form p textarea.et_contact_error + label,.medicus_contact_form .et_pb_contact_form p input.et_contact_error + label {padding-left: 21px !important;}
+.medicus_contact_form .et_pb_contact_form p:before {display: inline-block !important;font-family: "ETmodules" !important;margin: 0 !important;opacity: 1;font-size: 19px !important;
+position: absolute;top: 25px;left: 25px;-webkit-transform: translate3d(-56px, 0, 0);transform: translate3d(-56px, 0, 0);transition: transform 0.3s;min-width: 20px;z-index: 1;}
+.medicus_contact_form .et_pb_contact_form p.filled:before,
+.medicus_contact_form .et_pb_contact_form p.focus:before {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+.medicus_contact_form .et_pb_contact_form p:first-child::before {content: '\e08b' !important;}
+.medicus_contact_form .et_pb_contact_form p:nth-child(2)::before {content: "\e076" !important;}
+.medicus_contact_form .et_pb_contact_form p:nth-child(3)::before {content: "\e090" !important;}
+.medicus_contact_form .et_pb_contact_form p:nth-child(4)::before {content: "\6a" !important;}
+.medicus_contact_form .et_pb_contact_form p:nth-child(5)::before {content: "\e065" !important;}
+.medicus_contact_form .et_pb_contact_form p[data-type="checkbox"]{margin: 0 0 20px !important;}
+.medicus_contact_form .et_pb_contact_form p {position: relative;overflow: hidden;}
+.medicus_contact_form .et_pb_contact_form p:not([data-type="checkbox"]) label {display: block !important;position: absolute;width: 100%;text-align: left;pointer-events: none;top: 27px;padding-left: 20px;color: #0B1024;font-size: 13px;font-weight: 400;transition: all 0.3s ease-in-out;}
+.medicus_contact_form .et_pb_contact_form p.filled label,.medicus_contact_form .et_pb_contact_form p.focus label {opacity: 0;-webkit-transform: translate3d(120px, 0, 0);transform: translate3d(120px, 0, 0);}
+.medicus_contact_form .et_contact_bottom_container .et_pb_contact_right input{padding: 18px 5px !important;text-align: center;}
+@media only screen and (max-width: 767px) {
+    .medicus_contact_form .et_pb_row:first-child .et_pb_contact_form_container {padding: 30px !important;}
+    .medicus_contact_form .et_pb_contact_right {margin: 3%;}
+}
+/* medicus KEN BURNS */
+@media only screen and (min-width: 767px) {
+    .medicusKenBurnsIn .et_parallax_bg {animation: medicusKenburnsIn 45s forwards;}
+    .medicusKenBurnsOut .et_parallax_bg {animation: medicusKenburnsOut 45s forwards;}
+}
+@media only screen and (min-width: 767px) {
+    .medicusKenBurnsSectionIn .et_parallax_bg {
+        animation: medicusKenburnsIn 30s forwards;
+        -webkit-animation: medicusKenburnsIn 30s forwards;
+        -moz-animation: medicusKenburnsIn 30s forwards;
+        -o-animation: medicusKenburnsIn 30s forwards;
+        -ms-animation: medicusKenburnsIn 30s forwards;
+    }
+    .medicusKenBurnsSectionOut .et_parallax_bg {
+        animation: medicusKenburnsIn 30s forwards;
+        -webkit-animation: medicusKenburnsOut 30s forwards;
+        -moz-animation: medicusKenburnsOut 30s forwards;
+        -o-animation: medicusKenburnsOut 30s forwards;
+        -ms-animation: medicusKenburnsOut 30s forwards;
+    }
+}
+@keyframes medicusKenburnsIn {
+    0% {
+        opacity: 0;
+        -ms-transform: scale3d(1, 1, 1) translate3d(0px, 100px, 0px);
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0px, 100px, 0px);
+        transform: scale3d(1, 1, 1) translate3d(0px, 100px, 0px);
+        -o-transform: scale3d(1, 1, 1) translate3d(0px, 100px, 0px);
+        -moz-transform: scale3d(1, 1, 1) translate3d(0px, 100px, 0px);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        -ms-transform: scale3d(1.3, 1.3, 1.3) translate3d(-50px, 150px, 0px);
+        -webkit-transform: scale3d(1.3, 1.3, 1.3) translate3d(-50px, 150px, 0px);
+        transform: scale3d(1.3, 1.3, 1.3) translate3d(-50px, 150px, 0px);
+        -o-transform: scale3d(1.3, 1.3, 1.3) translate3d(-50px, 150px, 0px);
+        -moz-transform: scale3d(1.3, 1.3, 1.3) translate3d(-50px, 150px, 0px);
+    }
+}
+@keyframes medicusKenburnsOut {
+    0% {
+        opacity: 0;
+        -ms-transform: scale3d(1.3, 1.3, 1.3) translate3d(50px, -50px, 0px);
+        -webkit-transform: scale3d(1.3, 1.3, 1.3) translate3d(50px, -50px, 0px);
+        transform: scale3d(1.3, 1.3, 1.3) translate3d(50px, -50px, 0px);
+        -o-transform: scale3d(1.3, 1.3, 1.3) translate3d(50px, -50px, 0px);
+        -moz-transform: scale3d(1.3, 1.3, 1.3) translate3d(50px, -50px, 0px);
+        animation-timing-function: linear;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        -ms-transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+        -webkit-transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+        transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+        -o-transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+        -moz-transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+    }
+}
+/* FULLWIDTH SLIDER */
+.medicus_slider:hover .et-pb-arrow-next, .medicus_slider .et_mobile_device .et-pb-arrow-next {
+    right: 22px;
+    opacity: .6;
+    background-color: rgba(255,255,255,.15);
+    color: white !important;
+    border:solid 1px transparent;
+    transform: scale(1);
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.medicus_slider:hover .et-pb-arrow-prev, .medicus_slider .et_mobile_device .et-pb-arrow-prev {
+    left: 22px !important;
+    opacity: .6;
+    background-color: rgba(255,255,255,.15);
+    color: white !important;
+    border:solid 1px transparent;
+    transform: scale(1);
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.medicus_slider .et-pb-arrow-prev:hover, .medicus_slider .et-pb-arrow-next:hover {
+    text-decoration: none;
+    border: solid 1px #fff !important;
+    background-color: rgba(255,255,255,0) !important;
+    transition: all .6s ease-in-out;
+}
+.medicus_slider .et-pb-arrow-prev {
+    left: -100px;
+    border: solid 1px transparent;
+    transform: scale(0.6);
+    transition: all .6s ease-in-out;
+}
+.medicus_slider .et-pb-arrow-next {
+    right: -100px;
+    border: solid 1px transparent;
+    transform: scale(0.6);
+    transition: all .6s ease-in-out;
+}
+.medicus_slider .et-pb-active-slide .et_pb_slide_description {animation-name: gridFadeIn;}
+.medicus_slider .slider-img {display: block;margin-top: 30px;}
+.medicus_slider .et-pb-controllers a {
+    display: inline-block;
+    width: 20px;
+    height: 3px;
+    margin-right: 10px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-indent: -9999px;
+    transition: all .6s ease-in-out;
+}
+.medicus_slider .et-pb-controllers .et-pb-active-control {background-color: #fff !important; width: 50px;transition: all .6s ease-in-out;}
+.et-pb-controllers a:last-child {margin-right: 0 !important;}
+/* IMAGE ANIMATION */
+#cover-section .et_pb_slider .et_pb_slide {
+    -webkit-animation: scale-up 1s forwards cubic-bezier(0.7, 0, 0.3, 1);
+    animation: scale-up 1s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+#cover-section .et_pb_slider .et_pb_slide.et-pb-active-slide {
+    -webkit-animation: scale-up-down 2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+    animation: scale-up-down 2s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+/* Animations */
+@-webkit-keyframes scale-up {
+  from { -webkit-transform: scale(1.0); }
+  to { -webkit-transform: scale(1.4); }
+}
+@keyframes scale-up {
+  from { transform: scale(1.0); }
+  to { transform: scale(1.4); }
+}
+@-webkit-keyframes scale-up-down {
+  from { -webkit-transform: scale(1.2); }
+  to { -webkit-transform: scale(1.0); }
+}
+@keyframes scale-up-down {
+  from { transform: scale(1.2); }
+  to { transform: scale(1.0); }
+}
+/* Contact Form */
+.medicus_contact_form .et_pb_button {margin-right: 3%;}
+.medicus_contact_form .et_pb_contact_right {display: inline-grid;}
+.medicus_contact_form .input, .medicus_contact_form .input[type="checkbox"] + label i, .medicus_contact_form .input[type="radio"] + label i {background-color: #ffffff;}
+.medicus_contact_form .et_pb_contact_form_container {color: #afa46f;}
+.medicus_contact_form  .et_pb_contact_form_container input {padding: 20px 20px 20px 55px !important;}
+.medicus_contact_form .et_contact_bottom_container .et_pb_contact_right p:before {display: none !important;}
+.medicus_contact_form .et_pb_contact_form {margin-left: 0 !important;}
+.medicus_contact_form p.et_pb_contact_field {padding: 1% 3% 3% 1% !important;margin-bottom: 0;}
+.medicus_contact_form .et_pb_contact_form .et_contact_bottom_container {margin-top: 0 !important;width: 100%;}
+#page-container .medicus_contact_form .et_pb_contact_form textarea::-webkit-input-placeholder,
+#page-container .medicus_contact_form .et_pb_contact_form input::-webkit-input-placeholder {color: transparent !important;}
+#page-container .medicus_contact_form .et_pb_contact_form textarea::-moz-placeholder,
+#page-container .medicus_contact_form .et_pb_contact_form input::-moz-placeholder {color: transparent !important;}
+#page-container .medicus_contact_form .et_pb_contact_form textarea:-ms-input-placeholder,
+#page-container .medicus_contact_form .et_pb_contact_form input:-ms-input-placeholder {color: transparent !important;}
+#page-container .medicus_contact_form .et_pb_contact_form textarea:-moz-placeholder,
+#page-container .medicus_contact_form .et_pb_contact_form input:-moz-placeholder {color: transparent !important;}
+.medicus_contact_form .et_pb_row:first-child .et_pb_promo_description p:last-child {line-height: 200%;}
+.medicus_contact_form .et_pb_row:first-child .et_pb_promo_description p:last-child a {width: 85%;display: inline-block;}
+.medicus_contact_form .et_pb_row:last-child .et_pb_promo p:last-child {padding-bottom: 0 !important;}
+.medicus_contact_form .et_pb_row:last-child .et_pb_promo p {padding-bottom: 27px !important;}
+.medicus_contact_form .et_pb_row:last-child .et_pb_text {float: right;margin-top: -92px;margin-right: 2vw;}
+#page-container .medicus_contact_form p a:hover {opacity: 0.4;}
+.medicus_contact_form .et_pb_contact_form_container .et_pb_contact_message {padding: 20px 55px !important;}
+.medicus_contact_form .et_pb_contact_form_container .et-pb-contact-message ul {padding-bottom: 10px !important;}
+.medicus_contact_form .et_pb_contact_form p textarea.et_contact_error ,.medicus_contact_form .et_pb_contact_form p input.et_contact_error {border: 1px solid #f00 !important;}
+.medicus_contact_form .et_pb_contact_form p input.et_contact_error {margin-bottom: 5px !important;}
+.medicus_contact_form .et_pb_contact_form p textarea.et_contact_error + label,.medicus_contact_form .et_pb_contact_form p input.et_contact_error + label {padding-left: 21px !important;}
+.medicus_contact_form .et_pb_contact_form p:before {display: inline-block !important;font-family: "ETmodules" !important;margin: 0 !important;opacity: 1;font-size: 19px !important;
+position: absolute;top: 25px;left: 25px;-webkit-transform: translate3d(-56px, 0, 0);transform: translate3d(-56px, 0, 0);transition: transform 0.3s;min-width: 20px;z-index: 1;}
+.medicus_contact_form .et_pb_contact_form p.filled:before,
+.medicus_contact_form .et_pb_contact_form p.focus:before {-webkit-transform: translate3d(0, 0, 0);transform: translate3d(0, 0, 0);}
+.medicus_contact_form .et_pb_contact_form p:first-child::before {content: '\e08b' !important;}
+.medicus_contact_form .et_pb_contact_form p:nth-child(2)::before {content: "\e076" !important;}
+.medicus_contact_form .et_pb_contact_form p:nth-child(3)::before {content: "\e090" !important;}
+.medicus_contact_form .et_pb_contact_form p:nth-child(4)::before {content: "\6a" !important;}
+.medicus_contact_form .et_pb_contact_form p:nth-child(5)::before {content: "\e065" !important;}
+.medicus_contact_form .et_pb_contact_form p[data-type="checkbox"]{margin: 0 0 20px !important;}
+.medicus_contact_form .et_pb_contact_form p {position: relative;overflow: hidden;}
+.medicus_contact_form .et_pb_contact_form p:not([data-type="checkbox"]) label {display: block !important;position: absolute;width: 100%;text-align: left;pointer-events: none;top: 27px;padding-left: 20px;color: #a7a7a7;font-size: 18px;font-weight: 400;transition: all 0.3s ease-in-out;}
+.medicus_contact_form .et_pb_contact_form p.filled label,.medicus_contact_form .et_pb_contact_form p.focus label {opacity: 0;-webkit-transform: translate3d(120px, 0, 0);transform: translate3d(120px, 0, 0);}
+.medicus_contact_form .et_contact_bottom_container .et_pb_contact_right input{padding: 18px 5px !important;text-align: center;}
+@media only screen and (max-width: 767px) {
+    .medicus_contact_form .et_pb_row:first-child .et_pb_contact_form_container {padding: 30px !important;}
+    .medicus_contact_form .et_pb_contact_right {margin: 3%;}
+}
+/* PORTFOLIO & GALLERY */
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item h2, 
+.medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item h2, 
+.medicus_gallery .et_pb_gallery_grid .et_pb_gallery_item h3 {
+    opacity: 0 !important;
+    transform: translateY(-80px);
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    transition: all .6s ease-in-out;
+}
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item .post-meta,
+.medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item .post-meta,
+.medicus_gallery .et_pb_gallery_grid .et_pb_gallery_item .et_pb_gallery_caption {
+    opacity: 0 !important;
+    transform: translateY(-80px);
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    transition: all .6s ease-in-out;
+}
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item:hover h2,
+.medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item:hover h2,
+.medicus_gallery .et_pb_gallery_grid .et_pb_gallery_item:hover h3 {
+    opacity: 1 !important;
+    transform: translateY(-150px);
+    transition: all .6s ease-in-out;
+}
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item:hover .post-meta,
+.medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item:hover .post-meta, 
+.et_pb_gallery_grid .et_pb_gallery_item:hover .et_pb_gallery_caption {
+    opacity: 1 !important;
+    transform: translateY(-120px);
+    transition: all .6s ease-in-out;
+}
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item:hover img,
+.medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item:hover img,
+.medicus_gallery .et_pb_gallery_grid .et_pb_gallery_item:hover img,
+.medicus_shop .woocommerce ul.products li.product:hover img {
+    filter: brightness(40%) ;
+    transition: all .6s ease-in-out;
+    transform: scale(1.1);
+}
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item img, 
+.medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item img, 
+.medicus_gallery .et_pb_gallery_grid .et_pb_gallery_item img, 
+.medicus_shop .woocommerce .et_shop_image img {
+    transition: all .6s ease-in-out;
+}
+.medicus_shop .woocommerce .et_shop_image img {
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    -o-transform-origin: bottom;
+    transform-origin: bottom;
+}
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item,
+.medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item, 
+.medicus_gallery .et_pb_gallery_grid .et_pb_gallery_item,
+.medicus_shop .woocommerce ul.products li.product {
+    overflow: hidden;
+}
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item:hover h2:after, .medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item:hover h2:after, .medicus_gallery .et_pb_gallery_grid .et_pb_gallery_item:hover h3:after {
+    width: 100px;
+    height: 1px;
+    margin: 20px auto !important;
+    background: #00a1ff;
+    display: block;
+}
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item h2:after, .medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item h2:after, .medicus_gallery .et_pb_gallery_grid .et_pb_gallery_item h3:after {
+    content: '';
+    height: 1px;
+    background: #00a1ff;
+    transition: width 1s ease;
+    display: block;
+    width: 0px;
+    margin: 20px auto !important;
+}
+.medicus_portfolio .et_pb_divider {margin: 0;}
+/*Filters*/
+.medicus_portfolio .et_pb_filterable_portfolio .et_pb_portfolio_filters ul{display:table !important;margin:0 auto !important;}
+.medicus_portfolio .et_pb_filterable_portfolio .et_pb_portfolio_filters li a {
+    border-bottom: 2px solid #e2e2e2 !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    color: #666;
+    padding: 15px 25px;
+}
+.medicus_portfolio .et_pb_filterable_portfolio .et_pb_portfolio_filters li a.active {color: #00a1ff;border-bottom: 2px solid #00a1ff !important;}
+.medicus_portfolio .et_pb_filterable_portfolio .et_pb_portfolio_filters li:last-child a {border-radius: 0 !important;}
+.medicus_portfolio .et_pb_filterable_portfolio .et_pb_portfolio_filters li:first-child a {border-radius: 0 !important;}
+/* Responsive */
+@media only screen and (max-width: 1500px) {
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item:hover h2, .medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item:hover h2, .medicus_gallery .et_pb_gallery_grid .et_pb_gallery_item:hover h3 {transform: translateY(-120px);}
+}
+@media only screen and (max-width: 1200px) {
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item h2, .medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item .post-meta {width: 47%;}
+.medicus_gallery .et_pb_gallery_grid .et_pb_grid_item {width: 47% !important;clear: inherit;}
+.medicus_gallery .et_pb_gallery_image {margin: 10px;}
+.medicus_gallery .et_pb_column .et_pb_grid_item {margin:0;}
+}
+@media only screen and (max-width: 980px) {
+.medicus_gallery .et_pb_gallery_grid .et_pb_gallery_item h3 {width: 47%;}
+}
+@media only screen and (max-width: 768px) {
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item h2, .medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item .post-meta, .medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item .post-meta {width: 50% !important;}
+.medicus_gallery .et_pb_gallery_grid .et_pb_grid_item, .medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item {width: 100% !important;overflow: hidden;}
+.medicus_gallery .et_pb_gallery_grid .et_pb_gallery_item h3, .medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item .post-meta, .et_pb_gallery_grid .et_pb_gallery_item .et_pb_gallery_caption {width: 100% !important; font-size: 22px;}
+.medicus_gallery .et_pb_gallery_grid img, .medicus_portfolio .et_pb_filterable_portfolio_grid img {width: 100%;}
+.medicus_portfolio .et_pb_portfolio_filters li {width: 100% !important;}
+}
+@media only screen and (max-width: 480px) {
+.medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item h2, .medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item h2, .medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item .post-meta {width: 100% !important;}
+.medicus_portfolio .et_portfolio_image img {width: 100%;}
+}
+@media only screen and (min-width: 981px) and (max-width: 1200px) {
+    .medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item:hover h2,
+    .medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item:hover h2,
+    .medicus_gallery .et_pb_gallery_grid .et_pb_gallery_item:hover h3 {
+        opacity: 1 !important;
+        transform: translateY(-120px);
+        -webkit-transition: all .6s ease-in-out;
+        -moz-transition: all .6s ease-in-out;
+        transition: all .6s ease-in-out;
+    }
+    .medicus_portfolio .et_pb_portfolio_grid .et_pb_portfolio_item:hover .post-meta,
+    .medicus_portfolio .et_pb_filterable_portfolio_grid .et_pb_portfolio_item:hover .post-meta, 
+    .medicus_gallery .et_pb_gallery_item:hover .et_pb_gallery_caption {
+        opacity: 1 !important;
+        transform: translateY(-95px);
+        -webkit-transition: all .6s ease-in-out;
+        -moz-transition: all .6s ease-in-out;
+        transition: all .6s ease-in-out;
+    }
+}
+/*Our Works issue*/
+.et_pb_filterable_portfolio .et_pb_portofolio_pagination{border-top: none;}
+/* Blurb Eight 8*/
+@media only screen and (max-width: 980px) {
+.medicus_blurb_eight .et_pb_column {border-right: none;}
+}
+.medicus_blurb_eight .et_pb_blurb:hover .et_pb_main_blurb_image {
+    transition: opacity .2s ease-out,transform .2s ease-out;
+    -webkit-transform: scale(.4);
+    -moz-transform: scale(.4);
+    transform: scale(.4);
+    opacity: 0;
+}
+.medicus_blurb_eight .et_pb_blurb .et_pb_main_blurb_image {
+    transition: opacity .2s ease-out,transform .2s ease-out;
+    transition-delay: .2s;
+    opacity:1;}
+.medicus_blurb_eight .et_pb_blurb {margin-top: 60px;margin-bottom: -40px;}
+.medicus_blurb_eight .et_pb_blurb:hover .et_pb_blurb_container {transition: all .3s ease-in-out;transform: translateY(-80px);}
+.medicus_blurb_eight .et_pb_blurb .et_pb_blurb_container {transition: all .2s ease-out;}
+.medicus_blurb_eight .et_pb_blurb .et_pb_blurb_description {
+    transition: opacity .2s ease-out,transform .2s ease-out;
+    -webkit-transform: scale(.4);
+    -moz-transform: scale(.4);
+    transform: scale(.4);
+    opacity: 0;
+    margin-top: 30px;
+}
+.medicus_blurb_eight .et_pb_blurb:hover .et_pb_blurb_description {
+    transition: opacity .2s ease-out,transform .2s ease-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    transition-delay: .2s;
+}
+.medicus_blurb_eight .et_pb_blurb_content {margin: 0 auto -40px;}
+/* Animated Underline */
+.medicus_blurb_eight .et_pb_blurb h3 > a {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+.medicus_blurb_eight .et_pb_blurb h3 > a:before {
+  content: "";
+  position: absolute;
+  width: 33%;
+  height: 2px;
+  bottom: -20px;
+  left: 33%;
+  background-color: #00a1ff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  transition-delay: .2s;
+}
+.medicus_blurb_eight .et_pb_blurb:hover h3 > a:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transition-delay: .4s;
+}
+/* Blurb Seven */
+.medicus_blurb_seven .et_pb_blurb:hover {
+    transform: translateY(5px);
+    transition: all .3s ease-in-out 0s;
+}
+.medicus_blurb_seven .et_pb_blurb {
+    transition: all .3s ease-in-out 0s;
+}
+.et_pb_blurb:hover .medicus_blurb_seven_number {
+    transform: scale(1.05) !important;
+    transition: all .3s ease-in-out;
+}
+   .medicus_blurb_seven_number {
+    top: -80px;
+    left: 48%;
+}
+/* Blurb Six */
+.medicus_blurb_six {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.medicus_blurb_six .et_pb_blurb_description {
+    opacity: 0; 
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transition:.3s ease-in-out;
+}
+.medicus_blurb_six:hover .et_pb_blurb_description {
+    opacity:1;
+    transition:.8s ease-in-out; 
+    transition-delay: .3s; 
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+}
+.medicus_blurb_six .et_pb_module_header{
+    transform: translateY(120px);
+    -webkit-transform: translateY(120px);
+    -ms-transform: translateY(120px);
+    transition: .6s ease-in-out;
+}
+.medicus_blurb_six:hover .et_pb_module_header{
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transition: .6s ease-in-out;
+}
+.medicus_blurb_six:hover .more-link:after {opacity: 1 !important;right: 0;margin-right: -22px; transition-delay:.8s;}
+.medicus_blurb_six .more-link { opacity: 1 !important;}
+/* Blurb Five */
+.medicus_blurb_five_right .et_pb_blurb:hover {transform: translateX(5px);transition: all .3s ease-in-out;}
+.medicus_blurb_five_left .et_pb_blurb:hover {transform: translateX(-5px);transition: all .3s ease-in-out;}
+.medicus_blurb_five_right .et_pb_blurb, .medicus_blurb_five_left .et_pb_blurb {transition: all .3s ease-in-out;}
+/* Blurb Four */
+.medicus_blurb_four:hover{cursor: pointer;}
+.medicus_blurb_four:hover .et_pb_main_blurb_image img {/*transform: translateX(-5px);*/transform: scale(1.08);}
+.medicus_blurb_four:hover .et_pb_blurb_container {transform: translateX(5px);}
+.medicus_blurb_four:hover .et_pb_main_blurb_image img, .medicus_blurb_four .et_pb_main_blurb_image img,
+.medicus_blurb_four:hover .et_pb_blurb_container, .medicus_blurb_four .et_pb_blurb_container {
+transition: all .4s ease-in-out 0s;
+}
+/* Blurb Three */
+.more-link {
+    font-size: 14px;
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+    font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+    display: inline-block;
+    position: relative;
+    opacity: 0.3;
+}
+.more-link:after {
+    position: absolute;
+    opacity: 0;
+    font-weight: 100;
+    right: 0;
+    transition: .3s ease-in-out;
+    font-family: 'ETmodules';
+    content: "\24";
+    font-size: 18px;
+}
+.more-link:hover:after {
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+.medicus_blurb_three:hover .et_pb_main_blurb_image {
+    transform: scale(1.1);
+    }
+    .medicus_blurb_three .et_pb_main_blurb_image {
+-webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    -ms-transform-origin: bottom;
+    -o-transform-origin: bottom;
+    transform-origin: bottom;
+    }
+.medicus_blurb_three:hover .et_pb_main_blurb_image,.medicus_blurb_three .et_pb_main_blurb_image {transition: all .4s ease-in-out;}
+
+
+.medicus_blurb_three:hover .more-link:after, .medicus_blurb_eight:hover .more-link:after {opacity: 1;right: 0;margin-right: -22px;}
+.medicus_blurb_three:hover .more-link, .medicus_blurb_eight:hover .more-link {margin-left: -20px !important; opacity: 1 !important;}
+.medicus_blurb_three:hover {background-color: #ffffff; cursor: pointer; /*transform: translateY(-5px)*/; box-shadow: 0 20px 60px #e8f1f1; transition: all .3s ease-in-out;}
+.medicus_blurb_three {transition: all .3s ease-in-out !important; padding-bottom: 20px;}
+.medicus_blurb_three .et_pb_blurb_container {padding: 0 15px;}
+@-webkit-keyframes swing
+{
+    15%{-webkit-transform: translateX(5px);transform: translateX(5px);}
+    30%{-webkit-transform: translateX(-5px);transform: translateX(-5px);} 
+    50%{-webkit-transform: translateX(3px);transform: translateX(3px);}
+    65%{-webkit-transform: translateX(-3px);transform: translateX(-3px);}
+    80%{-webkit-transform: translateX(2px);transform: translateX(2px);}
+    100%{-webkit-transform: translateX(0);transform: translateX(0);}
+}
+@keyframes swing
+{
+    15%{-webkit-transform: translateX(5px);transform: translateX(5px);}
+    30%{-webkit-transform: translateX(-5px);transform: translateX(-5px);}
+    50%{-webkit-transform: translateX(3px);transform: translateX(3px);}
+    65%{-webkit-transform: translateX(-3px);transform: translateX(-3px);}
+    80%{-webkit-transform: translateX(2px);transform: translateX(2px);}
+    100%{-webkit-transform: translateX(0);transform: translateX(0);}
+}
+/* Blurb Two */
+.medicus_blurb_two_row .et_pb_column {z-index: auto !important;}
+.medicus_blurb_two .et_pb_blurb_content {padding:50px 30px; max-width: 800px;}
+.medicus_blurb_two:hover {transform: scale(1.03); box-shadow: 0 20px 60px #1b213a24; position: relative !important; z-index:9999 !important;}
+.medicus_blurb_two:hover .et_pb_main_blurb_image img {transform: translateX(-5px);}
+.medicus_blurb_two:hover .et_pb_blurb_container {transform: translateX(5px);}
+.medicus_blurb_two:hover .et_pb_blurb_container,.medicus_blurb_two .et_pb_blurb_container,
+.medicus_blurb_two:hover .et_pb_main_blurb_image img,.medicus_blurb_two .et_pb_main_blurb_image img,
+.medicus_blurb_two:hover, .medicus_blurb_two {transition: all .4s ease-in-out 0s;}
+/* Blurb One */
+.medicus_blurb_one .et_pb_blurb_content {padding:40px;}
+.medicus_blurb_one:hover .et_pb_main_blurb_image img {transform: scale(1.1);}
+.medicus_blurb_one:hover .et_pb_blurb_container {transform: translateX(0px);}
+.medicus_blurb_one:hover .et_pb_blurb_container,.medicus_blurb_one .et_pb_blurb_container,
+.medicus_blurb_one:hover .et_pb_main_blurb_image img,.medicus_blurb_one .et_pb_main_blurb_image img {transition: all .4s ease-in-out;}
+/* Underline */
+.medicus_blurb_one {display:inline-block;}
+.medicus_blurb_one:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #00a1ff;  
+  transform: scaleX(0); 
+  transition: transform .4s ease-in-out;
+}
+.fromLeft:after{ transform-origin: 100% 50%; }
+.fromLeft:hover:after{ transform: scaleX(1); transform-origin:   0% 50%; }
+.fromRight:after{  transform-origin:   0% 50%; }
+.fromRight:hover:after{ transform: scaleX(1); transform-origin: 100% 50%; }
+/* Bar Counters */
+.medicus_bar_counters .et_pb_counter_amount {color: #00a1ff!important;}
+.medicus_bar_counters .et_pb_counter_container {overflow: initial;margin-bottom: 30px;}
+.medicus_bar_counters .et_pb_counter_amount_number {margin-top: -25px;position: absolute;}
+/* Email Optin */
+.medicus_optin .et_pb_newsletter_description {display:none;}
+.medicus_optin .et_pb_contact_field_last:before {
+    font-family: "ETmodules";
+    content: "\e08a";
+    position: absolute;
+    color: #dadbe0 !important;
+    z-index: 1;
+    padding: 15px 15px;
+}
+.medicus_optin .input {position:relative;}
+.medicus_optin p.et_pb_newsletter_field .input[type="text"] {text-align: center;}
+.medicus_optin .et_pb_button:after {right: 15px;}
+/* Footer Menu */
+
+.medicus_footer_menu .et_pb_blurb_content {float: left;width:100%;}
+.medicus_footer_menu .et_pb_blurb_container {padding: 0 0 10px 0 !important;margin-bottom:0;}
+.medicus_footer_menu .et_pb_main_blurb_image {width: 20px !important;}
+.medicus_footer_menu:hover .et_pb_main_blurb_image .et-pb-icon {color: rgba(255,255,255,0.59) !important;transition: all .2s ease-in-out;}
+.medicus_footer_menu .et_pb_blurb_content a {color: rgba(255,255,255,0.5) !important;transition: all .2s ease-in-out;}
+.medicus_footer_menu .et_pb_blurb_content a:hover {color: rgba(255,255,255,1) !important;margin-left: 5px;transition: all .2s ease-in-out;}
+.medicus_footer_section .et_pb_subscribe .et_pb_newsletter_form .input {
+    line-height: 2em !important;
+}
+/* Social Follow */
+.medicus_social_follow li a.icon {
+    border-radius: 0 !important;
+    width: 45px !important;
+    height: 45px !important;
+    border: solid 1px #fff;
+    transition: all .3s ease-in-out 0s;
+}
+.medicus_social_follow li a.icon::before {
+    width: 45px !important;
+    height: 45px !important;
+    color: #dadbdf !important;
+    line-height: 45px !important;
+    background: #fff;
+    box-shadow: 0 2px 20px rgba(11, 16, 36, 0.05);
+}
+.medicus_social_follow .et_pb_social_media_follow_network a.icon {background-color: #fff!important;}
+/* Social Hover */
+.medicus_social_follow li a.icon:hover {border: solid 1px #00a1ff;transform: translateY(-2px);transition: all .3s ease-in-out 0s;}
+.medicus_social_follow li a.icon:hover::before {color: rgb(175, 164, 111) !important;}
+/* Footer 2 */
+.medicus_footer_2 .medicus_footer_menu .et_pb_blurb_content a:hover {color: #ffffff;margin-left: 5px;transition: all .2s ease-in-out;}  
+.medicus_bottom_menu a {color: #8e8f99; transition: all .3s ease-in-out 0s;}
+.medicus_bottom_menu a:hover {color: #ffffff; transition: all .3s ease-in-out 0s;}
+@media only screen and (max-width: 480px) {
+.medicus_bottom_menu a {width: 100%; display: inline-block; text-align: center;}
+}
+@media only screen and (max-width: 980px) {
+.medicus_bottom_menu {text-align: center !important;}
+}
+/* medicus Optin Horizontal */
+.demo-subscribe-section {display: inline-block !important;margin: auto;width: 100% !important;}
+.demo-subscribe-section .et_pb_newsletter{padding: 20px 10px; /*border-radius:10px;*/}
+.demo-subscribe-section .et_pb_newsletter_description {padding: 0 0 20px 0; width: 100% !important;}
+.demo-subscribe-section .et_pb_newsletter_form {width: 100% !important;}
+.demo-subscribe-section .et_pb_newsletter_form p {display: inline-block;}
+.demo-subscribe-section .et_pb_newsletter_form p input { 
+    border-radius: 0 !important;
+    padding: 16px 8% !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+}
+.demo-subscribe-section .et_pb_newsletter_form input[type="text"], .demo-subscribe-section .et_pb_newsletter_form p.et_pb_newsletter_field input[type="text"] {padding: 17px 20px !important;width:550px;}
+.demo-subscribe-section a.et_pb_newsletter_button:after {display:none;}
+.et_pb_newsletter_form p .et_pb_signup_error {border: 1px solid #fff !important;}
+.demo-subscribe-section .et_pb_newsletter_form {padding-left: 0 !important;}
+.demo-subscribe-section .et_pb_newsletter_fields {display: inline-block !important;}
+ 
+@media only screen and (max-width: 1050px) {
+    .demo-subscribe-section .et_pb_newsletter_form p input { padding: 14px 20px !important; width: 450px !important;}
+    .demo-subscribe-section .et_pb_newsletter_button{ width:210px !important; }
+}
+@media only screen and (max-width: 970px) {
+    .demo-subscribe-section .et_pb_newsletter_form p input { padding: 14px 20px !important; width: 400px !important;}
+    .demo-subscribe-section .et_pb_newsletter_button{ width:180px !important; }
+}
+@media only screen and (max-width: 840px) {
+    .demo-subscribe-section .et_pb_newsletter_form p input { padding: 14px 20px !important; width: 360px !important;}
+    .demo-subscribe-section .et_pb_newsletter_button{ width:150px !important; }
+}
+@media only screen and (max-width: 708px) {
+    .demo-subscribe-section .et_pb_newsletter_form p input { padding: 14px 20px !important; width: 450px !important;}
+    .demo-subscribe-section .et_pb_newsletter_button{ width:450px !important; padding: 13px 0; }
+    .demo-subscribe-section .et_pb_newsletter_button:hover{ width:450px !important; padding: 13px 0; }
+}
+@media only screen and (max-width: 550px) {
+    .demo-subscribe-section .et_pb_newsletter_form p input { padding: 14px 20px !important; width: 260px !important;}
+    .demo-subscribe-section .et_pb_newsletter_button{ width:260px !important; padding: 13px 0; }
+    .demo-subscribe-section .et_pb_newsletter_button:hover{ width:260px !important; padding: 13px 0; }
+}
+/* medicus Sign Up Section */
+.medicus_sign_up_section {padding-top: 80px !important;}
+@media only screen and (min-width: 709px) {
+.medicus_sign_up_section .et_pb_button {letter-spacing: 0px;font-size: 16px !important;width: 200px;padding: 13px 0;border: none;margin-left: -4px;}
+.medicus_sign_up_section .et_pb_button:hover {letter-spacing: 1px !important;font-size: 16px !important;width: 200px;padding: 13px 0;border: none;}
+}
+/* medicus Blog Custom */
+.medicus-post-meta .et-pb-icon{font-size:12px;color:#00a1ff;}
+.medicus-post-meta .medicus_author {margin-right:10px;}
+.medicus_date .medicusdate{display:block;color:white!important;font-size: 25px;font-weight: normal;}
+.medicus_date{text-transform:uppercase;}
+/* medicus Blog */
+.single .et_pb_post {margin-bottom: 0px !important;}
+.medicus_blog .et_pb_blog_grid .et_pb_image_container .published {
+
+    z-index: 100;
+    position: absolute;
+    right: -25px;
+    background: #00A1FF;
+    width: 70px;
+    height: 70px;
+    padding: 12px;
+    box-sizing: border-box;
+    color: #FFF;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    top: -20px;
+    font-weight: normal;
+    box-shadow: -10px 10px 20px #0a0f2530;
+    border-radius: 50%;
+
+}
+
+
+.medicus_blog .et_pb_post {padding: 0 20px;border: none;}
+.medicus_blog .entry-title {margin-top: -115px;position:relative;max-height: 45px;overflow: hidden;}
+.medicus_blog .post-meta {position:relative;}
+.medicus_blog .post-content {display:none;}
+.medicus_blog { position: relative; }
+.medicus_blog .et_pb_image_container:after {
+    position: absolute;
+    content: '';
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.1) 0%, #02141770 50%, #021417 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.1) 0%,#02141770 50%,#021417 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,#02141770 50%,#021417 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#cc021417',GradientType=0 );
+    background-size: cover;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity:.8;
+    transition: .3s ease all;
+    cursor:pointer;
+}
+.medicus_blog .et_pb_post:hover .et_pb_image_container:after {opacity:1;transition: all .3s ease-in-out;}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+.medicus_blog .et_pb_blog_grid .et_pb_image_container .published {right:0px;top:0px;}
+}
+@media only screen and (max-width: 1350px) {
+    .medicus_blog .entry-title {margin-top: -100px;}
+}
+@media only screen and (max-width: 768px) {
+    .medicus_blog .et_pb_blog_grid .column { float: none ;}
+    .medicus_blog .et_pb_blog_grid .column.size-1of1 .et_pb_post{margin-bottom: 20.5% !important;}
+}
+/* medicus Blog Grid */
+.medicus_blog_grid .more-link {
+    opacity: 1 !important;
+    background: #dadbe0;
+    color: #8e8e8e;
+    padding: 8px 15px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+.medicus_blog_grid .more-link:after {
+    position: absolute;
+    opacity: 0;
+    font-weight: 100;
+    right: 0;
+    transition: all .3s ease-in-out;
+    font-family: 'ETmodules';
+    content: "\24";
+}
+.medicus_blog_grid .et_pb_post:hover .more-link {padding: 8px 35px 8px 15px;background: #1a213c;color: #fff;}
+.medicus_blog_grid .et_pb_post:hover .more-link:after {opacity: 1;right: 10px;}
+/* Archive/Categories */
+@media (min-width: 981px) {
+.et_right_sidebar #sidebar {padding-left: 0px !important;}
+#main-content .container:before {width: 0px !important;}
+}
+/* Testimonials */
+.medicus_testimonials .et_pb_testimonial:before {top: 0px;left: 6%;font-size: 90px;content: "\7b";transform: rotate(180deg);}
+.medicus_single_testimonial .secondary-heading h4:after {border-top: 3px #eeeeee20 dashed;}
+/* Hover */
+.medicus_testimonials .et_pb_testimonial:hover .et_pb_testimonial_portrait {transform: translateY(-5px) scale(1.05);transition: all .3s ease-in-out 0s;}
+.medicus_testimonials .et_pb_testimonial .et_pb_testimonial_portrait {transition: all .3s ease-in-out 0s;}
+.medicus_testimonials .et_pb_testimonial:hover {transform: translateY(5px);transition: all .3s ease-in-out 0s;}
+.medicus_testimonials .et_pb_testimonial {transition: all .3s ease-in-out 0s;}
+/* Team Modules */
+.medicus_team:hover .et_pb_team_member_image img,
+.medicus_team:hover .et_pb_team_member_description,
+.medicus_team:hover {
+    transition: all .3s ease-in-out 0s;
+    box-shadow: 0 10px 60px #1b213a24;
+}
+.medicus_team .et_pb_team_member_image img,
+.medicus_team .et_pb_team_member_description,
+.medicus_team {
+    transition: all .3s ease-in-out 0s;
+}
+.medicus_team:hover{transform: translateY(-10px);}
+.medicus_team {overflow: hidden;position: relative; display: block;}
+.medicus_team .et_pb_team_member_image img {margin: 0;}
+.medicus_team .et_pb_team_member_description {position:absolute;top: 83%;min-height: 460px; padding: 20px;background: #fff;margin-top: -20px;}
+.medicus_team:hover .et_pb_team_member_description {padding: 80px 20px !important; top: 0; color: #00000060 !important;}
+.medicus_team .et_pb_member_social_links a {color: white!important;line-height: 40px;}
+.medicus_team .et_pb_member_social_links {margin-top: 40px;}
+.medicus_team .et_pb_member_social_links li {border-radius: 100%!important; margin-right: 10px;width: 40px;height: 40px;background-color: #00A1FF!important;}
+.medicus_team .et_pb_member_social_links li:hover a {color: #fff!important;}
+.medicus_team .et_pb_member_social_links li:hover {opacity: .8; transition: all .4s ease-in-out;}
+.et_pb_team_member .et_pb_team_member_description h4 {font-size:18px !important;}
+/* Team Module Responsive */
+@media (min-width: 480px) and (max-width: 580px) {
+.medicus_team .et_pb_member_social_links li {width: 30px; height: 30px;}
+.medicus_team .et_pb_member_social_links a {line-height: 30px; font-size:12px;}
+.medicus_team .et_pb_member_social_links {margin-top: 15px;}
+.medicus_team .et_pb_team_member_description {font-size: 12px;line-height: 1.4em;}
+}
+@media (min-width: 980px) and (max-width: 1320px) {
+.medicus_team .et_pb_member_social_links li {width: 30px; height: 30px;}
+.medicus_team .et_pb_member_social_links a {line-height: 30px; font-size:12px;}
+.medicus_team .et_pb_member_social_links {margin-top: 15px;}
+.medicus_team .et_pb_team_member_description {font-size: 12px;line-height: 1.4em;}
+}
+@media (min-width: 320px) {
+        .medicus_team .et_pb_team_member_image {margin: 0 0 80px 0 !important;}
+        .medicus_team .et_pb_team_member_description {top: 84% !important;}
+        .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 80% !important;}
+        .medicus_team:hover .et_pb_team_member_description {top: 20px !important; padding: 20px !important;}
+        
+}
+@media (min-width: 360px) {
+        .medicus_team .et_pb_team_member_image {margin: 0 0 80px 0 !important;}
+        .medicus_team .et_pb_team_member_description {top: 84% !important;}
+        .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 82% !important;}
+        .medicus_team:hover .et_pb_team_member_description {top: 20px !important; padding: 20px !important;}
+}
+@media (min-width: 410px) {
+        .medicus_team .et_pb_team_member_image {margin: 0 0 80px 0 !important;}
+        .medicus_team .et_pb_team_member_description {top: 84% !important;}
+        .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 84% !important;}
+        .medicus_team:hover .et_pb_team_member_description {top: 20px !important; padding: 20px !important;}
+}
+@media (min-width: 460px) {
+        .medicus_team .et_pb_team_member_image {margin: 0 0 80px 0 !important;}
+        .medicus_team .et_pb_team_member_description {top: 84% !important;}
+        .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 85% !important;}
+        .medicus_team:hover .et_pb_team_member_description {top: 20px !important; padding: 20px !important;}
+}
+@media (min-width: 480px) {
+        .medicus_team .et_pb_team_member_image {margin: 0 0 80px 0 !important;}
+        .medicus_team .et_pb_team_member_description {top: 80% !important;}
+        .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 87% !important;}
+        .medicus_team:hover .et_pb_team_member_description {top: 20px !important;padding: 20px 20px !important;}
+}
+@media (min-width: 480px) {
+        .medicus_team .et_pb_team_member_image {margin: 0 0 80px 0 !important;}
+        .medicus_team .et_pb_team_member_description {top: 80% !important;}
+        .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 87% !important;}
+        .medicus_team:hover .et_pb_team_member_description {top: 20px !important;padding: 20px 20px !important;}
+}
+@media (min-width: 540px) {
+        .medicus_team .et_pb_team_member_image {margin: 0 0 80px 0 !important;}
+        .medicus_team .et_pb_team_member_description {top: 82% !important;}
+        .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 89% !important;}
+        .medicus_team:hover .et_pb_team_member_description {top: 20px !important;}
+}
+@media (min-width: 600px) {
+        .medicus_team .et_pb_team_member_image {margin: 0 0 80px 0 !important;}
+        .medicus_team .et_pb_team_member_description {top: 82% !important;}
+        .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 78% !important;}
+        .medicus_team:hover .et_pb_team_member_description {top: 20px !important;}
+}
+@media (min-width: 680px) {
+        .medicus_team .et_pb_team_member_image {margin: 0 0 80px 0 !important;}
+        .medicus_team .et_pb_team_member_description {top: 82% !important;}
+        .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 81% !important;}
+        .medicus_team:hover .et_pb_team_member_description {top: 20px !important;}
+}
+@media (min-width: 760px) {
+        .medicus_team .et_pb_team_member_image {margin: 0 0 80px 0 !important;}
+        .medicus_team .et_pb_team_member_description {top: 85% !important;}
+        .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 82% !important;}
+        .medicus_team:hover .et_pb_team_member_description {top: 20px !important; padding: 50px 20px !important;}
+}
+@media (min-width: 840px) {
+        .medicus_team .et_pb_team_member_image {margin: 0 0 80px 0 !important;}
+        .medicus_team .et_pb_team_member_description {top: 85% !important;}
+        .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 85% !important;}
+        .medicus_team:hover .et_pb_team_member_description {top: 20px !important; padding: 50px 20px !important;}
+}
+@media (min-width: 980px) {
+       .medicus_team .et_pb_team_member_description {top: 78% !important;}
+       .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 86% !important;}
+       .medicus_team:hover .et_pb_team_member_description {top: 20px !important; padding: 20px !important;}
+}
+@media (min-width: 1000px) {
+    .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 82% !important;}
+    .medicus_team:hover .et_pb_team_member_description {top: 20px !important; padding: 20px !important;}
+}
+@media (min-width: 1200px) {
+       .medicus_team .et_pb_team_member_description {top: 79% !important;}
+       .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 84% !important;}
+       .medicus_team:hover .et_pb_team_member_description {top: 20px !important}
+}
+@media (min-width: 1300px) {
+       .medicus_team .et_pb_team_member_description {top: 82% !important;}
+       .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 80% !important;}
+       .medicus_team:hover .et_pb_team_member_description {top: 20px !important}
+}
+@media (min-width: 1480px) {
+       .medicus_team .et_pb_team_member_description {top: 83% !important;}
+       .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 83% !important;}
+       .medicus_team:hover .et_pb_team_member_description {top: 20px !important; padding: 80px 20px !important;}
+       .medicus-person-carousel .medicus_team:hover .et_pb_team_member_description {top: 20px !important; padding: 50px 20px !important;}
+}
+@media (min-width: 1620px) {
+       .medicus_team .et_pb_team_member_description {top: 84% !important;}
+       .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 83% !important;}
+       .medicus_team:hover .et_pb_team_member_description {top: 20px !important;}
+}
+@media (min-width: 1760px) {
+       .medicus_team .et_pb_team_member_description {top: 85% !important;}
+       .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 85% !important;}
+       .medicus_team:hover .et_pb_team_member_description {top: 20px !important}
+}
+@media (min-width: 1920px) {
+       .medicus_team .et_pb_team_member_description {top: 86% !important;}
+       .medicus-person-carousel .medicus_team .et_pb_team_member_description {top: 85% !important;}
+       .medicus_team:hover .et_pb_team_member_description {top: 20px !important}
+    }
+/* Team Module Small */
+.medicus_team_small:hover .et_pb_team_member_image {
+    transform: scale(1.05) translateY(-5px);
+    transition: all .3s ease-in-out;
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    opacity: 1;
+}
+.medicus_team_small .et_pb_team_member_image {
+    transition: all .3s ease-in-out;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+.medicus_team_small .et_pb_team_member_description h4:before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 2px;
+    bottom: -15px;
+    left: 40%;
+    background-color: #00a1ff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.medicus_team_small:hover h4:before {visibility: visible;-webkit-transform: scaleX(1);transform: scaleX(1);
+}
+/* Column Reverse */
+@media (max-width:980px) {
+.column-reverse-mobile {display: flex; flex-direction: column-reverse;}
+}
+/* Animate Toggle */
+.et_pb_toggle_open .et_pb_toggle_title:before {font-family: 'ETmodules';transform: rotate(180deg);content: "\33";transition:all 0.5s ease-in-out 0s;}
+.et_pb_toggle_title:before {content: "\33" !important;font-size: 2em !important;transition: all 0.5s ease-in-out 0s;}
+.et_pb_toggle_open h5.et_pb_toggle_title {transition: all 0.4s ease-in-out;}
+.et_pb_toggle_close h5.et_pb_toggle_title {transition: all 0.4s ease-in-out;}
+/* Primary navigation */
+#main-header {border-bottom: solid 1px rgba(255,255,255,.1);}
+header#main-header.et-fixed-header {border-bottom:none;box-shadow:  5px 23px 36px rgba(50, 107, 120, 0.32)!important}
+/* Move secondary menu elements to the right */
+#et-info {float: right !important;}
+/* Make the logo bigger (overlap secondary nav) */
+@media (min-width:981px) {
+    .et_header_style_left #et-top-navigation,
+    .et_header_style_left .et-fixed-header #et-top-navigation {
+        padding-top:20px!important;
+    }
+    #main-header {z-index:100000}
+}
+/* Secondary elements styling */
+#top-header .et-social-icon a {padding:10px;background:transparent ;border:1px white solid;transition: all .3s ease-in-out; border-radius: 50px;}
+#top-header .et-social-icon a:before {font-size:80%!important;display:inline-block;transition: all .3s ease-in-out;transform-origin: bottom;}
+#top-header .et-social-icons li {margin-left:2px;}
+h1 mark, h2 mark, h3 mark, h4 mark, h5 mark, h6 mark, p mark {background:none !important;}
+#top-header .et-social-icon a:hover {opacity:1;transform: translateY(-2px);background:transparent; color: white!important; border-color: #002129;}
+#top-header .et-social-icon a:hover:before {transform: scale(1.2);}
+#top-header .et-social-icons {margin-left:10px}
+
+/* Primary nav links styling */
+@media only screen and (min-width: 981px) {
+    #et-top-navigation nav>ul>li>a {transition: all .3s ease-in-out;}
+    #et-top-navigation nav>ul>li>a:hover {opacity:1;}
+    #et-top-navigation nav>ul>li:not(.menu-item-has-children)>a:before {
+        content:'';
+        display:block;
+        position:absolute;
+        bottom:-1px;
+        left:50%;
+        right:50%;
+        background:transparent;
+        transition: all .3s ease-in-out;
+    }
+    .et-fixed-header #et-top-navigation nav>ul>li:not(.menu-item-has-children)>a:before {bottom:0;}
+    #et-top-navigation nav>ul>li>a:hover:before {left:-5px;right:-5px;}
+}
+#top-menu li li a {width: 280px !important;}
+/* Submenu Styling */
+.nav li ul {
+    border-top:none !important;
+    padding:20px 0 !important;
+    box-shadow: 0 0 80px rgba(50, 54, 58, 0.12) !important;
+    width: 280px !important;
+    border-radius: 3px;
+    margin-top: -7px;
+}
+.nav li li {line-height: 1.6em !important;}
+#top-menu li li {padding:0 !important;display:block;}
+#top-menu li li a {padding:5px 15px 5px 20px;position:relative;transition: all .3s ease-in-out;display: block;width:100%;text-transform:none;}
+#top-menu li li a:hover {padding-left:25px;background:transparent;opacity:1;}
+#top-menu li li a:before {content:'';display:block;position:absolute;width:0;top:0;bottom:0;left:-10px;transition: all .3s ease-in-out;}
+#top-menu li li a:before {left:0;}
+
+@media (min-width: 980px) {
+.sub-menu:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: -14px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    z-index: 1;
+}
+}
+/* Secondary Heading Styling */
+.secondary-heading h1,
+.secondary-heading h2,
+.secondary-heading h3,
+.secondary-heading h4,
+.secondary-heading h5,
+.secondary-heading h6 {
+    display:inline-block;
+    position:relative;
+}
+.secondary-heading h1:after,
+.secondary-heading h2:after,
+.secondary-heading h3:after,
+.secondary-heading h4:after,
+.secondary-heading h5:after,
+.secondary-heading h6:after {
+    display:inline-block;
+    content:'';
+    width:100vw;
+    position:absolute;
+    top:7px;
+    right:-10px;
+    border-top:3px #eee dashed;
+    margin-right:-100vw
+}
+.secondary-heading-parent {
+    overflow:hidden;
+}
+@media (min-width:480px) {
+    .secondary-heading.et_pb_text_align_right h1:after,
+    .secondary-heading.et_pb_text_align_right h2:after,
+    .secondary-heading.et_pb_text_align_right h3:after,
+    .secondary-heading.et_pb_text_align_right h4:after,
+    .secondary-heading.et_pb_text_align_right h5:after,
+    .secondary-heading.et_pb_text_align_right h6:after {
+        right:auto;
+        left:-10px;
+        margin-right:0; 
+        margin-left:-100vw
+    }
+}
+/* Team Carousel */
+.medicus-person-carousel .medicus_team .et_pb_member_social_links {margin-top: 20px;}
+.owl-carousel.medicus-person-carousel .medicus_team:hover .et_pb_team_member_image img,.owl-carousel.medicus-person-carousel .medicus_team:hover .et_pb_team_member_description, .medicus_team:hover {transition: all .3s ease-in-out 0s;box-shadow: 0 10px 25px #edf5f5;}
+.owl-carousel.medicus-person-carousel .owl-item{padding:15px;}
+.owl-carousel.medicus-person-carousel .owl-nav button.owl-next,
+.owl-carousel.medicus-person-carousel .owl-nav button.owl-prev,
+.owl-carousel.medicus-person-carousel button.owl-dot{background: transparent!important; border-radius: 50%!important; border: 1px solid #00a1ff;}
+.medicus-person-carousel .owl-prev {position: absolute;top: -80px;right: 52px !important;display: block !important;border-radius: 0px !important;}
+.medicus-person-carousel .owl-next {position: absolute;top: -80px;right: 0px !important;display: block !important;border-radius: 0px !important;}
+.medicus-person-carousel .medicus-next .et-pb-icon,.medicus-person-carousel .medicus-prev .et-pb-icon{font-size: 20px;line-height: 40px;width: 41px;height: 40px;}
+.owl-theme.medicus-person-carousel .owl-nav [class*="owl-"]:hover { background: transparent; color: #00a1ff;}
+.et_pb_member_social_links .et_pb_font_icon::before {/*content: "\e093";*/ color: white;}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+.et_pb_column.medicus-person-carousel .et_pb_team_member_image {width: 100%;}
+}
+@media only screen and (max-width: 600px) {
+.et_pb_column.medicus-person-carousel .et_pb_team_member_image {width: 100%;max-width: 450px !important;}
+}
+
+/* medicus Popup */
+.mfp-wrap .mfp-close:active {top:0px;}
+.white-popup .et_pb_section {padding-top: 0 !important; }
+.white-popup .et_pb_section .et_pb_row {margin-top: 174px; /*background: #fff !important;*/}
+.white-popup .mfp-close:active, .white-popup .mfp-close {opacity:1 !important;position: fixed !important; top: 0px !important; right: 0px;}
+.white-popup .et_pb_contact {width: 95%;}
+.mfp-arrow-left:after, .mfp-arrow-left .mfp-a, .mfp-arrow-right:after, .mfp-arrow-right .mfp-a{line-height: 0.7em !important;}
+.et_pb_post {position: relative;}
+.header_fixin_mobile #main-header{position:fixed;}
+.option_mobile_menu .et_mobile_nav_menu,.option_mobile_menu #et_mobile_nav_menu{display: block;}
+.option_mobile_menu  #top-menu{display: none;}
+@media only screen and (max-width: 480px) {
+.white-popup .et_pb_section .et_pb_row {margin-top: 60px; /*background: #fff !important;*/}
+}
+
+/* Popup Code */
+.mfp-fade.mfp-wrap.mfp-removing.medicus-mfp .mfp-content .medicus-popup .et_pb_row{opacity: 0;transform: scale(0.9);}
+.mfp-fade.mfp-bg {opacity: 0;transition: all 0.3s ease-out;}
+.mfp-fade .medicus-popup .et_pb_row {opacity: 0;transition: all 0.3s ease-in-out;transform: scale(0.9);}
+.mfp-fade.mfp-ready .medicus-popup .et_pb_row {opacity: 1;transform: scale(1);}
+.mfp-fade.mfp-ready.mfp-bg {opacity: 0.8;}
+.mfp-fade.mfp-removing .medicus-popup .et_pb_row {transform: scale(0.8);opacity: 0;}
+.mfp-fade.mfp-removing.mfp-bg {opacity: 0;}
+
+#popup_4 .et_pb_button:hover {background-color: #ffffff !important;}
+
+/* 404 Page */
+
+
+/* medicus Blog List */
+@media only screen and  (min-width:981px) {
+.medicus_blog_list .entry-featured-image-url {width: 40.5%;margin-right: 4%;float: left;overflow: hidden;margin-bottom: 0px !important; border-radius: 10px 0px 0px 10px}
+.medicus_blog_list .entry-featured-image-url img{min-height:250px;}
+.medicus_blog_list .post_info { width: 55%; float: left;margin-top: 30px;}
+.medicus_blog_list article a.more-link {position: absolute;right: 0;bottom: 0; border-radius: 5px 0px 10px 0px}
+}
+.medicus_blog_list .et_pb_post {background:#FFFFFF; box-shadow:0 10px 120px rgb(217, 233, 249, 0.7); border-radius: 10px;}
+.medicus_blog_list .et_pb_post:hover {box-shadow:0 10px 120px rgb(217, 233, 249,);}
+
+.medicus_blog_list .et_pb_post .entry-title a {margin-top: 10px;margin-right: 25px;display: inline-block;}
+.medicus_blog_list .et_pb_post .post-content {margin-right: 60px; margin-bottom: 30px;}
+.medicus_blog_list article .entry-title {padding-bottom: 15px;}
+.medicus_blog_list article a.more-link:after {opacity:1;position: relative;vertical-align:middle;}
+.medicus_blog_list article a.more-link {color: #adaeb2 !important;background-color: #e5e5e5 !important;padding: 15px;float: right;opacity:1;transition:all .2s ease-in-out;}
+.medicus_blog_list article:hover a.more-link {color: #fff !important;background-color: #00A1FF!important;padding: 15px;float: right;opacity:1; transition:all .2s ease-in-out;}
+.medicus_blog_list article a:hover.more-link:after{-webkit-animation: swing 1s ease;animation: swing 1s ease; -webkit-animation-iteration-count: 1;animation-iteration-count: 1;display:block;}
+@media only screen and  (max-width:980px) {
+.medicus_blog_list .post_info { padding:15px 25px;}
+}
+
+/* medicus Blog Grid */
+.medicus_blog_grid  article:hover .entry-featured-image-url:after { opacity: 1; transform:translateY(-120px);}
+.medicus_blog_grid  article .entry-featured-image-url:after {z-index:4;content: 'Read More';display: block;opacity: 0;position: absolute;color: #fff;transform: translateY(-80px);
+transition: all .6s ease-in-out;width: 100%;font-size: 18px;text-align: center;}
+.medicus_blog_grid article .entry-featured-image-url:after,.medicus_blog_grid article .entry-featured-image-url:before{ transition: all .6s ease-in-out;}
+.medicus_blog_grid .et_pb_post:hover .entry-featured-image-url:before {z-index:4;height: 35px !important;transform:translateY(-30px)  !important;}
+.medicus_blog_grid .et_pb_post .entry-featured-image-url:before {z-index:4;content: '';display: block;position: absolute;background-color: #fff;width: 1px;transform: translateY(-10px);left: 51%;height: 0;top: calc(100% - 60px);transition: all .6s ease-in-out;transition-delay: 0s;}
+@media only screen and  (max-width:767px) {
+.medicus_blog_grid .et_pb_post .entry-featured-image-url::before {transform: translateY(-100px);}
+.medicus_blog_grid .et_pb_post:hover .entry-featured-image-url:before { transform: translateY(-120px) !important;}
+.medicus_blog_grid article .entry-featured-image-url::after { transform: translateY(-130px);}
+.medicus_blog_grid article:hover .entry-featured-image-url:after {transform: translateY(-220px);}
+}
+@media only screen and  (max-width:600px) {
+.medicus_blog_grid .et_pb_post .entry-featured-image-url::before {transform: translateY(-50px);}
+.medicus_blog_grid .et_pb_post:hover .entry-featured-image-url:before { transform: translateY(-60px) !important;}
+.medicus_blog_grid article .entry-featured-image-url::after { transform: translateY(-70px);}
+.medicus_blog_grid article:hover .entry-featured-image-url:after {transform: translateY(-160px);}
+}
+@media only screen and  (max-width:415px) {
+.medicus_blog_grid .et_pb_post .entry-featured-image-url::before {transform: translateY(-20px);}
+.medicus_blog_grid .et_pb_post:hover .entry-featured-image-url:before { transform: translateY(-30px) !important;}
+.medicus_blog_grid article .entry-featured-image-url::after { transform: translateY(-50px);}
+.medicus_blog_grid article:hover .entry-featured-image-url:after {transform: translateY(-130px);}
+}
+
+/* Single Post Nav */
+.medicus_post_section.et_pb_section,.medicus_post_row.et_pb_row{padding:0; max-width: 1080px; margin:auto; width:100% !important;}
+.medicus_post_row.et_pb_row {border-top: solid 1px #f2f2f2; padding-top:20px;}
+.medicus_post_left{float: left;padding: 10px;border-radius: 100px;transition: all .3s ease;}
+.medicus_post_left span strong,.medicus_post_right span strong{vertical-align: top;}
+.medicus_post_right{float: right;padding: 10px;border-radius: 100px;transition: all .3s ease}
+.medicus_post_right span,.medicus_post_left span{margin: 12px;line-height: 26px;vertical-align: top;transition: all .3s ease;}
+.medicus_post_left:hover, .medicus_post_right:hover {background-color: whitesmoke;}
+.medicus_post_left:hover span, .medicus_post_right:hover span { transition: all .3s ease;}
+.medicus_post_left .et-pb-icon, .medicus_post_right .et-pb-icon {font-size: 26px !important;vertical-align: middle;}
+@media screen and (max-width: 767px){
+.medicus_post_left,.medicus_post_right{float:none;text-align:center;}
+}
+#commentform textarea, #commentform input[type="text"], #commentform input[type="email"], #commentform input[type="url"] {
+    background-color: whitesmoke !important;
+}
+
+/* Author Box */
+.medicus_author_row.et_pb_row{background: whitesmoke; max-width: 1080px;}
+.medicus_author_section {padding: 20px 0 !important;}
+.medicus_author_left{width:15%;float: left;text-align: center;margin-left:1%;margin-right:1%}
+.medicus_author_right{width:78%;float: right;margin-right:5%}
+@media screen and (max-width: 980px){
+.medicus_author_left { margin-left: 5%; margin-right: 5%; }
+.medicus_author_right { width: 70%;margin-right: 5%;}
+.medicus_author_left img {border-radius: 200px; box-shadow: rgba(0,0,0,0.2);}
+}
+
+/* Blog Related Articles */
+.et_pb_section_related_articles .et_pb_row {padding: 10px 0; width: 100% !important;}
+.et_pb_section.et_pb_section_related_articles{padding:30px 0; max-width: 1080px; margin:30px auto;}
+.related_articles_section  .et_pb_row{background-color: #ffffff;border-radius: 6px;box-shadow: 0 30px 150px rgba(0, 0, 0, 0.2);padding: 20px 50px;}
+.related_articles_section h2 {color: #232323;font-size: 20px;font-weight: 700;}
+.related_articles_section .et_pb_column.et_pb_column_1_3 a{color: #000000;}
+.related_articles_section .et_pb_column.et_pb_column_layout_fullwidth a{color: #000000;}
+.related_articles_section .et_pb_row .et_pb_column_1_3 {width: 30%; margin-right: 5%;}
+.related_articles_section .et_pb_row_related_articles.et_pb_row .et_pb_column_1_3:last-child {margin-right: 0% !important;}
+.related_img .et_social_media{display:none;}
+.related_articles_section img {border-radius: 5px;-webkit-border-radius: 5px !important;opacity: 0.8;transform-origin: center bottom 0;transition: all 400ms ease 0s;box-shadow: 0 10px 100px rgb(225, 237, 249);min-height: 185px;vertical-align: unset !important;display: block;position: relative;overflow: hidden;}
+.related_articles_section .et_pb_column.et_pb_column_1_3 {animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s normal none 1 running gridFadeIn;opacity: 1;margin-bottom:25px;   display: block;}
+.related_articles_section .et_pb_column.et_pb_column_layout_fullwidth {animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s normal none 1 running gridFadeIn;opacity: 1;margin-bottom:25px;display: block;}
+.related_articles_section .et_pb_column.et_pb_column_1_3 .related_div {background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.80) 100%) repeat scroll 0 0;text-shadow: 0 4px 10px rgba(7, 15, 27,0.4);bottom: 0;color: #ffffff;font-size: 16px;font-weight: 600;line-height: 20px;padding: 40px 15px 15px 15px;position: absolute;width: 100%;border-radius: 5px;}
+.related_articles_section .et_pb_column.et_pb_column_layout_fullwidth .related_div {font-size: 20px;font-weight: 800;position: absolute; width: 100%;bottom: 10px; color: #FFFFFF; padding: 5px; line-height: 18px;}
+.related_articles_section .et_pb_row_related_articles.et_pb_row{background-color: transparent;border-radius: 0;box-shadow: none;padding: 0;width:100% !important;}
+.et_pb_row_related_articles .et_pb_column:hover img {transform: scale(1.05) !important;}
+.related_img {overflow: hidden;border-radius: 5px;}
+.et_pb_row_related_articles .et_pb_column:hover img {opacity: 1;transition: all 400ms ease 0s;}
+@media only screen and (max-width: 980px) {
+  .related_articles_section .et_pb_row_related_articles.et_pb_row .et_pb_column_1_3:first-child {margin-left: 0% !important;}
+  .related_articles_section .et_pb_column.et_pb_column_1_3 {margin-bottom:50px;}
+  .related_articles_section .et_pb_column.et_pb_column_1_3 .related_div {font-size: 15px; line-height: 18px;}
+  .related_articles_section .et_pb_row_related_articles.et_pb_row .et_pb_column_1_3:last-child {margin-bottom:50px !important;}
+  .related_articles_section h2 {margin-bottom:50px !important;}
+}
+@media only screen and (max-width: 540px) {
+  .related_articles_section .et_pb_column.et_pb_column_1_3 .related_div {font-size: 14px; line-height: 18px;}
+  .related_articles_section .et_pb_column.et_pb_column_layout_fullwidth .related_div {font-size: 14px; line-height: 18px;}
+  .related_articles_section .et_pb_row {padding: 0 20px;}
+}
+@media only screen and  (max-width:1300px) {
+    .medicus_post_section.et_pb_section, .et_pb_section_related_articles {width:80% !important;}
+    .medicus_post_left, .medicus_post_right {width:100%;text-align: -webkit-center;}
+}
+
+/* Add Subline on Menu */
+span.sub-description {font-style: italic;font-size: small;opacity: .6;}
+
+/* Grey CTA Responsive Fix */
+@media only screen and  (max-width:980px) {
+.medicus_grey_cta {background-color: #f6f6f7;}
+}
+/* Back To Top */
+.et_pb_scroll_top.et-pb-icon {bottom: 15px !important;right: 15px !important;padding: 15px !important;border-radius: 50px !important;background: #00A1FF!important;font-size: 22px !important;}
+.et_pb_scroll_top:before {content: "\21" !important;}
+
+/* MOBILE MENU */
+#mobile_menu { display: block !important; min-height: 100vh; top: 0; border-top: none; padding-top: 80px; z-index: 9998; }
+.mobile_nav.closed #mobile_menu {
+ transform: rotateY(90deg); -webkit-transform: rotateY(90deg);
+ transform-origin: right; -webkit-transform-origin: right;
+ background: #fff; transition: .8s ease-in-out !important; }
+.mobile_nav.opened #mobile_menu {
+ transform: rotateY(0deg); -webkit-transform: rotateY(0deg);
+ transform-origin: right; -webkit-transform-origin: right;
+ background: #00a1ff ; transition: .8s ease-in-out; }
+.mobile_nav.opened .mobile_menu_bar:before {
+ content: "\4d"; color: #fff; }
+.et_mobile_menu li a { color: #fff; }
+@media(max-width: 980px) {
+.et_header_style_split .mobile_menu_bar, .et_header_style_left .mobile_menu_bar { z-index: 9999; }
+#main-header .container.clearfix.et_menu_container { width: 100%; }
+.logo_container { padding-left: 30px; }
+#et-top-navigation { padding-right: 30px; }
+
+/* Mobile Menu Fixed on Scroll */
+.et_non_fixed_nav.et_transparent_nav #main-header, .et_non_fixed_nav.et_transparent_nav #top-header, .et_fixed_nav #main-header, .et_fixed_nav #top-header {position: fixed !important; }
+    .et_mobile_menu { overflow: scroll !important; }
+    .et_fixed_nav #main-header {position: fixed !important;}    
+    body.mobilemenuscroll{overflow:hidden !important;}
+}
+@media(min-width: 341px) {
+    #mobile_menu { width: 340px; margin-left: calc(100% - 340px); }
+} 
+@media(max-width: 340px) {
+    #mobile_menu { width: 100%; margin-left: 0; }
+}
+
+.et_pb_portfolio_grid .et_pb_portfolio_item{
+    will-change: transform;
+}
+
+.et_pb_portfolio_grid .et_pb_portfolio_item img{
+    backface-visibility: hidden;
+}

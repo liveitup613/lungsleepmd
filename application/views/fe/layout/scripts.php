@@ -1,0 +1,11 @@
+<script type="text/javascript" src="<?php echo base_url('assets/frontend/scripts/jquery.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/frontend/scripts/jquery-migrate.min.js');?>"></script>    
+<script type="text/javascript" src="<?php echo base_url('assets/frontend/scripts/menu-responsible.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/frontend/scripts/variables.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/frontend/scripts/custom.unified.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/frontend/scripts/medicus-custom-scripts.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/frontend/scripts/common.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/frontend/scripts/parsley.min.js');?>"></script>   
+<script type="text/javascript" src="<?php echo base_url('assets/frontend/scripts/caldera-forms-front.min.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/frontend/scripts/intlTelInput.min.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/frontend/scripts/jquery-baldrick.min.js');?>"></script>

@@ -51,7 +51,7 @@
                                                 </div> <!-- .et_pb_text -->
                                                 <div class="et_pb_module et_pb_text et_pb_text_1  et_pb_text_align_left et_pb_bg_layout_light">
                                                     <div class="et_pb_text_inner">
-                                                        <p><small>Specializes  in the</small>   <br><strong>Treathment & Diagnosis of Pulmonary & Sleep Disorders</p>
+                                                        <p><small>Specializes  in the</small>   <br><strong>Treatment & Diagnosis of Pulmonary & Sleep Disorders</p>
                                                     </div>
                                                 </div> <!-- .et_pb_text -->
                                                 <div class="et_pb_button_module_wrapper et_pb_button_0_wrapper  et_pb_module et_had_animation"

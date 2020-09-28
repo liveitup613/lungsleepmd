@@ -57,7 +57,7 @@
                                                 <div class="et_pb_button_module_wrapper et_pb_button_0_wrapper  et_pb_module et_had_animation"
                                                     style="">
                                                     <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light et_smooth_scroll_disabled open-popup-popup_3"
-                                                        href="#popup_3">Request Consultation</a>
+                                                        href="<?php echo base_url('service-fees');?>">Request Consultation</a>
                                                 </div>
                                             </div> <!-- .et_pb_column -->
                                         </div> <!-- .et_pb_row -->

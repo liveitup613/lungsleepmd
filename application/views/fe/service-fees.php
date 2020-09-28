@@ -53,6 +53,60 @@
                                             <div class="service-container container-small">
                                                 <div class='content'>
                                                     <div class='service-quote'>
+                                                        <h4>Service: Appointment Form</h4>
+                                                    </div>
+                                                    <div class='appointment-form'>
+                                                        <form id='appointment-form'>
+                                                            <div class='form-group'>
+                                                                <label class='form-label'>First Name</label>
+                                                                <input type='text' calss='form-control'>
+                                                            </div>
+                                                            <div class='form-group'>
+                                                                <label class='form-label'>Last Name</label>
+                                                                <input type='text' calss='form-control'>
+                                                            </div>
+                                                            <div class='form-group'>
+                                                                <label class='form-label'>Phone Number</label>
+                                                                <input type='text' calss='form-control'>
+                                                            </div>
+                                                            <div class='form-group'>
+                                                                <label class='form-label'>Email</label>
+                                                                <input type='text' calss='form-control'>
+                                                            </div>
+                                                            <label>Address</label>
+                                                            <div class='form-group'>
+                                                                <label class='form-label'>Street Address</label>
+                                                                <input type='text' calss='form-control'>
+                                                            </div>
+                                                            <div class='form-group'>
+                                                                <label class='form-label'>Stress Address Line2</label>
+                                                                <input type='text' calss='form-control'>
+                                                            </div>
+                                                            <div class='form-group'>
+                                                                <label class='form-label'>City</label>
+                                                                <input type='text' calss='form-control'>
+                                                            </div>
+                                                            <div class='form-group'>
+                                                                <label class='form-label'>State/Province</label>
+                                                                <input type='text' calss='form-control'>
+                                                            </div>
+                                                            <div class='form-group'>
+                                                                <label class='form-label'>Postal/Zip Code</label>
+                                                                <input type='text' calss='form-control'>
+                                                            </div>
+                                                            <div class='form-group'>
+                                                                <label class='form-label'>Country</label>
+                                                                <input type='text' calss='form-control'>
+                                                            </div>    
+                                                            <div class='form-group'>
+                                                                <label class='form-label'>Appointment Date</label>
+                                                                <input type='date' calss='form-control'>
+                                                            </div>         
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class='content'>
+                                                    <div class='service-quote'>
                                                         <h4>Discounted fees are available for current patients of the practice and new patients with hardship ona case by case basis.</h4>
                                                     </div>
                                                     <div class='service-fee'>

@@ -15,7 +15,7 @@
                         class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light">
                         <li
                             class="et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook et_pb_social_media_follow_network_0_tb_footer">
-                            <a href="https://medicus.b3multimedia.ie/#" class="icon et_pb_with_border"
+                            <a href="#" class="icon et_pb_with_border"
                                 title="Follow on Facebook" target="_blank"><span
                                     class="et_pb_social_media_follow_network_name"
                                     aria-hidden="true">Follow</span>
@@ -23,7 +23,7 @@
                         </li>
                         <li
                             class="et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter et_pb_social_media_follow_network_1_tb_footer">
-                            <a href="https://medicus.b3multimedia.ie/#" class="icon et_pb_with_border"
+                            <a href="#" class="icon et_pb_with_border"
                                 title="Follow on Twitter" target="_blank"><span
                                     class="et_pb_social_media_follow_network_name"
                                     aria-hidden="true">Follow</span>
@@ -31,7 +31,7 @@
                         </li>
                         <li
                             class="et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-instagram et_pb_social_media_follow_network_2_tb_footer">
-                            <a href="https://medicus.b3multimedia.ie/#" class="icon et_pb_with_border"
+                            <a href="#" class="icon et_pb_with_border"
                                 title="Follow on Instagram" target="_blank"><span
                                     class="et_pb_social_media_follow_network_name"
                                     aria-hidden="true">Follow</span>
@@ -39,7 +39,7 @@
                         </li>
                         <li
                             class="et_pb_social_media_follow_network_3_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-youtube et_pb_social_media_follow_network_3_tb_footer">
-                            <a href="https://medicus.b3multimedia.ie/#" class="icon et_pb_with_border"
+                            <a href="#" class="icon et_pb_with_border"
                                 title="Follow on Youtube" target="_blank"><span
                                     class="et_pb_social_media_follow_network_name"
                                     aria-hidden="true">Follow</span>

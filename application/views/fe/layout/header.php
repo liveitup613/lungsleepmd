@@ -5,25 +5,25 @@
             <ul class="et-social-icons">
 
                 <li class="et-social-icon et-social-facebook">
-                    <a href="https://medicus.b3multimedia.ie/#" class="icon" style="min-width: 36px;">
+                    <a href="#" class="icon" style="min-width: 36px;">
                         <span>Facebook</span>
                     </a>
                 </li>
                 <li class="et-social-icon et-social-twitter">
-                    <a href="https://medicus.b3multimedia.ie/#" class="icon" style="min-width: 36px;">
+                    <a href="#" class="icon" style="min-width: 36px;">
                         <span>Twitter</span>
                     </a>
                 </li>
 
 
                 <li class="et-social-icon et-social-linkedin">
-                    <a href="https://medicus.b3multimedia.ie/#" class="icon" style="min-width: 36px;">
+                    <a href="#" class="icon" style="min-width: 36px;">
                         <span>LinkedIn</span>
                     </a>
                 </li>
 
                 <li class="et-social-icon et-social-rss">
-                    <a href="https://medicus.b3multimedia.ie/feed/" class="icon" style="min-width: 36px;">
+                    <a href="#" class="icon" style="min-width: 36px;">
                         <span>RSS</span>
                     </a>
                 </li>

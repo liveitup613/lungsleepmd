@@ -58,19 +58,41 @@
                                                             <div class='contact'>
                                                                 <img src='<?php echo base_url('assets/frontend/images/icon-green-28.png');?>'>
                                                                 <p>516-485-5864</p>
+                                                                <p>347-537-2872</p>
                                                             </div>
                                                         </div>
                                                         <div class='contact-container'>
                                                             <div class='contact'>
                                                                 <img src='<?php echo base_url('assets/frontend/images/icon-green-15.png');?>'>
-                                                                <p>320 Wilson Street, NY</p>
+                                                                <p>320 Wilson St Suite #2</p>
+                                                                <p>West Hempstead, NY 11552</p>
                                                             </div>
                                                         </div>
                                                         <div class='contact-container'>
                                                             <div class='contact'>
-                                                                <img src='<?php echo base_url('assets/frontend/images/icon-green-27.png');?>'>
-                                                                <p>contactus@epignosis.com</p>
+                                                                <img src='<?php echo base_url('assets/frontend/images/fax-icon.png');?>'>
+                                                                <p>516-485-0151</p>
+                                                                <p>   </p>
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class='opening-hours-info'>
+                                                        <div class='hours-container'>
+                                                            <div class='office-hours'>
+                                                                <h4>Office Hours</h4>
+                                                                <div class='hours'><div class='date'>Monday</div><p>10AM - 2PM</p></div>
+                                                                <div class='hours'><div class='date'>Tuesday</div> 10AM - 5PM</div>
+                                                                <div class='hours'><div class='date'>Wednesday</div> 12:30PM - 7:30 PM</div>
+                                                                <div class='hours'><div class='date'>Thursday</div> 10AM - 5PM</div>
+                                                                <div class='hours'><div class='date'>Friday</div> 10AM - 5PM</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class='hours-container'>
+                                                            <div class='office-hours'>
+                                                                <h4>PFT Testing Hours</h4>
+                                                                <div class='hours'><div class='date'>Monday</div>2PM - 5PM</div>
+                                                                <div class='hours'><div class='date'>Friday</div>PFTs THROUGHOUT DAY AS NEEDED</div>
+                                                            </div>                
                                                         </div>
                                                     </div>
                                                 </div>
@@ -84,7 +106,7 @@
 
                 </div> <!-- #main-content -->
 
-               <?php $this->load->view('fe/layout/footer');?>
+                <?php $this->load->view('fe/layout/footer');?>
             </div> <!-- #et-main-area -->
 
 

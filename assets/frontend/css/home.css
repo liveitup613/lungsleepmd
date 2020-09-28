@@ -486,7 +486,7 @@
         margin-bottom: 32px;     
     }
 
-    @media only screen and (max-width:650px) {
+    @media only screen and (max-width:747px) {
         .contact-container {
             width: 100%;
         }
@@ -502,6 +502,7 @@
         background-color: white;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
+        min-height: 282px;
     }
 
     .contact img {
@@ -514,4 +515,99 @@
         color: black;
         font-weight: 600;
         font-size: 18px;
+    }
+
+    .opening-hours-info {
+        min-height: 350px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .hours-container {
+        width: 50%;
+        padding: 0px 16px;
+        margin-bottom: 32px;     
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .hours-container h4 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: -31px;
+        background-color: #f0f5f5;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .hours-container .hours {
+        color: black;
+        font-weight: 600;
+        font-size: 15px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 16px;
+    }
+
+    .hours-container .date {
+        font-size: 17px;  
+        color: #4f676b;              
+        font-weight: bold;
+        min-width: 140px;
+    }
+
+    @media only screen and (max-width:747px) {
+        .hours-container {
+            width: 100%;
+        }
+
+        .hours-container h4 {
+            font-size: 20px;
+        }
+
+        .hours-container .hours {
+            display: block;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hours-container .date {
+            text-align: center;
+        }
+        
+    }
+
+    .office-hours {
+        border-style: solid;
+        border-width: 3px;
+        border-color: #00c3c6;
+        border-radius: 15px;
+        width: 450px;
+        padding: 16px 48px;
+        min-height: 292px;
+    }
+
+    @media only screen and (max-width:650px) {
+        .office-hours {
+            width: 345px;            
+        }
+        
+    }
+    
+
+    .et_policy {
+        border-style: solid;
+        border-color: #4f676b;
+        border-width: 0px;
+        border-top-width: 2px;
+        padding-top: 16px;
+    }
+
+    .et_service_descrition p:first-child{
+        height: 205px!important;        
+        overflow:hidden;
     }

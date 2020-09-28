@@ -137,11 +137,14 @@
                                     margin-top: 16px;'>Click Here</a>
                         </div>
                     </div> <!-- .et_pb_text -->                    
-                </div> <!-- .et_pb_column -->
+                </div> <!-- .et_pb_column -->                
 
 
             </div> <!-- .et_pb_row -->
 
+            <div class='et_pb_row et_policy' style='margin-bottom: 0px;'>
+                © 2020 EPIGNOSIS SPECIALTY PRACTICE, P.C. ALL RIGHTS RESERVED. Designed by <a href='www.systoneit.com'>Systone Iterations</a>
+            </div>
 
         </div> <!-- .et_pb_section -->
     </div><!-- .et_builder_inner_content -->

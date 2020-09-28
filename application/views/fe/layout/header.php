@@ -60,18 +60,21 @@
                             </li>
                             <li class="menu-item">
                                 <a href="<?php echo base_url('services/critical_medicine');?>">Critical Care Medicine</a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="<?php echo base_url('service-fees');?>">Service Fees</a>
-                            </li>
+                            </li>                            
                             <li class="menu-item">
                                 <a href="<?php echo base_url('additional-services');?>">Additional Services</a>
                             </li>
                         </ul>
                     </li>
+                    <li class="menu-item">
+                        <a href="<?php echo base_url('service-fees');?>">Service Fees</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="<?php echo base_url('about-us');?>">About Us</a>
+                    </li>
                     <li
                         class="menu-item  menu-item-has-children">
-                        <a title="" href="#">Our Work</a>
+                        <a title="" href="#">Quick Links</a>
                         <ul class="sub-menu">
                             <li class="menu-item">
                                 <a href="<?php echo base_url('insurance');?>">Insurance Information</a>
@@ -89,9 +92,6 @@
                                 <a href="<?php echo base_url('blogs');?>">Blogs</a>
                             </li>                                      
                         </ul>
-                    </li>                                
-                    <li class="menu-item">
-                        <a href="<?php echo base_url('about-us');?>">About Us</a>
                     </li>
                     <li class="menu-item">
                         <a href="<?php echo base_url('contact-us');?>">Contact Us</a>

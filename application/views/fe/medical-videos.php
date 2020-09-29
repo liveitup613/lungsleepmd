@@ -88,7 +88,7 @@
                                                                     <p>Como Usar el Inhalador Ellipta</p>
                                                                 </div>
                                                                 <div class='video-play'>
-                                                                    <img src='<?php echo base_url('assets/images/youtube-play.png');?>'>
+                                                                    <img src='<?php echo base_url('assets/images/youtube-play.png');?>' onclick='onVideoShow("dUdhTX8K6ak")'>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -100,7 +100,7 @@
                                                                     <p>How to Use Your Incentive Spirometer (Spanish) | Memorial Sloan Kettering</p>
                                                                 </div>
                                                                 <div class='video-play'>
-                                                                    <img src='<?php echo base_url('assets/images/youtube-play.png');?>'>
+                                                                    <img src='<?php echo base_url('assets/images/youtube-play.png');?>' onclick='onVideoShow("3LhtF9E3jCk")'>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -112,7 +112,7 @@
                                                                     <p>Tecnica de inhalación de Combivent Respimat</p>
                                                                 </div>
                                                                 <div class='video-play'>
-                                                                    <img src='<?php echo base_url('assets/images/youtube-play.png');?>'>
+                                                                    <img src='<?php echo base_url('assets/images/youtube-play.png');?>' onclick='onVideoShow("LJFvFB5u12M")'>
                                                                 </div>
                                                             </div>
                                                         </div>

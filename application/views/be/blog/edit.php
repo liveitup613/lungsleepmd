@@ -7,7 +7,7 @@
     <!-- BEGIN HEAD -->    
     <head>
         <meta charset="utf-8" />
-        <title>Syston Iterations | <?php echo ($ID == 0 ? "New Blog" : "Blog Edit");?></title>
+        <title><?php echo ($ID == 0 ? "New Blog" : "Blog Edit");?> | Epignosis Specialty Practice</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />

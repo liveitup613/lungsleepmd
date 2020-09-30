@@ -143,7 +143,7 @@
             </div> <!-- .et_pb_row -->
 
             <div class='et_pb_row et_policy' style='margin-bottom: 0px;'>
-                © 2020 EPIGNOSIS SPECIALTY PRACTICE, P.C. ALL RIGHTS RESERVED. Designed by <a href='www.systoneit.com'>Systone Ietrations</a>
+                © 2020 EPIGNOSIS SPECIALTY PRACTICE, P.C. ALL RIGHTS RESERVED. Designed by <a href='http://www.systoneit.com'>Systone Ietrations</a>
             </div>
 
         </div> <!-- .et_pb_section -->

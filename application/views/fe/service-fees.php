@@ -51,7 +51,7 @@
 
                                         <main class="main">
                                             <div class="service-container container-small">
-                                                <div class='content'>
+                                                <!-- <div class='content'>
                                                     <div class='service-quote'>
                                                         <h4>Service: Appointment Form</h4>
                                                     </div>                                                    
@@ -72,8 +72,7 @@
                                                             <div class='form-group col-5'>
                                                                 <label class='form-label'>Email<span class="field_required">*</span></label>
                                                                 <input type='text' class='form-control' id='email' name='email' required>
-                                                            </div>
-                                                            <!-- <label>Address</label> -->
+                                                            </div>                                                            
                                                             <div class='form-group col-10'>
                                                                 <label class='form-label'>Street Address<span class="field_required">*</span></label>
                                                                 <input type='text' class='form-control' id='street1' name='street1' required>
@@ -384,7 +383,7 @@
                                                             </div>   
                                                         </div>   
                                                     </form>                                                    
-                                                </div>
+                                                </div> -->
                                                 <div class='content'>
                                                     <div class='service-quote'>
                                                         <h4>Discounted fees are available for current patients of the practice and new patients with hardship ona case by case basis.</h4>

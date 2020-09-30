@@ -27,54 +27,135 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('fe/home');
+		$this->db->select('*');
+		$this->db->where('ID', 1);
+		$this->db->from('tblhome');
+		$data = $this->db->get()->row_array();
+
+		$this->db->select('*');
+		$this->db->from('tblblogs');
+		$this->db->where('Enable', 'YES');
+		$this->db->limit(2);
+		$this->db->order_by('CreatedDate', 'desc');
+		$data['blogs'] = $this->db->get()->result_array();
+
+		$this->load->view('fe/home', $data);
     }
     
     public function pulmonary_medicine() {
-		$this->load->view('fe/pulmonary-medicine');
+		$this->db->select('*');
+		$this->db->where('ID', 1);
+		$this->db->from('tblservices');
+		$data = $this->db->get()->row_array();
+
+		$this->load->view('fe/pulmonary-medicine', $data);
 	}
 
 	public function sleep_medicine() {
-		$this->load->view('fe/sleep-medicine');
+		$this->db->select('*');
+		$this->db->where('ID', 2);
+		$this->db->from('tblservices');
+		$data = $this->db->get()->row_array();
+
+		$this->load->view('fe/sleep-medicine', $data);
 	}
 
 	public function critical_medicine() {
-		$this->load->view('fe/critical-care-medicine');
+		$this->db->select('*');
+		$this->db->where('ID', 3);
+		$this->db->from('tblservices');
+		$data = $this->db->get()->row_array();
+
+		$this->load->view('fe/critical-care-medicine', $data);
 	}
 
 	public function sevice_fees() {
-		$this->load->view('fe/service-fees');
+		$this->db->select('*');
+		$this->db->from('tblservicefees');
+		$data['fees'] = $this->db->get()->result_array();
+		
+		$this->load->view('fe/service-fees', $data);
 	}
 
 	public function additional_services() {
-		$this->load->view('fe/additional-service');
+		$this->db->select('*');
+		$this->db->from('tbladditionalservices');
+		$data['services'] = $this->db->get()->result_array();
+
+		$this->load->view('fe/additional-service', $data);
 	}
 
 	public function insurance() {
-		$this->load->view('fe/insurance');
+		$this->db->select('*');
+		$this->db->where('Type', 'Insurance');
+		$this->db->from('tblresource');
+		$data['insurances'] = $this->db->get()->result_array();
+
+		$this->load->view('fe/insurance', $data);
 	}
 
 	public function patient_forms() {
-		$this->load->view('fe/patient-form');
+		$type_array = array('Medical', 'Instruction', 'Sleep', 'Other');
+
+		foreach ($type_array as $type) {
+			$this->db->select('*');
+			$this->db->where('Type', $type);
+			$this->db->from('tblpatientform');
+			$data[$type.'s'] = $this->db->get()->result_array();
+		}
+
+		$this->load->view('fe/patient-form', $data);
 	}
 
 	public function instructional_medical_videos() {
-		$this->load->view('fe/medical-videos');
+		$this->db->select('*');
+		$this->db->from('tblmedicalvideos');
+		$data['videos'] = $this->db->get()->result_array();
+
+		$this->load->view('fe/medical-videos', $data);
 	}
 
 	public function blogs() {
-		$this->load->view('fe/blogs');
+		$this->db->select('*');
+		$this->db->from('tblblogs');
+		$data['blogs'] = $this->db->get()->result_array();
+
+		$this->load->view('fe/blogs', $data);
 	}
 
 	public function blogView($id) {
-		$this->load->view('fe/blogView');
+		$this->db->select('*');
+		$this->db->from('tblblogs');
+		$this->db->where('ID', $id);
+		$data = $this->db->get()->row_array();
+		
+		$this->load->view('fe/blogView', $data);
 	}
 
 	public function aboutUs() {
-		$this->load->view('fe/aboutUs');
+		$this->db->select('*');
+		$this->db->from('tblaboutus');
+		$this->db->where('ID', 1);
+		$data = $this->db->get()->row_array();
+
+		$type_array = array('Association', 'Affiliation', 'Certification');
+
+		foreach ($type_array as $type) {
+			$this->db->select('*');
+			$this->db->where('Type', $type);
+			$this->db->from('tblresource');
+			$data[$type.'s'] = $this->db->get()->result_array();
+		}
+
+		$this->load->view('fe/aboutUs', $data);
 	}
 
 	public function contactUs() {
-		$this->load->view('fe/contactUs');
+		$this->db->select('*');
+		$this->db->from('tblcontact');
+		$this->db->where('ID', 1);
+
+		$data = $this->db->get()->row_array();
+		$this->load->view('fe/contactUs', $data);
 	}
 }

@@ -49,7 +49,7 @@
                                             <h1 class="header__breadcrumb--title">Instructional Medical Videos</h1>
                                         </div>
 
-                                        <main class="main" id='main'>
+                                        <main class="main" id='main' style='background-color: #f0f0f0!important'>
                                             <div class="service-container">
                                                 <div class='content'>
                                                     <div class='video-preview'>
@@ -57,66 +57,23 @@
                                                         </iframe>
                                                     </div>
                                                     <div class='video-box'>
-                                                        <div class='video'>
-                                                            <div class='video-container'>
-                                                                <div class='video-image' style='background-image: url(https://i.ytimg.com/vi/1rjN2_hDXEY/hqdefault.jpg);'></div>
-                                                                <div class='video-detail'>
-                                                                    <p>Pulmonary function Test(PFT) - Springfield Clinic Pulmonary</p>
+                                                        <?php
+                                                            foreach ($videos as $video) {
+                                                                ?>
+                                                                <div class='video'>
+                                                                    <div class='video-container'>
+                                                                        <div class='video-image' style='background-image: url(https://i.ytimg.com/vi/<?php echo $video['YoutubeID'];?>/hqdefault.jpg);'></div>
+                                                                        <div class='video-detail'>
+                                                                            <p><?php echo $video['Title'];?></p>
+                                                                        </div>
+                                                                        <div class='video-play'>
+                                                                            <img src='<?php echo base_url('assets/images/youtube-play.png');?>' onclick='onVideoShow("<?php echo $video["YoutubeID"];?>")'>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
-                                                                <div class='video-play'>
-                                                                    <img src='<?php echo base_url('assets/images/youtube-play.png');?>' onclick='onVideoShow("1rjN2_hDXEY")'>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class='video'>
-                                                            <div class='video-container'>
-                                                                <div class='video-image' style='background-image: url(https://i.ytimg.com/vi/awa4z2fFn7A/hqdefault.jpg);'></div>
-                                                                <div class='video-detail'>
-                                                                    <p>How to use the ApneaLink™ Air Home Sleep Testing Device</p>
-                                                                </div>
-                                                                <div class='video-play'>
-                                                                    <img src='<?php echo base_url('assets/images/youtube-play.png');?>' onclick='onVideoShow("awa4z2fFn7A")'>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class='video'>
-                                                            <div class='video-container'>
-                                                                <div class='video-image' style='background-image: url(https://i.ytimg.com/vi/dUdhTX8K6ak/hqdefault.jpg);'></div>
-                                                                <div class='video-detail'>
-                                                                    <p>Como Usar el Inhalador Ellipta</p>
-                                                                </div>
-                                                                <div class='video-play'>
-                                                                    <img src='<?php echo base_url('assets/images/youtube-play.png');?>' onclick='onVideoShow("dUdhTX8K6ak")'>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class='video'>
-                                                            <div class='video-container'>
-                                                                <div class='video-image' style='background-image: url(https://i.ytimg.com/vi/3LhtF9E3jCk/hqdefault.jpg);'></div>
-                                                                <div class='video-detail'>
-                                                                    <p>How to Use Your Incentive Spirometer (Spanish) | Memorial Sloan Kettering</p>
-                                                                </div>
-                                                                <div class='video-play'>
-                                                                    <img src='<?php echo base_url('assets/images/youtube-play.png');?>' onclick='onVideoShow("3LhtF9E3jCk")'>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class='video'>
-                                                            <div class='video-container'>
-                                                                <div class='video-image' style='background-image: url(https://i.ytimg.com/vi/LJFvFB5u12M/hqdefault.jpg);'></div>
-                                                                <div class='video-detail'>
-                                                                    <p>Tecnica de inhalación de Combivent Respimat</p>
-                                                                </div>
-                                                                <div class='video-play'>
-                                                                    <img src='<?php echo base_url('assets/images/youtube-play.png');?>' onclick='onVideoShow("LJFvFB5u12M")'>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        
+                                                                <?php
+                                                            }
+                                                            ?>
                                                     </div>
                                                 </div>
                                             </div>

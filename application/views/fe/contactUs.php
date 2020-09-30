@@ -57,22 +57,27 @@
                                                         <div class='contact-container'>
                                                             <div class='contact'>
                                                                 <img src='<?php echo base_url('assets/frontend/images/icon-green-28.png');?>'>
-                                                                <p>516-485-5864</p>
-                                                                <p>347-537-2872</p>
+                                                                <?php
+                                                                    $phones = explode('/', $Phone);
+                                                                    foreach ($phones as $phone) {
+                                                                        echo '<p>'.$phone.'</p>';
+                                                                    }
+                                                                ?>                                                                
                                                             </div>
                                                         </div>
                                                         <div class='contact-container'>
                                                             <div class='contact'>
                                                                 <img src='<?php echo base_url('assets/frontend/images/icon-green-15.png');?>'>
-                                                                <p>320 Wilson St Suite #2</p>
-                                                                <p>West Hempstead, NY 11552</p>
+                                                                <?php  
+                                                                    echo '<p>' . $Address . '</p>';
+                                                                ?>
+                                                                
                                                             </div>
                                                         </div>
                                                         <div class='contact-container'>
                                                             <div class='contact'>
                                                                 <img src='<?php echo base_url('assets/frontend/images/fax-icon.png');?>'>
-                                                                <p>516-485-0151</p>
-                                                                <p>   </p>
+                                                                <p><?php echo $Fax;?></p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -80,18 +85,25 @@
                                                         <div class='hours-container'>
                                                             <div class='office-hours'>
                                                                 <h4>Office Hours</h4>
-                                                                <div class='hours'><div class='date'>Monday</div><p>10AM - 2PM</p></div>
-                                                                <div class='hours'><div class='date'>Tuesday</div> 10AM - 5PM</div>
-                                                                <div class='hours'><div class='date'>Wednesday</div> 12:30PM - 7:30 PM</div>
-                                                                <div class='hours'><div class='date'>Thursday</div> 10AM - 5PM</div>
-                                                                <div class='hours'><div class='date'>Friday</div> 10AM - 5PM</div>
+                                                                <?php
+                                                                    echo $Monday == '' ? '' : "<div class='hours'><div class='date'>Monday</div><p>".$Monday."</p></div>";
+                                                                    echo $Tuesday == '' ? '' : "<div class='hours'><div class='date'>Tuesday</div><p>".$Tuesday."</p></div>";
+                                                                    echo $Wednesday == '' ? '' : "<div class='hours'><div class='date'>Wednesday</div><p>".$Wednesday."</p></div>";
+                                                                    echo $Thursday == '' ? '' : "<div class='hours'><div class='date'>Thursday</div><p>".$Thursday."</p></div>";
+                                                                    echo $Friday == '' ? '' : "<div class='hours'><div class='date'>Friday</div><p>".$Friday."</p></div>";
+                                                                    ?>
                                                             </div>
                                                         </div>
                                                         <div class='hours-container'>
                                                             <div class='office-hours'>
                                                                 <h4>PFT Testing Hours</h4>
-                                                                <div class='hours'><div class='date'>Monday</div>2PM - 5PM</div>
-                                                                <div class='hours'><div class='date'>Friday</div>PFTs THROUGHOUT DAY AS NEEDED</div>
+                                                                <?php
+                                                                    echo $PFTMonday == '' ? '' : "<div class='hours'><div class='date'>Monday</div><p>".$PFTMonday."</p></div>";
+                                                                    echo $PFTTuesday == '' ? '' : "<div class='hours'><div class='date'>Tuesday</div><p>".$PFTTuesday."</p></div>";
+                                                                    echo $PFTWednesday == '' ? '' : "<div class='hours'><div class='date'>Wednesday</div><p>".$PFTWednesday."</p></div>";
+                                                                    echo $PFTThursday == '' ? '' : "<div class='hours'><div class='date'>Thursday</div><p>".$PFTThursday."</p></div>";
+                                                                    echo $PFTFriday == '' ? '' : "<div class='hours'><div class='date'>Friday</div><p>".$PFTFriday."</p></div>";
+                                                                    ?>                                                                
                                                             </div>                
                                                         </div>
                                                     </div>

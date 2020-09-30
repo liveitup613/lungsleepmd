@@ -52,18 +52,10 @@
                                             <div class="service-container container-small">
                                                 <div class='content'>
                                                     <div class='portfolio'>
-                                                        <img src='<?php echo base_url('assets/frontend/images/critical-care-medicine.jpg');?>'>
+                                                        <img src='<?php echo base_url('assets/images/services/'.$Portfolio);?>'>
                                                     </div>
                                                     <div class='row'>     
-                                                        <p>Patients starting from the age of 4  years old to adulthood with various sleep disorders especially the following conditions:</p>
-                                                        <ul style="list-style-type: circle;">
-                                                            <li>Six(6) weeks or greater of difficulty sleeping</li>
-                                                            <li>Excessive snoring while sleeping</li>
-                                                            <li>Sleeping excessivley during the day</li>
-                                                            <li>Excessive movement during sleep</li>
-                                                            <li>Abnormal activity during sleep</li>                                                                                    
-                                                        </ul>                                      
-                                                        <p>Epignosis Speicalty Practice now offers sophisticated SomnoStar sleep diagnostics software at the West Hempstead Sleep Disorder Center for the diagnosis of various sleep disorders such as Obstructive Sleep Apnea, Narcolepsy Limb Movement disorder and REM Sleep behavior disorder</p>             
+                                                        <?php echo $Content;?>
                                                     </div>   
                                                 </div>
                                             </div>

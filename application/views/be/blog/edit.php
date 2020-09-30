@@ -29,8 +29,8 @@
     <body class="page-container-bg-solid page-boxed">     
         <!-- BEGIN HEADER -->           
         <?php 
-            $menu['parent'] = 'blog';
-            $menu['current'] = 'blog';
+            $menu['parent'] = 'quick_links';
+            $menu['current'] = 'blogs';
             $this->load->view('be/layout/header', $menu);
             ?>
         <!-- END HEADER -->
@@ -93,7 +93,7 @@
                                                         <label class='control-label col-md-2'>Portfolio</label>
                                                         <div class='col-md-10'>
                                                             <div class='portfolio-box'>                                                                
-                                                                <img class='portfolio img-thumbnail' id='imgPortfolio' src='<?php echo base_url($Portfolio === '' ? 'assets/images/blog-temp.png' : 'assets/images/blogs/'.$Portfolio);?>'>
+                                                                <img class='portfolio img-thumbnail' id='imgPortfolio' src='<?php echo base_url($Portfolio === '' ? 'assets/images/blank.png' : 'assets/images/blogs/'.$Portfolio);?>'>
                                                                 <img class='portfolio-camera' src='<?php echo base_url('assets/images/camera.png');?>'>
                                                                 <input type='file' style='display:none' id='filePortfolio' name='Portfolio' accept=".jpg,.png">
                                                             </div>                                                            
@@ -125,7 +125,7 @@
                                                             <button type="button" class="btn green" id='btnUpdate'>
                                                                 <i class="fa fa-check"></i> <?php echo ($ID == 0 ? "Save" : "Update");?>
                                                             </button>
-                                                            <a type='button' class='btn default' href='<?php echo base_url('admin/blog');?>'><i class='fa fa-mail-reply-all'></i> Cancel</a>
+                                                            <a type='button' class='btn default' href='<?php echo base_url('admin/links/blogs');?>'><i class='fa fa-mail-reply-all'></i> Cancel</a>
                                                         </div>                                                        
                                                     </div>
                                                 </div>

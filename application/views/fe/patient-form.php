@@ -59,84 +59,66 @@
                                                     <div class='step-detail'>                                                        
                                                         <div class='form-box'>
                                                             <div class='form-category'>Medical & Sleep Questionnaires</div>
-                                                            <div class='form-detail'>
-                                                                <div class='form-download'>
-                                                                    <a href='#'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
-                                                                </div>
-                                                                <div class='form-title'>Sleep Questionnaire</div>                                                                
-                                                            </div>
-                                                            <div class='form-detail'>
-                                                                <div class='form-download'>
-                                                                    <a href='#'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
-                                                                </div>
-                                                                <div class='form-title'>Sleep Questionnaire Ver II</div>                                                                
-                                                            </div>
-                                                            <div class='form-detail'>
-                                                                <div class='form-download'>
-                                                                    <a href='#'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
-                                                                </div>
-                                                                <div class='form-title'>Bed Partner Questionnaire</div>                                                                
-                                                            </div>
-                                                            <div class='form-detail'>
-                                                                <div class='form-download'>
-                                                                    <a href='#'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
-                                                                </div>
-                                                                <div class='form-title'>Functional Outcome Questionnaire</div>                                                                
-                                                            </div>
+                                                            <?php
+                                                                foreach($Medicals as $form) {
+                                                                    ?>
+                                                                    <div class='form-detail'>
+                                                                        <div class='form-download'>
+                                                                            <a href='<?php echo base_url('assets/forms/'.$form['Attach']);?>' target='blank'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
+                                                                        </div>
+                                                                        <div class='form-title'><?php echo $form['Title'];?></div>                                                                
+                                                                    </div>
+                                                                    <?php
+                                                                }
+                                                                ?>                                                            
                                                         </div>
                                                         <div class='form-box'>
                                                             <div class='form-category'>Instruction Forms</div>
-                                                            <div class='form-detail'>
-                                                                <div class='form-download'>
-                                                                    <a href='#'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
-                                                                </div>
-                                                                <div class='form-title'>MSLT</div>                                                                
-                                                            </div>
-                                                            <div class='form-detail'>
-                                                                <div class='form-download'>
-                                                                    <a href='#'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
-                                                                </div>
-                                                                <div class='form-title'>Polysomnogram</div>
-                                                            </div>
-                                                            <div class='form-detail'>
-                                                                <div class='form-download'>
-                                                                    <a href='#'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
-                                                                </div>
-                                                                <div class='form-title'>PSG Instruction</div>
-                                                            </div>
+                                                            <?php
+                                                                foreach($Instructions as $form) {
+                                                                    ?>
+                                                                    <div class='form-detail'>
+                                                                        <div class='form-download'>
+                                                                            <a href='<?php echo base_url('assets/forms/'.$form['Attach']);?>' target='blank'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
+                                                                        </div>
+                                                                        <div class='form-title'><?php echo $form['Title'];?></div>                                                                
+                                                                    </div>
+                                                                    <?php
+                                                                }
+                                                                ?>
                                                         </div>
                                                         <div class='form-box'>
                                                             <div class='form-category'>Sleep Diary Forms</div>
-                                                            <div class='form-detail'>
-                                                                <div class='form-download'>
-                                                                    <a href='#'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
-                                                                </div>
-                                                                <div class='form-title'>Sleep Diary</div>                                                                
-                                                            </div>
-                                                            <div class='form-detail'>
-                                                                <div class='form-download'>
-                                                                    <a href='#'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
-                                                                </div>
-                                                                <div class='form-title'>Sleep Diary Ver II</div>
-                                                            </div>
-                                                            <div class='form-detail'>
-                                                                <div class='form-download'>
-                                                                    <a href='#'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
-                                                                </div>
-                                                                <div class='form-title'>MSLT Sleep Diary</div>
-                                                            </div>
+                                                            <?php
+                                                                foreach($Sleeps as $form) {
+                                                                    ?>
+                                                                    <div class='form-detail'>
+                                                                        <div class='form-download'>
+                                                                            <a href='<?php echo base_url('assets/forms/'.$form['Attach']);?>' target='blank'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
+                                                                        </div>
+                                                                        <div class='form-title'><?php echo $form['Title'];?></div>                                                                
+                                                                    </div>
+                                                                    <?php
+                                                                }
+                                                                ?>
                                                         </div>
                                                         <div class='form-box'>
                                                             <div class='form-category'>Other Forms</div>
+                                                            <?php
+                                                                foreach($Others as $form) {
+                                                                    ?>
+                                                                    <div class='form-detail'>
+                                                                        <div class='form-download'>
+                                                                            <a href='<?php echo base_url('assets/forms/'.$form['Attach']);?>' target='blank'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
+                                                                        </div>
+                                                                        <div class='form-title'><?php echo $form['Title'];?></div>                                                                
+                                                                    </div>
+                                                                    <?php
+                                                                }
+                                                                ?>
                                                             <div class='form-detail'>
                                                                 <div class='form-download'>
-                                                                    <a href='#'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
-                                                                </div>
-                                                                <div class='form-title'>Could I have a sleeping problem</div>                                                                
-                                                            </div>
-                                                            <div class='form-detail'>
-                                                                <div class='form-download'>
-                                                                    <a href='#'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
+                                                                    <a href='https://form.jotform.com/201796598024060' target='blank'><img src='<?php echo base_url('assets/images/download.png');?>'></a>
                                                                 </div>
                                                                 <div class='form-title'>Patient Demographics</div>
                                                             </div>

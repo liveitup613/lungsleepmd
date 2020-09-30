@@ -16,6 +16,9 @@
         <!-- BEGIN GLOBAL STYLES -->
         <?php $this->load->view('be/layout/styles'); ?>
         <!-- END GLOBAL STYLES -->
+        <link href="<?php echo base_url('assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css');?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css');?>" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url('assets/global/plugins/bootstrap-summernote/summernote.css');?>" rel="stylesheet" type="text/css" />
 
         <link href="<?php echo base_url('assets/css/pages/be/about-us.css');?>" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" href="<?php echo base_url('favicon.png');?>" /> </head>
@@ -54,7 +57,7 @@
                         <!-- BEGIN PAGE BREADCRUMBS -->
                         <ul class="page-breadcrumb breadcrumb">
                             <li>
-                                <a href="index.html">Main</a>
+                                <a href="#">Main</a>
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
@@ -74,44 +77,91 @@
                                                 <span class="caption-subject font-green bold uppercase">About Us Content</span>
                                             </div>                                         
                                         </div>
+                                        <form id='imageForm'>
+                                            <input type='hidden' id='inputType' name='Type'>
+                                            <input type='file' style='display:none' id='filePortfolio' name='Portfolio' accept=".jpg,.png,.gif">
+                                        </form>
                                         <div class="portlet-body form">
                                             <!-- BEGIN FORM-->
                                             <form action="#" class="form-horizontal form-bordered ">
                                                 <div class="form-body">
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">Title</label>
+                                                        <label class="control-label col-md-3">Meet Our Medical Director</label>
                                                         <div class="col-md-9">
-                                                            <textarea type="text" class='form-control' rows='5' id='Title'><?php echo $Title;?></textarea>
+                                                            <div id="sumnoteContent"><?php echo $Content?></div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">Content</label>
+                                                        <label class="control-label col-md-3">Our clinical Staff</label>
                                                         <div class="col-md-9">
-                                                        <?php                                                            
-                                                            $breaks = array("<br />","<br>","<br/>");
-                                                            $text = str_ireplace($breaks, "\r\n", $Content);
-                                                            ?>                                                            
-                                                            <textarea type="text" class='form-control' rows='10' id='Content'><?php echo $text;?></textarea>
+                                                            <div id="sumnoteClinical"><?php echo $ClinicalStaff;?></div>                                                            
                                                         </div>
                                                     </div>    
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">Our Core Values</label>
+                                                        <label class="control-label col-md-3">Associations</label>
                                                         <div class="col-md-9">
                                                             <div class='new-core-value'>
-                                                                <button type="button" class="btn green btn-sm" id='btnAddNewCoreValue'><i class='icon-plus'></i>&nbsp;&nbsp;ADD NEW</button>   
+                                                                <button type="button" class="btn green btn-sm" id='btnAddNewAssociation'><i class='icon-plus'></i>&nbsp;&nbsp;ADD NEW</button>   
                                                             </div>
-                                                            <?php 
-                                                                foreach ($coreValues as $coreValue) {
-                                                                    ?>
-                                                                        <div class='core-value'>                                                                
-                                                                            <input type='text' value='<?php echo $coreValue['Title'];?>' class='form-control'>
-                                                                            <div class='core-value-buttons'>                                                                    
-                                                                                <button type="button" class="btn red btn-sm" onclick='deleteCoreValue(<?php echo $coreValue["ID"];?>)'>DELETE</button>
+                                                            <div class='row'>
+                                                                <?php
+                                                                    foreach ($Associations as $association) {
+                                                                        ?>
+                                                                        <div class='col-md-4 col-sm-6 image-box'>
+                                                                            <img src='<?php echo base_url('assets/images/resource/'.$association['Portfolio']);?>'>
+                                                                            <div class='image-control'>
+                                                                                <button class='btn red btn-sm btn-circle' onclick='deleteAssociation(<?php echo $association["ID"];?>)'><i class='icon-trash'></i></button>
                                                                             </div>
-                                                                        </div>
-                                                                    <?php
-                                                                }
-                                                            ?>                                                            
+                                                                        </div> 
+                                                                        <?php
+                                                                    }
+                                                                    ?>
+                                                                                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>                                                   
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">Affiliation</label>
+                                                        <div class="col-md-9">
+                                                            <div class='new-core-value'>
+                                                                <button type="button" class="btn green btn-sm" id='btnAddNewAffiliation'><i class='icon-plus'></i>&nbsp;&nbsp;ADD NEW</button>   
+                                                            </div>
+                                                            <div class='row'>
+                                                                <?php
+                                                                    foreach ($Affiliations as $affiliation) {
+                                                                        ?>
+                                                                        <div class='col-md-4 col-sm-6 image-box'>
+                                                                            <img src='<?php echo base_url('assets/images/resource/'.$affiliation['Portfolio']);?>'>
+                                                                            <div class='image-control'>
+                                                                                <button class='btn red btn-sm btn-circle' onclick='deleteAffiliation(<?php echo $affiliation["ID"];?>)'><i class='icon-trash'></i></button>
+                                                                            </div>
+                                                                        </div> 
+                                                                        <?php
+                                                                    }
+                                                                    ?>                                                             
+                                                            </div>                                                                                                                   
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">Certification</label>
+                                                        <div class="col-md-9">
+                                                            <div class='new-core-value'>
+                                                                <button type="button" class="btn green btn-sm" id='btnAddNewCertification'><i class='icon-plus'></i>&nbsp;&nbsp;ADD NEW</button>   
+                                                            </div>
+                                                            <div class='row'>
+                                                                <?php
+                                                                    foreach ($Certifications as $certification) {
+                                                                        ?>
+                                                                        <div class='col-md-4 col-sm-6 image-box'>
+                                                                            <img src='<?php echo base_url('assets/images/resource/'.$certification['Portfolio']);?>'>
+                                                                            <div class='image-control'>
+                                                                                <button class='btn red btn-sm btn-circle' onclick='deleteCerfication(<?php echo $certification["ID"];?>)'><i class='icon-trash'></i></button>
+                                                                            </div>
+                                                                        </div> 
+                                                                        <?php
+                                                                    }
+                                                                    ?>                                                       
+                                                            </div>                                                                                                                     
                                                         </div>
                                                     </div>                                                                                                                                          
                                                 </div>
@@ -138,37 +188,6 @@
                 <!-- END PAGE CONTENT BODY -->
 
                 <!-- BEGIN MODAL CONTENT BODY -->
-                <!-- BEGIN ADD MODAL CONTENT BODY -->
-                <div class="modal fade" id="AddNewModal" tabindex="-1" role="basic" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                                <h4 class="modal-title">Add New Core Value</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form action="" class="form-horizontal form-bordered" id='addNewForm'>
-                                    <div class="form-body">
-                                        <div class="form-group">
-                                            <label class="control-label col-md-3">Title</label>
-                                            <div class="col-md-9">
-                                                <textarea type="text" class='form-control' id='CoreValueTitle' name='Title' required></textarea>
-                                            </div>
-                                        </div>                                        
-                                    </div>                                    
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn green" id='btnAddNew'>Add</button>
-                            </div>
-                        </div>
-                        <!-- /.modal-content -->
-                    </div>
-                    <!-- /.modal-dialog -->
-                </div>
-                <!-- END ADD MODAL CONTENT BODY -->
-
                 <!-- BEGIN DEELTE MODAL CONTENT BODY -->
                 <div class="modal fade" id="deleteModal" tabindex="-1" role="basic" aria-hidden="true">
                     <div class="modal-dialog">

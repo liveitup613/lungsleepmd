@@ -56,45 +56,15 @@
                                                         <h4>Epignosis Specialty Practice accpets only selective insurance and cash payments which include the following, please call confirm.</h4>
                                                     </div>
                                                     <div class='insurance-box'>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/Americhoice.jpg');?>'>
-                                                        </div>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/Cpventry-300x110.jpg');?>'>
-                                                        </div>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/Emprire.png');?>'>
-                                                        </div>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/Guardian.png');?>'>
-                                                        </div>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/Healthnet-300x78.png');?>'>
-                                                        </div>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/Emblem.png');?>'>
-                                                        </div>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/Medicare.png');?>'>
-                                                        </div>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/MultiPlan-300x100.png');?>'>
-                                                        </div>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/United-300x86.png');?>'>
-                                                        </div>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/download-1.png');?>'>
-                                                        </div>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/empire-plan.jpe');?>'>
-                                                        </div>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/healthcare-partners.jpg');?>'>
-                                                        </div>
-                                                        <div class='insurance'>
-                                                            <img src='<?php echo base_url('assets/frontend/images/insurance/medicaid.jpg');?>'>
-                                                        </div>
+                                                        <?php 
+                                                            foreach ($insurances as $insuracne) {
+                                                                ?>
+                                                                <div class='insurance'>
+                                                                    <img src='<?php echo base_url('assets/images/resource/'.$insuracne['Portfolio']);?>'>
+                                                                </div>            
+                                                                <?php
+                                                            }
+                                                            ?>
                                                     </div>
                                                 </div>
                                             </div>
@@ -120,8 +90,6 @@
 
     <script type='text/javascript'>
         document.documentElement.className = 'js';  
-
-
         var base_url = "<?php echo base_url();?>";        
     </script>
 

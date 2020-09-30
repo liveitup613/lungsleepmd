@@ -7,7 +7,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 8px;
     margin-bottom: 8px;
+    border-style: solid;
+    border-color: #eee;
+    border-width: 0px;
+    border-bottom-width: 1px;
+}
+
+.core-value-title {
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
 }
 
 @media only screen and (max-width:576px) {
@@ -32,4 +43,41 @@
     .core-value-buttons {
         margin: 8px 0px;
     }
+}
+
+.image-box {
+    padding: 32px 16px;
+    text-align: center;
+    position: relative;
+}
+
+.image-box img{
+    max-width: 230px;
+    height: 70px;
+}
+
+.image-control {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -17px;
+    margin-top: 0px;
+    opacity: 0;
+}
+
+.image-box:hover .image-control {
+    opacity: .9;
+    margin-top: -15px;  
+    transition: all .5s ease-out;
+}
+
+.image-box:hover {
+    transform: scale(1.1);      
+    transition: all .2s ease-out;
+}
+
+.core-value-title img{
+    width: 25px;
+    margin-right: 8px;
+    /* margin-top: 8px; */
 }

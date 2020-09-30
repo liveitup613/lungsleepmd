@@ -56,11 +56,11 @@
                                                     </div>
                                                     <div>
                                                         <ul>
-                                                            <li>Department of Transportation(DOT) Physical</li>
-                                                            <li>Immigration Physicals</li>
-                                                            <li>Suboxone Treathment</li>
-                                                            <li>Collagen Induction Theraphy</li>
-                                                            <li>Paramedical Tatooing</li>
+                                                            <?php
+                                                                foreach ($services as $service) {
+                                                                    echo '<li style="margin-bottom : 8px;">' . $service['Title'] . '</li>';
+                                                                }
+                                                            ?>
                                                         </ul>
                                                     </div>
                                                 </div>

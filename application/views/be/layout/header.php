@@ -5,7 +5,7 @@
             <!-- BEGIN LOGO -->
             <div class="page-logo">
                 <a href="<?php echo base_url('');?>">                            
-                    <img src="<?php echo base_url('assets/layouts/global/img/logo.png');?>" alt="logo" class="logo-default" style='width: 120px;'>
+                    <img src="<?php echo base_url('assets/layouts/global/img/logo.svg');?>" alt="logo" class="logo-default" style='width: 120px;'>
                 </a>
             </div>
             <!-- END LOGO -->
@@ -18,9 +18,20 @@
                     <!-- BEGIN USER LOGIN DROPDOWN -->
                     <li class="dropdown dropdown-user dropdown-dark">
                         <a href="<?php echo base_url('admin/logout');?>" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                            <img alt="" class="img-circle" src="<?php echo base_url('assets/layouts/global/img/avatar.jpg');?>">
+                            <img alt="" class="img-circle" src="<?php echo base_url('assets/images/'.$user['Avatar']);?>">
                             <span class="username username-hide-mobile">Admin</span>
-                        </a>                                
+                        </a>   
+                        <ul class="dropdown-menu dropdown-menu-default">
+                            <li>
+                                <a href="<?php echo base_url('admin/profile');?>">
+                                    <i class="icon-user"></i> My Profile </a>
+                            </li>                           
+                            <li class="divider"> </li>                            
+                            <li>
+                                <a href="<?php echo base_url('admin/logout');?>">
+                                    <i class="icon-key"></i> Log Out </a>
+                            </li>
+                        </ul>                             
                     </li>
                     <!-- END USER LOGIN DROPDOWN -->
                     <!-- BEGIN QUICK SIDEBAR TOGGLER -->
@@ -45,29 +56,54 @@
             <div class="hor-menu">                
                 <ul class="nav navbar-nav">
                     <li class="menu-dropdown classic-menu-dropdown <?php echo ($parent == 'home' ? 'active' : '');?>">
-                        <a href="javascript:;"> Home
+                        <a href="<?php echo base_url('admin/home');?>"> Home </a>                                
+                    </li>
+                    <li class="menu-dropdown classic-menu-dropdown <?php echo ($parent == 'services' ? 'active' : '');?>">
+                        <a href="javascript:;"> Our Services
                             <span class="arrow"></span>
                         </a>
                         <ul class="dropdown-menu pull-left">
-                            <li class="<?php echo ($current == 'home-title' ? 'active' : '');?>">
-                                <a href="<?php echo base_url('admin/home/title');?>" class="nav-link  ">Home Title</a>
+                            <li class="<?php echo ($current == 'pulmonary_medicine' ? 'active' : '');?>">
+                                <a href="<?php echo base_url('admin/services/pulmonary_medicine');?>" class="nav-link  ">Pulmonary Medicine</a>
                             </li>
-                            <li class="<?php echo ($current == 'who-we-serve' ? 'active' : '');?>">
-                                <a href="<?php echo base_url('admin/home/who-we-serve');?>" class="nav-link  ">Who We Serve</a>
+                            <li class="<?php echo ($current == 'sleep_medicine' ? 'active' : '');?>">
+                                <a href="<?php echo base_url('admin/services/sleep_medicine');?>" class="nav-link  ">Sleep Medicine</a>
+                            </li>
+                            <li class="<?php echo ($current == 'critical_care' ? 'active' : '');?>">
+                                <a href="<?php echo base_url('admin/services/critical_care');?>" class="nav-link  ">Critical Care Medicine</a>
+                            </li>
+                            <li class="<?php echo ($current == 'additional' ? 'active' : '');?>">
+                                <a href="<?php echo base_url('admin/services/additional');?>" class="nav-link  ">Additional Services</a>
                             </li>                                    
                         </ul>
                     </li>
-                    <li class="menu-dropdown classic-menu-dropdown <?php echo ($parent == 'what-we-do' ? 'active' : '');?>">
-                        <a href="<?php echo base_url('admin/what-we-do');?>"> What We Do </a>                                
+                    <li class="menu-dropdown classic-menu-dropdown <?php echo ($parent == 'service_fee' ? 'active' : '');?>">
+                        <a href="<?php echo base_url('admin/service_fee');?>"> Service Fees </a>                                
                     </li>
                     <li class="menu-dropdown classic-menu-dropdown <?php echo ($parent == 'about-us' ? 'active' : '');?>">
                         <a href="<?php echo base_url('admin/about-us');?>"> About Us </a>                                
                     </li>
-                    <li class="menu-dropdown classic-menu-dropdown <?php echo ($parent == 'blog' ? 'active' : '');?>">
-                        <a href="<?php echo base_url('admin/blog');?>"> Blog </a>                               
+                    <li class="menu-dropdown classic-menu-dropdown <?php echo ($parent == 'quick_links' ? 'active' : '');?>">
+                        <a href="javascript:;"> Quick Links
+                            <span class="arrow"></span>
+                        </a>
+                        <ul class="dropdown-menu pull-left">
+                            <li class="<?php echo ($current == 'insurance' ? 'active' : '');?>">
+                                <a href="<?php echo base_url('admin/links/insurance');?>" class="nav-link  ">Insurance Information</a>
+                            </li>
+                            <li class="<?php echo ($current == 'patient_forms' ? 'active' : '');?>">
+                                <a href="<?php echo base_url('admin/links/patient_forms');?>" class="nav-link  ">Patient Forms</a>
+                            </li>
+                            <li class="<?php echo ($current == 'medical_vidoes' ? 'active' : '');?>">
+                                <a href="<?php echo base_url('admin/links/medical_videos');?>" class="nav-link  ">Instructional Medical Videos</a>
+                            </li>
+                            <li class="<?php echo ($current == 'blogs' ? 'active' : '');?>">
+                                <a href="<?php echo base_url('admin/links/blogs');?>" class="nav-link  ">Blogs</a>
+                            </li>                                    
+                        </ul>
                     </li>
-                    <li class="menu-dropdown classic-menu-dropdown <?php echo ($parent == 'join-us' ? 'active' : '');?>">
-                        <a href="<?php echo base_url('admin/join-us');?>"> Join Us</a>                                
+                    <li class="menu-dropdown classic-menu-dropdown <?php echo ($parent == 'contact-us' ? 'active' : '');?>">
+                        <a href="<?php echo base_url('admin/contact-us');?>"> Contact Us</a>                                
                     </li>                            
                 </ul>
             </div>

@@ -25,8 +25,8 @@
     <body class="page-container-bg-solid page-boxed">     
         <!-- BEGIN HEADER -->           
         <?php 
-            $menu['parent'] = 'blog';
-            $menu['current'] = 'blog';
+            $menu['parent'] = 'quick_links';
+            $menu['current'] = 'blogs';
             $this->load->view('be/layout/header', $menu);
             ?>
         <!-- END HEADER -->
@@ -76,7 +76,7 @@
                                         </div>
                                         <div class="portlet-body">
                                             <div class='blog-new'>
-                                                <a type='button' class='btn green' href="<?php echo base_url('admin/blog/edit/0');?>"><i class='icon-plus'></i>&nbsp;&nbsp;Add New</a>
+                                                <a type='button' class='btn green' href="<?php echo base_url('admin/links/blog/edit/0');?>"><i class='icon-plus'></i>&nbsp;&nbsp;Add New</a>
                                             </div>
                                             <div class="table-scrollable">
                                                 <table class="table table-striped table-bordered table-advance table-hover">
@@ -101,7 +101,7 @@
                                                                     </td>
                                                                     <td class='blog-date'> <?php echo $blog['CreatedDate'];?> </td>
                                                                     <td>
-                                                                        <a href="<?php echo base_url('admin/blog/edit/'.$blog['ID']);?>" class="btn btn-outline btn-circle btn-sm purple">
+                                                                        <a href="<?php echo base_url('admin/links/blog/edit/'.$blog['ID']);?>" class="btn btn-outline btn-circle btn-sm purple">
                                                                             <i class="fa fa-edit"></i> Edit </a>
                                                                         <a href="javascript:deleteBlog(<?php echo $blog['ID'];?>);" class="btn btn-outline btn-circle dark btn-sm black">
                                                                             <i class="fa fa-trash-o"></i> Delete </a>

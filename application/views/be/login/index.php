@@ -19,7 +19,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <head>
         <meta charset="utf-8" />
-        <title>Systone Admin | Login</title>
+        <title>Epignosis Specialty Practice | Login</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="" name="description" />
@@ -48,7 +48,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- BEGIN LOGO -->
         <div class="logo">
             <a href="">
-                <img src="<?php echo base_url('assets/layouts/global/img/logo.png');?> " alt=""  style='width:150px;'/>
+                <img src="<?php echo base_url('assets/layouts/global/img/logo-white.svg');?> " alt=""  style='width:210px;'/>
             </a>
         </div>
         <!-- END LOGO -->

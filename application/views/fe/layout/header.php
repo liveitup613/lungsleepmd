@@ -5,25 +5,25 @@
             <ul class="et-social-icons">
 
                 <li class="et-social-icon et-social-facebook">
-                    <a href="#" class="icon" style="min-width: 36px;">
+                    <a href="https://facebook.com/lungsleepmd" class="icon" style="min-width: 36px;" target='blank'>
                         <span>Facebook</span>
                     </a>
                 </li>
                 <li class="et-social-icon et-social-twitter">
-                    <a href="#" class="icon" style="min-width: 36px;">
+                    <a href="https://twitter.com/sleeplungmd" class="icon" style="min-width: 36px;" target='blank'>
                         <span>Twitter</span>
                     </a>
                 </li>
 
 
                 <li class="et-social-icon et-social-linkedin">
-                    <a href="#" class="icon" style="min-width: 36px;">
+                    <a href="http://www.linkedin.com/pub/olanrewaju-esan/25/527/1a2" class="icon" style="min-width: 36px;" target='blank'>
                         <span>LinkedIn</span>
                     </a>
                 </li>
 
-                <li class="et-social-icon et-social-rss">
-                    <a href="#" class="icon" style="min-width: 36px;">
+                <li class="et-social-icon et-social-rss" target='blank'>
+                    <a href="http://www.maptoons.li/west-hempstead/" class="icon" style="min-width: 36px;">
                         <span>RSS</span>
                     </a>
                 </li>

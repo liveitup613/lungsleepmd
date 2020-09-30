@@ -53,65 +53,41 @@
                                             <div class="service-container">
                                                 <div class='content'>
                                                     <div class='blogs-box'>
-                                                        <div class='blog-container'>
-                                                            <div class='blog'>
-                                                                <div class='blog-image' style='background-image:url(<?php echo base_url('assets/images/blogs/medicus38-400x250.jpg');?>);'
-                                                                    onclick='blogView(1);'> 
-                                                                    <div class='blog-read-more'>Read More</div>
-                                                                </div>
-                                                                <div class='blog-detail'>
-                                                                    <div class='blog-title'>Dr. Smith Comming To Medicus</div>
-                                                                    <div class='blog-content'>
-                                                                        <p>Curabitur fringilla malesuada magna, in vehicula tortor hendrerit quis. Cras dolor odio, faucibus elementum egestas a, auctor sed nisl. Suspendisse in odio justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut laoreet nibh, ac luctus enim.</p>
+                                                        <?php
+                                                            foreach ($blogs as $blog) {
+                                                                ?>
+                                                                <div class='blog-container'>
+                                                                    <div class='blog'>
+                                                                        <div class='blog-image' style='background-image:url(<?php echo base_url('assets/images/blogs/'.$blog['Portfolio']);?>);'
+                                                                            onclick='blogView(<?php echo $blog["ID"];?>);'> 
+                                                                            <div class='blog-read-more'>Read More</div>
+                                                                        </div>
+                                                                        <div class='blog-detail'>
+                                                                            <div class='blog-title'><?php echo $blog['Title'];?></div>
+                                                                            <div class='blog-content'>
+                                                                                <p>
+                                                                                <?php 
+                                                                                    $string = $blog['Content'];
+                                                                                    $string = strip_tags($string);
+                                                                                    if (strlen($string) > 300) {
+                                                                                    
+                                                                                        // truncate string
+                                                                                        $stringCut = substr($string, 0, 300);
+                                                                                        $endPoint = strrpos($stringCut, ' ');
+                                                                                    
+                                                                                        //if the string doesn't contain any space then it will cut without word basis.
+                                                                                        $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+                                                                                    }
+                                                                                    echo $string;
+                                                                                ?> 
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class='blog-container'>
-                                                            <div class='blog'>
-                                                                <div class='blog-image' style='background-image:url(<?php echo base_url('assets/images/blogs/medicus38-400x250.jpg');?>);'
-                                                                    onclick='blogView(1);'> 
-                                                                    <div class='blog-read-more'>Read More</div>
-                                                                </div>
-                                                                <div class='blog-detail'>
-                                                                    <div class='blog-title'>Dr. Smith Comming To Medicus</div>
-                                                                    <div class='blog-content'>
-                                                                        <p>Curabitur fringilla malesuada magna, in vehicula tortor hendrerit quis. Cras dolor odio, faucibus elementum egestas a, auctor sed nisl. Suspendisse in odio justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut laoreet nibh, ac luctus enim.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class='blog-container'>
-                                                            <div class='blog'>
-                                                                <div class='blog-image' style='background-image:url(<?php echo base_url('assets/images/blogs/medicus38-400x250.jpg');?>);'
-                                                                    onclick='blogView(1);'> 
-                                                                    <div class='blog-read-more'>Read More</div>
-                                                                </div>
-                                                                <div class='blog-detail'>
-                                                                    <div class='blog-title'>Dr. Smith Comming To Medicus</div>
-                                                                    <div class='blog-content'>
-                                                                        <p>Curabitur fringilla malesuada magna, in vehicula tortor hendrerit quis. Cras dolor odio, faucibus elementum egestas a, auctor sed nisl. Suspendisse in odio justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut laoreet nibh, ac luctus enim.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class='blog-container'>
-                                                            <div class='blog'>
-                                                                <div class='blog-image' style='background-image:url(<?php echo base_url('assets/images/blogs/medicus38-400x250.jpg');?>);'
-                                                                    onclick='blogView(1);'> 
-                                                                    <div class='blog-read-more'>Read More</div>
-                                                                </div>
-                                                                <div class='blog-detail'>
-                                                                    <div class='blog-title'>Dr. Smith Comming To Medicus</div>
-                                                                    <div class='blog-content'>
-                                                                        <p>Curabitur fringilla malesuada magna, in vehicula tortor hendrerit quis. Cras dolor odio, faucibus elementum egestas a, auctor sed nisl. Suspendisse in odio justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut laoreet nibh, ac luctus enim.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                                <?php
+                                                            }
+                                                            ?>                                                        
                                                     </div>
                                                 </div>
                                             </div>

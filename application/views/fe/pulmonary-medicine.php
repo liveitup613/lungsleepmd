@@ -51,39 +51,10 @@
                                             <div class="service-container container-small">
                                                 <div class='content'>
                                                     <div class='portfolio'>
-                                                        <img src='<?php echo base_url('assets/frontend/images/pulmonary-disorder.jpg');?>'>
+                                                        <img src='<?php echo base_url('assets/images/services/'.$Portfolio);?>'>
                                                     </div>
                                                     <div class='row'>
-                                                        <p><span style="font-size: 14pt;"><strong>Patients from the age of 18 years to adulthood in all pulmonary disease especially the following conditions:</strong></span></p>
-                                                        <ul style="text-align: left;">
-                                                            <li style="list-style-type: none;">
-                                                            <ul style="list-style-type: circle;">
-                                                            <li><span style="font-size: 14pt;">Asthma</span></li>
-                                                            <li><span style="font-size: 14pt;">Bronchiectasis</span></li>
-                                                            <li><span style="font-size: 14pt;">Chronic Obstructive Pulmonary Disease</span></li>
-                                                            <li><span style="font-size: 14pt;">Muscular Dystrophy</span></li>
-                                                            <li><span style="font-size: 14pt;">Post-polio Syndrome</span></li>
-                                                            <li><span style="font-size: 14pt;">History of Tuberculosis</span></li>
-                                                            <li><span style="font-size: 14pt;">Pulmonary Manifestations of HIV Disease</span></li>
-                                                            <li><span style="font-size: 14pt;">Lung Cancer</span></li>
-                                                            <li><span style="font-size: 14pt;">Pulmonary Embolism</span></li>
-                                                            <li><span style="font-size: 14pt;">Pulmonary Hypertension</span></li>
-                                                            <li><span style="font-size: 14pt;">Sarcoidosis</span></li>
-                                                            <li><span style="font-size: 14pt;">Pulmonary manifestations of sickle cell disease</span></li>
-                                                            <li><span style="font-size: 14pt;">Geriatric patients with lung disease</span></li>
-                                                            </ul>
-                                                            </li>
-                                                        </ul>
-                                                        <p><span style="font-size: 14pt;"><strong>And patients in the following situations:</strong></span></p>
-                                                        <ul style="text-align: left;">
-                                                            <li style="list-style-type: none;">
-                                                            <ul style="list-style-type: circle;">
-                                                            <li><span style="font-size: 14pt;">Smoker greater than 20 years, regardless of if they are currently smoking or have quit</span></li>
-                                                            <li><span style="font-size: 14pt;">Workers in shipyards, construction, or anywhere they may have been exposed to asbestos or environmental toxins</span></li>
-                                                            </ul>
-                                                            </li>
-                                                        </ul>
-                                                        <p><span style="font-size: 14pt;"><strong>Epignosis Specialty Practice also offer Full Body Plethysmography Pulmonary Function Testing Machine at the&nbsp;Ayodeji Ojomo Asthma Center.</strong></span></p>
+                                                        <?php echo $Content;?>
                                                     </div>   
                                                 </div>
                                             </div>

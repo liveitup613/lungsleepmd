@@ -90,7 +90,7 @@
 
 
                                                     <div class="et_pb_text_inner">
-                                                        <p>Epignosis Specialty Practice, located in West Hempstead, New York provides Pulmonary and Sleep Medicine treatments for people of all ages. Headed by Dr. Olanrewaju Esan, who is also the Medical Director at the West Hempstead Sleep Disorder Center, our team of doctors, nurses, students and office staff are dedicated to treating all related illnesses. Through education, research and patient care we strive to achieve excellence in providing superior medical attention to the services and treatments relating to pulmonary, sleep and critical care medicine.</p>
+                                                        <p><?php echo $AboutUsContent;?></p>
                                                     </div>
                                                 </div> <!-- .et_pb_text -->
                                                 <div class="et_pb_button_module_wrapper et_pb_button_1_wrapper  et_pb_module et_had_animation"
@@ -141,7 +141,7 @@
                                                         <div class="et_pb_blurb_container">
                                                             <h4 class="et_pb_module_header"><span>Pulmonary Disorders</span></h4>
                                                             <div class="et_pb_blurb_description et_service_descrition">
-                                                                <p>Over sixty million people annually suffer from pulmonary and respiratory disorders. We treat these conditions with the most current technologies and therapies.</p>
+                                                                <p><?php echo $PulmonaryContent;?></p>
                                                                 <p>
                                                                     <a href="<?php echo base_url('services/pulmonary_medicine');?>" class="more-link">Read More</a>
                                                                 </p>
@@ -173,7 +173,7 @@
                                                             <h4 class="et_pb_module_header"><span>Sleep Disorders</span>
                                                             </h4>
                                                             <div class="et_pb_blurb_description et_service_descrition">
-                                                                <p>40 million Americans suffer from sleep disorders. If your day to day routine is being affected and  your productivity and overall health are warning you may have a sleep disorder.</p>
+                                                                <p><?php echo $SleepDisorderContent;?></p>
                                                                 <p>
                                                                     <a class="more-link"
                                                                         href="<?php base_url('services/sleep_disorders');?>">ReadMore
@@ -208,7 +208,7 @@
                                                         <div class="et_pb_blurb_container">
                                                             <h4 class="et_pb_module_header"><span>Critical Care Medicine</span></h4>
                                                             <div class="et_pb_blurb_description et_service_descrition">
-                                                                <p>Dr.Olanrewaju Esan pursued a fellowshir in Pulmonary and Critical Care Medicine, upon competion he obtained extensive experience at hospitals throughout New York City and Long island.</p>
+                                                                <p><?php echo $CriticalCareContent;?></p>
                                                                 <p><a href="https://medicus.b3multimedia.ie/#"
                                                                         class="more-link">Read More</a></p>
                                                             </div>
@@ -229,17 +229,11 @@
                                                         <p>Our Blog</p>
                                                         <h2>What Is New At Epignosis</h2>
                                                     </div>
-                                                </div> <!-- .et_pb_text -->
-                                                <div class="et_pb_module et_pb_text et_pb_text_14  et_pb_text_align_right et_pb_bg_layout_light">
-                                                    <div class="et_pb_text_inner">
-                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                            Donec ut nunc.&nbsp;Donec ut nunc.&nbsp;Donec ut nunc.</p>
-                                                    </div>
-                                                </div> <!-- .et_pb_text -->
+                                                </div> <!-- .et_pb_text -->                                                
                                                 <div
                                                     class="et_pb_button_module_wrapper et_pb_button_4_wrapper et_pb_button_alignment_right et_pb_module ">
                                                     <a class="et_pb_button et_pb_button_4 mc_button et_pb_bg_layout_light"
-                                                        href="https://medicus.b3multimedia.ie/">See All News</a>
+                                                        href="<?php echo base_url('blogs');?>">See All News</a>
                                                 </div>
                                             </div> <!-- .et_pb_column -->
                                             <div class="et_pb_column et_pb_column_2_3 et_pb_column_18  et_pb_css_mix_blend_mode_passthrough et-last-child">
@@ -248,50 +242,39 @@
                                                     <div class="et_pb_blog_grid clearfix ">
                                                         <div class="et_pb_ajax_pagination_container">
                                                             <div class="et_pb_salvattore_content" data-columns="2">
-                                                                <div>
-                                                                    <article
-                                                                        class="et_pb_post clearfix et_pb_blog_item_0_0 post-28633 post type-post  format-standard has-post-thumbnail  category-laboratory-news category-main-hospital-news category-cardiology-news category-education-law category-gynecology-news category-hospital-news">
+                                                                <?php  
+                                                                    foreach ($blogs as $blog) {
+                                                                        ?>
+                                                                        <div>
+                                                                            <article
+                                                                                class="et_pb_post clearfix et_pb_blog_item_0_0 post-28633 post type-post  format-standard has-post-thumbnail  category-laboratory-news category-main-hospital-news category-cardiology-news category-education-law category-gynecology-news category-hospital-news">
 
-                                                                        <div class="et_pb_image_container">
-                                                                            <span class="published medicus_date">
-                                                                                <span class="medicusdate">19</span>
-                                                                                Apr
-                                                                            </span>
-                                                                            <a href="https://medicus.b3multimedia.ie/blog-post-6/"
-                                                                                class="entry-featured-image-url">
-                                                                                <img
-                                                                                    src="<?php echo base_url('assets/frontend/images/medicus38-400x250.jpg');?>"
-                                                                                    alt="Dr. Smith Comming To Medicus"
-                                                                                    class=""                                                                                    
-                                                                                    width="400" height="250">
-                                                                            </a>
-                                                                        </div>
-                                                                        <!-- .et_pb_image_container -->
-                                                                        <h2 class="entry-title">
-                                                                            <a href="https://medicus.b3multimedia.ie/blog-post-6/">
-                                                                                Dr.Smith Comming To Medicus</a>
-                                                                        </h2>
-                                                                    </article>
-                                                                </div>
-                                                                <div>
-                                                                    <article id="post-28614"
-                                                                        class="et_pb_post clearfix et_pb_blog_item_0_1 post-28614 post type-post  format-standard has-post-thumbnail  category-laboratory-news category-main-hospital-news category-cardiology-news category-education-law category-gynecology-news category-hospital-news">
-
-                                                                        <div class="et_pb_image_container"><span
-                                                                                class="published medicus_date"><span
-                                                                                    class="medicusdate">18</span>Apr</span><a
-                                                                                href="https://medicus.b3multimedia.ie/blog-post-3/"
-                                                                                class="entry-featured-image-url"><img
-                                                                                    src="<?php echo base_url('assets/frontend/images/vaccination-2722937_1920-400x250.jpg');?>"
-                                                                                    alt="New Way To Fight Lyme Disease"
-                                                                                    class=""
-                                                                                    width="400" height="250"></a></div>
-                                                                        <!-- .et_pb_image_container -->
-                                                                        <h2 class="entry-title"><a
-                                                                                href="https://medicus.b3multimedia.ie/blog-post-3/">
-                                                                                New Way To Fight Lyme Disease</a></h2>
-                                                                    </article>
-                                                                </div>
+                                                                                <div class="et_pb_image_container">
+                                                                                    <span class="published medicus_date">
+                                                                                        <?php
+                                                                                             $date = date_create($blog['CreatedDate']);
+                                                                                             echo '<span class="medicusdate">'.date_format($date, 'd').'</span>';
+                                                                                             echo date_format($date, 'M');
+                                                                                        ?>                                                                                        
+                                                                                    </span>
+                                                                                    <a href="<?php echo base_url('blogs/view/'.$blog['ID']);?>"
+                                                                                        class="entry-featured-image-url">
+                                                                                        <div class='home-blog-box'
+                                                                                            style='background-image: url(<?php echo base_url('assets/images/blogs/'.$blog['Portfolio']);?>);'>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <!-- .et_pb_image_container -->
+                                                                                <h2 class="entry-title">
+                                                                                    <a href="<?php echo base_url('blogs/view/'.$blog['ID']);?>">
+                                                                                        <?php echo $blog['Title'];?>
+                                                                                    </a>
+                                                                                </h2>
+                                                                            </article>
+                                                                        </div>        
+                                                                        <?php
+                                                                    }
+                                                                    ?>                                                      
                                                             </div><!-- .et_pb_salvattore_content -->
                                                         </div>
                                                     </div> <!-- .et_pb_posts -->

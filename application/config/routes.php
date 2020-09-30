@@ -68,37 +68,49 @@ $route['contact-us'] = 'home/contactUs';
 //Admin Page
 
 $route['admin'] = 'manageLogin';
-$route['admin/home/title'] = 'manageHome/title';
-$route['admin/home/who-we-serve'] = 'manageHome/whoweserve';
-$route['admin/what-we-do'] = 'manageWhatWeDo';
+$route['admin/home'] = 'manageHome';
+$route['admin/services/pulmonary_medicine'] = 'manageServices/pulmonary_medicine';
+$route['admin/services/sleep_medicine']  = 'manageServices/sleep_medicine';
+$route['admin/services/critical_care'] = 'manageServices/critical_care_medicine';
+$route['admin/services/additional'] = 'manageServices/additional';
+$route['admin/service_fee'] = 'manageServices/service_fees';
 $route['admin/about-us'] = 'manageAboutUs';
-$route['admin/blog'] = 'manageBlog';
-$route['admin/blog/edit/(:num)'] = 'manageBlog/edit/$1';
-$route['admin/join-us'] = 'manageJoinUs';
-$route['admin/join-us/edit/(:num)'] = 'manageJoinUs/edit/$1';
+$route['admin/links/insurance'] = 'manageQuickLinks/insurance';
+$route['admin/links/patient_forms'] = 'manageQuickLinks/patient_form';
+$route['admin/links/medical_videos'] = 'manageQuickLinks/medical_videos';
+$route['admin/links/blogs'] = 'manageQuickLinks/blogs';
+$route['admin/links/blog/edit/(:num)'] = 'manageQuickLinks/editBlog/$1';
+$route['admin/contact-us'] = 'manageContact';
+
+$route['admin/profile'] = 'manageLogin/userprofile';
 $route['admin/logout'] = 'manageLogin/logout';
 
 
 // Apis
 
-$route['api/home/updateTitle'] = 'manageHome/updateTitle';
-$route['api/home/addService'] = 'manageHome/addNewService';
-$route['api/home/deleteService'] = 'manageHome/deleteService';
-$route['api/home/updateService'] = 'manageHome/updateService';
-
-$route['api/whatwedo/add'] = 'manageWhatWeDo/addNewService';
-$route['api/whatwedo/edit'] = 'manageWhatWeDo/updateService';
-$route['api/whatwedo/delete'] = 'manageWhatWeDo/deleteService';
-$route['api.whatwedo/get'] = 'manageWhatWeDo/getService';
-
-$route['api/about-us/update'] = 'manageAboutUs/updateTitle';
-$route['api/about-us/coreValue/add'] = 'manageAboutUs/addCoreValue';
-$route['api/about-us/coreValue/delete'] = 'manageAboutUs/deleteCoreValue';
-
-$route['api/blog/delete'] = 'manageBlog/deleteBlog';
-$route['api/blog/edit'] = 'manageBlog/updateBlog';
-
-$route['api/job/edit'] = 'manageJoinUs/updateJob';
-$route['api/job/delete'] = 'manageJoinUs/deleteJob';
+$route['api/home/updateContnet'] = 'manageHome/updateContnet';
+$route['api/services/update'] = 'manageServices/updateService';
+$route['api/services/additional/add'] = 'manageServices/addAdditional';
+$route['api/services/additional/delete'] = 'manageServices/deleteAdditional';
+$route['api/services/additional/update'] = 'manageServices/updateAdditional';
+$route['api/services/fee/add'] = 'manageServices/addFee';
+$route['api/services/fee/get'] = 'manageServices/getFee';
+$route['api/services/fee/delete'] = 'manageServices/deleteFee';
+$route['api/services/fee/update'] = 'manageServices/updateFee';
+$route['api/about-us/update'] = 'manageAboutUs/updateContent';
+$route['api/resource/add'] = 'manageAboutUs/addImage';
+$route['api/resource/delete'] = 'manageAboutUs/deleteImage';
+$route['api/patient-form/add'] = 'manageQuickLinks/addPatientForm';
+$route['api/patient-form/get'] = 'manageQuickLinks/getPatientForm';
+$route['api/patient-form/update'] = 'manageQuickLinks/updatePatientForm';
+$route['api/patient-form/delete'] = 'manageQuickLinks/deletePatientForm';
+$route['api/medical-video/add'] = 'manageQuickLinks/addMedicalVideo';
+$route['api/medical-video/get'] = 'manageQuickLinks/getMedicalVideo';
+$route['api/medical-video/delete'] = 'manageQuickLinks/deleteMedicalVideo';
+$route['api/medical-video/update'] = 'manageQuickLinks/updateMedicalVideo';
+$route['api/blog/delete'] = 'manageQuickLinks/deleteBlog';
+$route['api/blog/edit'] = 'manageQuickLinks/updateBlog';
+$route['api/contact/update'] = 'manageContact/update';
+$route['api/profile/update'] = 'manageLogin/updateProfile';
 
 $route['api/sendEmail'] = 'home/sendEmail';

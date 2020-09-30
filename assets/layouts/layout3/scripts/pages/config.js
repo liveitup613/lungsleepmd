@@ -14,7 +14,7 @@ function showSuccessToastr(message) {
         "hideMethod": "fadeOut"
     }
 
-    toastr.success(message, 'Syston Iteration') ;
+    toastr.success(message, 'Epignosis Specialty Practice') ;
 }
 
 function showErrorToastr(message) {
@@ -33,7 +33,7 @@ function showErrorToastr(message) {
         "hideMethod": "fadeOut"
     }
 
-    toastr.error(message, 'Syston Iteration') ;
+    toastr.error(message, 'Epignosis Specialty Practice') ;
 }
 
 function showWarningToastr(message) {
@@ -52,7 +52,7 @@ function showWarningToastr(message) {
         "hideMethod": "fadeOut"
     }
 
-    toastr.warning(message, 'Syston Iteration') ;
+    toastr.warning(message, 'Epignosis Specialty Practice') ;
 }
 
 function replaceNR2Br(str) {

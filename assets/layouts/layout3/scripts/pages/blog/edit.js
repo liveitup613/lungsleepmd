@@ -72,7 +72,7 @@ $('#btnUpdate').click(function() {
 		dataType: "json",
 		success: function (res) {
 			if (res.success == true) {
-                document.location.href = base_url + 'admin/blog';
+                document.location.href = base_url + 'admin/links/blogs';
             }
             else {
                 showErrorToastr(editedId == 0 ? 'Add New Blog' : 'Edit Blog');

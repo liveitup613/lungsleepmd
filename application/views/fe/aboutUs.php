@@ -56,27 +56,14 @@
                                                         <div class='et_pb_module et_pb_divider et_pb_divider_4 mc_divider et_pb_divider_position_ et_pb_space'></div>                                 
                                                     </div>
                                                     <div class='step-detail'>                                                        
-                                                        <p>
-                                                            <img src='<?php echo base_url('assets/frontend/images/doctor.jpg');?>' class='avatar'>
-                                                            Dr. Olanrewaju Esan subsequently completed his internship and residency in internal medicine at Interfaith Medical Center in Brooklyn, NY. Post residency, he was an Attending Physician in the AIDS/HIV Center and the Emergency Department at Interfaith Medical Center.<br><br><br>
-                                                            He proceeded to pursue and completed a fellowship in Pulmonary and Critical Care Medicine at St. Luke’s-Roosevelt Hospital Center, a Columbia Presbyterian University Hospital, where he served as chief fellow in his third year of fellowship. At the same time, he was a part-time attending physician in the famed Smithers Detoxification Center at Roosevelt Hospital, as well as a fellow in Sleep Medicine at the Sleep Disorders Institute in New York City.</p>
-                                                        <p>Dr. Esan is board certified and recertified by the American Board of Internal Medicine in internal medicine, pulmonary diseases and critical care medicine till 2022. He is also board certified by the American Board of Sleep Medicine in sleep medicine indefinitely. He holds an MBA in Healthcare Management from Hofstra University.</p>
-                                                        <p>Presently, Dr. Esan is the medical director of the West Hempstead Sleep Disorder Center and consultant Pulmonologist and Intensivist at South Nassau Communities Hospital.  He also actively participates as a teacher and preceptor for the South Nassau Family Practice Residency Program, Molloy College Nursing Practitioner program, and Adelphi University Nurse Practitioner program.</p>
-                                                        <p>Dr. Esan lives on Long Island with his wife and their four children.</p>
+                                                        <?php echo $Content;?>
                                                     </div>
                                                     <div class='step-description'>
                                                         <h2>Our clinical Staff</h2>
                                                         <div class='et_pb_module et_pb_divider et_pb_divider_4 mc_divider et_pb_divider_position_ et_pb_space'></div>                                 
                                                     </div>
                                                     <div class='step-detail'>
-                                                        <p>Epignosis Specialty Practice has a team of highly trained and certified professionals to help with every step of the process, including:</p>
-                                                        <br><br>
-                                                        <ul>
-                                                            <li>Nurse Practitioners</li>
-                                                            <li>Medical Assistants</li>
-                                                            <li>Nurse practitioner students, residents and medical students who assist in the evaluation of patients</li>
-                                                            <li>Our billing is outsourced to the reputable TruBill Management Services and they can be contacted at 1-844-814-5747</li>
-                                                        </ul>
+                                                        <?php echo $ClinicalStaff;?>
                                                     </div>
                                                     <div class='step-description'>
                                                         <h2>Associations</h2>
@@ -84,15 +71,15 @@
                                                     </div>
                                                     <div class='step-detail'>
                                                         <div class='insurance-box'>
-                                                            <div class='insurance'>
-                                                                <img src='<?php echo base_url('assets/frontend/images/ACP-300x158.jpg');?>'>
-                                                            </div>
-                                                            <div class='insurance'>
-                                                                <img src='<?php echo base_url('assets/frontend/images/ACC.jpg');?>'>
-                                                            </div>
-                                                            <div class='insurance'>
-                                                                <img src='<?php echo base_url('assets/frontend/images/AASM-1012x1024.jpg');?>'>
-                                                            </div>                                                        
+                                                            <?php 
+                                                                foreach ($Associations as $insuracne) {
+                                                                    ?>
+                                                                    <div class='insurance'>
+                                                                        <img src='<?php echo base_url('assets/images/resource/'.$insuracne['Portfolio']);?>'>
+                                                                    </div>            
+                                                                    <?php
+                                                                }
+                                                                ?>                                                                                                                  
                                                         </div>
                                                     </div>
                                                     <div class='step-description'>
@@ -101,12 +88,15 @@
                                                     </div>
                                                     <div class='step-detail'>
                                                         <div class='insurance-box'>
-                                                            <div class='insurance'>
-                                                                <img src='<?php echo base_url('assets/frontend/images/WUH.gif');?>'>
-                                                            </div>
-                                                            <div class='insurance'>
-                                                                <img src='<?php echo base_url('assets/frontend/images/SNCH-300x89.jpg');?>'>
-                                                            </div>
+                                                            <?php 
+                                                                foreach ($Affiliations as $insuracne) {
+                                                                    ?>
+                                                                    <div class='insurance'>
+                                                                        <img src='<?php echo base_url('assets/images/resource/'.$insuracne['Portfolio']);?>'>
+                                                                    </div>            
+                                                                    <?php
+                                                                }
+                                                                ?>                                                           
                                                         </div>
                                                     </div>                                                    
                                                     <div class='step-description'>
@@ -115,9 +105,15 @@
                                                     </div>
                                                     <div class='step-detail'>
                                                         <div class='insurance-box'>
-                                                            <div class='insurance'>
-                                                                <img src='<?php echo base_url('assets/frontend/images/ABIM.gif');?>'>
-                                                            </div>
+                                                            <?php 
+                                                                foreach ($Certifications as $insuracne) {
+                                                                    ?>
+                                                                    <div class='insurance'>
+                                                                        <img src='<?php echo base_url('assets/images/resource/'.$insuracne['Portfolio']);?>'>
+                                                                    </div>            
+                                                                    <?php
+                                                                }
+                                                                ?>                                                            
                                                         </div>
                                                     </div>
                                                 </div>

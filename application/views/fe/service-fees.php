@@ -353,12 +353,31 @@
                                                             </div>      
                                                             <div class='col-10'><hr></div>                                                         
                                                             <div class='form-group col-10'>
-                                                                <input type='checkbox' id='checkbox1'><label for='checkbox1' class='form-label'>Office Visit(Current Patient) - $125</label><br>
-                                                                <input type='checkbox' id='checkbox2'><label for='checkbox2' class='form-label'>Home Sleep Study - $300</label><br>
-                                                                <input type='checkbox' id='checkbox3'><label for='checkbox3' class='form-label'>Consultation Fee - $400</label><br>
-                                                                <input type='checkbox' id='checkbox4'><label for='checkbox4' class='form-label'>Follow Up Visit - $200</label><br>
-                                                                <input type='checkbox' id='checkbox5'><label for='checkbox5' class='form-label'>Diagnostic Sleep Study - $600</label><br><br>
-                                                                <input type='checkbox' id='checkbox6'><label for='checkbox6' class='form-label'>CPAP Titration Sleep Study - $750</label><br>
+                                                                <?php 
+                                                                    $cnt = 0;
+                                                                    foreach ($fees as $fee) {
+                                                                        echo "<input type='checkbox' id='fee".$fee['ID']."' class='fee-checkbox'><label for='fee".$fee['ID']."' class='form-label'>".$fee['Title']." - <span id='price-fee".$fee['ID']."'>";
+                                                                        $price = $fee['Price'];
+                                                                        $prices = explode('/', $price);
+                                                                        
+                                                                        for ($i = 0; $i < count($prices); $i++)  {
+                                                                            if ($i == 0)
+                                                                                echo '$'.$prices[$i];
+                                                                            else
+                                                                                echo '/$'.$prices[$i];
+                                                                        }    
+                                                                        echo "</span></label><br>";
+                                                                        $cnt ++;
+                                                                        if ($cnt == 5) {
+                                                                            echo '<br>';
+                                                                            $cnt = 0;
+                                                                        }
+                                                                        
+                                                                    }
+                                                                ?>                                                                
+                                                            </div>
+                                                            <div class='col-10 form-group' style='color: black; font-weight: 700;'>
+                                                                Total Price For Services: $<label id='total_Price'>0</label>
                                                             </div>
                                                             <div class='form-group col-10' style='text-align: center;'>
                                                                 <button type='submit' class='btn'>Submit</button>
@@ -370,18 +389,25 @@
                                                     <div class='service-quote'>
                                                         <h4>Discounted fees are available for current patients of the practice and new patients with hardship ona case by case basis.</h4>
                                                     </div>
-                                                    <div class='service-fee'>
-                                                        <div class='service-title'>Office Visit (Current Patient)</div>
-                                                        <div class='service-price'>$125</div>
-                                                    </div> 
-                                                    <div class='service-fee'>
-                                                        <div class='service-title'>Therapeutic Injection (Xolair, Epinephrine, Ceftriaxone, etc...)</div>
-                                                        <div class='service-price'>$300</div>
-                                                    </div>                                                    
-                                                    <div class='service-fee'>
-                                                        <div class='service-title'>Full Sleep Evaluation(Nigerian, Caribbean, South American, Asian Patients)</div>
-                                                        <div class='service-price'>$2000</div>
-                                                    </div>
+                                                    <?php 
+                                                        
+                                                        foreach ($fees as $fee) {
+                                                            echo "<div class='service-fee'>";
+                                                            echo "<div class='service-title'>".$fee['Title']."</div>";
+                                                            echo "<div class='service-price'>";
+                                                            $price = $fee['Price'];
+                                                            $prices = explode('/', $price);
+                                                            
+                                                            for ($i = 0; $i < count($prices); $i++)  {
+                                                                if ($i == 0)
+                                                                    echo '$'.$prices[$i];
+                                                                else
+                                                                    echo '/$'.$prices[$i];
+                                                            }    
+                                                            echo '</div>';
+                                                            echo '</div>';
+                                                        }
+                                                    ?>                                                     
                                                     <div class='service-card'>
                                                         <p>Visa/Master Card/American Express/Discover Accepted</p>
                                                     </div>
@@ -412,9 +438,11 @@
 
 
         var base_url = "<?php echo base_url();?>";        
-    </script>
+    </script>    
 
     <?php $this->load->view('fe/layout/scripts');?>
+    
+    <script type="text/javascript" src="<?php echo base_url('assets/frontend/scripts/pages/service-fees.js');?>"></script>
     
 </body>
 

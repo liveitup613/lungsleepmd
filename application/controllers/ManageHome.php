@@ -28,25 +28,20 @@ class ManageHome extends CI_Controller {
 
 	public function index()
 	{		
-    }
-
-    public function title() {
 		$this->db->select('*');
 		$this->db->where('ID', 1);
 		$this->db->from('tblhome');
 		$data = $this->db->get()->row_array();
 
-        $this->load->view('be/home/title', $data);
-	}
-	
-	public function whoweserve() {
-		$this->db->select('*');
-		$this->db->from('tblwhoweserve');
-		$data['services'] = $this->db->get()->result_array();
-		$this->load->view('be/home/who-we-serve', $data);
-	}
+		$this->db->select('Avatar');
+		$this->db->where('ID', 1);
+		$this->db->from('tbluser');
+		$data['user'] = $this->db->get()->row_array();
 
-	public function updateTitle() {
+        $this->load->view('be/home/index', $data);
+    }	
+
+	public function updateContnet() {
 		$data = $this->input->post();
 
 		$this->db->where('ID', 1);
@@ -97,50 +92,4 @@ class ManageHome extends CI_Controller {
 				'success' => true
 			));
 	}
-
-	public function updateService() {
-		$ID = $this->input->post('ID');
-		$Enable = $this->input->post('Enable');
-
-		$this->db->where('ID', $ID);
-		$this->db->set('Enable', $Enable);
-		$this->db->update('tblwhoweserve');
-
-		echo json_encode(array(
-			'success' => true
-		));
-	}
-
-	public function deleteService() {
-		$ID = $this->input->post('ID');
-
-		$this->db->where('ID', $ID);
-		$this->db->from('tblwhoweserve');
-		$service = $this->db->get()->row_array();
-		if ($service == null) {
-			echo json_encode(array(
-				'success' => false
-			));
-		}
-
-		if (!empty($service['Portfolio']) && file_exists('assets/images/whoweserve/'.$service['Portfolio'])) {
-			unlink('assets/images/whoweserve/'.$service['Portfolio']);
-		}
-
-		$this->db->where('ID', $ID);
-		$this->db->delete('tblwhoweserve');
-		$deletedCnt = $this->db->affected_rows();
-
-		if ($deletedCnt == 0) {
-			echo json_encode(array(
-				'success' => false
-			));
-		}
-		else {
-			echo json_encode(array(
-				'success' => true
-			));
-		}		
-	}
-   
 }

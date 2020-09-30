@@ -55,14 +55,14 @@
                                                         <h2>Meet Our Medical Director</h2>
                                                         <div class='et_pb_module et_pb_divider et_pb_divider_4 mc_divider et_pb_divider_position_ et_pb_space'></div>                                 
                                                     </div>
-                                                    <div class='step-detail'>                                                        
+                                                    <div style='margin-bottom: 30px;'>                                                        
                                                         <?php echo $Content;?>
                                                     </div>
                                                     <div class='step-description'>
                                                         <h2>Our clinical Staff</h2>
                                                         <div class='et_pb_module et_pb_divider et_pb_divider_4 mc_divider et_pb_divider_position_ et_pb_space'></div>                                 
                                                     </div>
-                                                    <div class='step-detail'>
+                                                    <div>
                                                         <?php echo $ClinicalStaff;?>
                                                     </div>
                                                     <div class='step-description'>

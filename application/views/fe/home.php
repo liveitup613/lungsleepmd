@@ -176,7 +176,7 @@
                                                                 <p><?php echo $SleepDisorderContent;?></p>
                                                                 <p>
                                                                     <a class="more-link"
-                                                                        href="<?php base_url('services/sleep_disorders');?>">ReadMore
+                                                                        href="<?php echo base_url('services/sleep_medicine');?>">ReadMore
                                                                     </a>
                                                                 </p>
                                                             </div>
@@ -209,8 +209,9 @@
                                                             <h4 class="et_pb_module_header"><span>Critical Care Medicine</span></h4>
                                                             <div class="et_pb_blurb_description et_service_descrition">
                                                                 <p><?php echo $CriticalCareContent;?></p>
-                                                                <p><a href="https://medicus.b3multimedia.ie/#"
-                                                                        class="more-link">Read More</a></p>
+                                                                <a class="more-link"
+                                                                        href="<?php echo base_url('services/critical_medicine');?>">ReadMore
+                                                                    </a>
                                                             </div>
                                                         </div>
                                                     </div> <!-- .et_pb_blurb_content -->

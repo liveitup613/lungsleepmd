@@ -112,7 +112,7 @@
                             <div class="et_pb_blurb_container">
 
                                 <div class="et_pb_blurb_description">
-                                    <p><a href="<?php echo base_url('services/critical_care_medicine');?>">&nbsp;
+                                    <p><a href="<?php echo base_url('services/critical_medicine');?>">&nbsp;
                                             Critical Care Medicine</a></p>
                                 </div>
                             </div>
@@ -143,7 +143,7 @@
             </div> <!-- .et_pb_row -->
 
             <div class='et_pb_row et_policy' style='margin-bottom: 0px;'>
-                © 2020 EPIGNOSIS SPECIALTY PRACTICE, P.C. ALL RIGHTS RESERVED. Designed by <a href='www.systoneit.com'>Systone Iterations</a>
+                © 2020 EPIGNOSIS SPECIALTY PRACTICE, P.C. ALL RIGHTS RESERVED. Designed by <a href='www.systoneit.com'>Systone Ietrations</a>
             </div>
 
         </div> <!-- .et_pb_section -->

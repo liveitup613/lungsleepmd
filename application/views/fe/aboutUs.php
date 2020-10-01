@@ -11,7 +11,7 @@
     <meta name="description" content="Epignosis Specialty Practice, located in West Hempstead, New York provides Pulmonary and Sleep Medicine treatments for people of all ages.">
     <meta content="Epignosis v2.0" name="generator">   
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="msapplication-TileImage" content="<?php echo base_url('assets/frontend/img/cropped-favicon-270x270.png');?>">
+    <meta name="msapplication-TileImage" content="<?php echo base_url('favicon.png');?>">
 
     <link rel="canonical" href="<?php echo base_url();?>">    
     <!-- All In One SEO Pack -->

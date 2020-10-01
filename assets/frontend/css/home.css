@@ -725,7 +725,7 @@
     .staff-container {
         width: 100%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-items: flex-start;
         flex-wrap: wrap;
     }
@@ -749,7 +749,7 @@
     }
 
     .staff-info {
-        background-color: white;            
+        background-color: #f0f5f5;            
         min-height: 300px;
         border-radius: 5px;     
         margin-top: 238px;
@@ -783,6 +783,9 @@
     }
 
     @media only screen and (max-width : 1070px) {
+        .staff-container { 
+            justify-content: flex-start;
+        }
         .staff-box {
             width: 50%;
         }

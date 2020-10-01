@@ -59,11 +59,29 @@
                                                         <?php echo $Content;?>
                                                     </div>
                                                     <div class='step-description'>
-                                                        <h2>Our clinical Staff</h2>
+                                                        <h2>Our Clinical Staff</h2>
                                                         <div class='et_pb_module et_pb_divider et_pb_divider_4 mc_divider et_pb_divider_position_ et_pb_space'></div>                                 
                                                     </div>
                                                     <div>
                                                         <?php echo $ClinicalStaff;?>
+                                                    </div>
+                                                    <div>
+                                                        <div class='staff-container'>
+                                                            <?php 
+                                                                foreach ($staffs as $staff) {
+                                                                    ?>
+                                                                    <div class='staff-box'>
+                                                                        <div class='staff' style='background-image: url(<?php echo base_url("assets/images/staffs/".$staff['Attach']);?>)'>
+                                                                            <div class='staff-info'>
+                                                                                <div class='staff-name'><?php echo $staff['Name'];?></div>
+                                                                                <div class='staff-desc'><?php echo $staff['Description'];?></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <?php
+                                                                }
+                                                                ?>
+                                                        </div>
                                                     </div>
                                                     <div class='step-description'>
                                                         <h2>Associations</h2>

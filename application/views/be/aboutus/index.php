@@ -92,9 +92,33 @@
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label class="control-label col-md-3">Our clinical Staff</label>
+                                                        <label class="control-label col-md-3">Our Clinical Staff</label>
                                                         <div class="col-md-9">
                                                             <div id="sumnoteClinical"><?php echo $ClinicalStaff;?></div>                                                            
+                                                        </div>
+                                                    </div> 
+                                                    <div class="form-group">
+                                                        <label class="control-label col-md-3">Staffs</label>
+                                                        <div class="col-md-9">
+                                                            <div class='new-core-value'>
+                                                                <button type="button" class="btn green btn-sm" id='btnAddNewStaff'><i class='icon-plus'></i>&nbsp;&nbsp;ADD NEW</button>   
+                                                            </div> 
+                                                            <div class='row'>
+                                                                <?php
+                                                                    foreach ($staffs as $staff) {
+                                                                        ?>
+                                                                        <div class='col-md-4 col-sm-6 staff-img'>
+                                                                            <img src='<?php echo base_url('assets/images/staffs/'.$staff['Attach']);?>'>
+                                                                            <div class='image-control'>
+                                                                                <button class='btn green btn-sm btn-circle' onclick='editStaff(<?php echo $staff["ID"];?>);'><i class='icon-pencil'></i></button>
+                                                                                <button class='btn red btn-sm btn-circle' onclick='deleteStaff(<?php echo $staff["ID"];?>);'><i class='icon-trash'></i></button>
+                                                                            </div>
+                                                                        </div> 
+                                                                        <?php
+                                                                    }
+                                                                    ?>
+                                                                
+                                                            </div>                                                           
                                                         </div>
                                                     </div>    
                                                     <div class="form-group">
@@ -110,7 +134,7 @@
                                                                         <div class='col-md-4 col-sm-6 image-box'>
                                                                             <img src='<?php echo base_url('assets/images/resource/'.$association['Portfolio']);?>'>
                                                                             <div class='image-control'>
-                                                                                <button class='btn red btn-sm btn-circle' onclick='deleteAssociation(<?php echo $association["ID"];?>)'><i class='icon-trash'></i></button>
+                                                                                <button class='btn red btn-sm btn-circle' onclick='deleteAssociation(<?php echo $association["ID"];?>);'><i class='icon-trash'></i></button>
                                                                             </div>
                                                                         </div> 
                                                                         <?php
@@ -133,7 +157,7 @@
                                                                         <div class='col-md-4 col-sm-6 image-box'>
                                                                             <img src='<?php echo base_url('assets/images/resource/'.$affiliation['Portfolio']);?>'>
                                                                             <div class='image-control'>
-                                                                                <button class='btn red btn-sm btn-circle' onclick='deleteAffiliation(<?php echo $affiliation["ID"];?>)'><i class='icon-trash'></i></button>
+                                                                                <button class='btn red btn-sm btn-circle' onclick='deleteAffiliation(<?php echo $affiliation["ID"];?>);'><i class='icon-trash'></i></button>
                                                                             </div>
                                                                         </div> 
                                                                         <?php
@@ -155,7 +179,7 @@
                                                                         <div class='col-md-4 col-sm-6 image-box'>
                                                                             <img src='<?php echo base_url('assets/images/resource/'.$certification['Portfolio']);?>'>
                                                                             <div class='image-control'>
-                                                                                <button class='btn red btn-sm btn-circle' onclick='deleteCerfication(<?php echo $certification["ID"];?>)'><i class='icon-trash'></i></button>
+                                                                                <button class='btn red btn-sm btn-circle' onclick='deleteCerfication(<?php echo $certification["ID"];?>);'><i class='icon-trash'></i></button>
                                                                             </div>
                                                                         </div> 
                                                                         <?php
@@ -188,6 +212,50 @@
                 <!-- END PAGE CONTENT BODY -->
 
                 <!-- BEGIN MODAL CONTENT BODY -->
+                <!-- BEGIN ADD MODAL CONTENT BODY -->
+                <div class="modal fade" id="AddNewModal" tabindex="-1" role="basic" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">Add New Staff</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" class="form-horizontal form-bordered" id='addNewForm'>
+                                    <div class="form-body">
+                                        <input type='hidden' id='Type' name='Type'>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Name</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class='form-control' id='Name' name='Name' required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Description</label>
+                                            <div class="col-md-9">
+                                                <textarea type="text" class='form-control' id='Description' name='Description' required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class='form-group'>
+                                            <label class='control-label col-md-3'>Image</label>
+                                            <div class='col-md-9'>
+                                                <input type='file' class='form-control' id='Attach' name='Attach' accept=".jpg,.png,.gif" required >
+                                            </div>
+                                        </div>                                        
+                                    </div>                                    
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn green" id='btnAddNew'>Add</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- END ADD MODAL CONTENT BODY -->
+
                 <!-- BEGIN DEELTE MODAL CONTENT BODY -->
                 <div class="modal fade" id="deleteModal" tabindex="-1" role="basic" aria-hidden="true">
                     <div class="modal-dialog">
@@ -209,6 +277,49 @@
                     <!-- /.modal-dialog -->
                 </div>
                 <!-- END DELETE MODAL CONTETN BODY -->
+                <!-- BEGIN ADD MODAL CONTENT BODY -->
+                <div class="modal fade" id="EditModal" tabindex="-1" role="basic" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">Edit Staff</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" class="form-horizontal form-bordered" id='editForm'>
+                                    <input type='hidden' ID = 'editedID' name='ID'>
+                                    <div class="form-body">
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Name</label>
+                                            <div class="col-md-9">
+                                                <input type="text" class='form-control' id='NameEdit' name='Name' required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-md-3">Description</label>
+                                            <div class="col-md-9">
+                                                <textarea type="text" class='form-control' id='DescriptionEdit' name='Description' required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class='form-group'>
+                                            <label class='control-label col-md-3'>Image</label>
+                                            <div class='col-md-9'>
+                                                <input type='file' class='form-control' id='AttachEdit' name='Attach' accept=".jpg,.png,.gif" >
+                                            </div>
+                                        </div>                                     
+                                    </div>                                    
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn green" id='btnUpdateStaff'>Update</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- END ADD MODAL CONTENT BODY -->
                 <!-- END CONTENT BODY -->
             </div>
             <!-- END CONTENT -->

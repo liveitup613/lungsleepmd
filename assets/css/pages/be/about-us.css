@@ -60,7 +60,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-left: -17px;
+    margin-left: -36px;
     margin-top: 0px;
     opacity: 0;
 }
@@ -80,4 +80,20 @@
     width: 25px;
     margin-right: 8px;
     /* margin-top: 8px; */
+}
+
+.staff-img {
+    padding: 32px 16px;
+    text-align: center;
+    position: relative;
+}
+
+.staff-img img{
+    max-width: 230px;
+}
+
+.staff-img:hover .image-control {
+    opacity: .9;
+    margin-top: -15px;  
+    transition: all .5s ease-out;
 }

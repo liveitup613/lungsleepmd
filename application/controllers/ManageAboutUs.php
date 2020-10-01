@@ -45,6 +45,10 @@ class ManageAboutUs extends CI_Controller {
 		$this->db->where('ID', 1);
 		$this->db->from('tbluser');
 		$data['user'] = $this->db->get()->row_array();
+
+		$this->db->select('*');
+		$this->db->from('tblstaffs');
+		$data['staffs'] = $this->db->get()->result_array();
 		
         $this->load->view('be/aboutus/index', $data);
 	}
@@ -124,6 +128,159 @@ class ManageAboutUs extends CI_Controller {
 
 		$this->db->where('ID', $ID);
 		$this->db->delete('tblresource');
+
+		echo json_encode(array(
+			'success' => true
+		));
+	}
+
+	public function addStaff() {
+		$date = time();
+        $avatar = "";
+
+        if (!empty($_FILES["Attach"]["name"])) {
+            $config['upload_path'] = 'assets/images/staffs/';
+            $config['allowed_types'] = 'jpg|png|gif';
+            $config['overwrite'] = true;
+            $config['file_name'] = 'form'.$date;
+            $this->load->library('upload', $config);
+
+            if (!$this->upload->do_upload('Attach')) {
+                $error =  $this->upload->display_errors();
+                echo json_encode(array('message' => $error, 'success' => false));
+                return;
+            }
+            $data = $this->upload->data();
+            $avatar = $data['file_name'];
+		}		
+		
+		$resource_data = array(
+			'Name' => $this->input->post('Name'),			
+			'Description' => $this->input->post('Description'),
+			'Attach' => $avatar
+		);
+		
+		$this->db->insert('tblstaffs', $resource_data);
+
+		$returnedID = $this->db->insert_id();
+
+		if ($returnedID == 0)
+			echo json_encode(array(
+				'success' => false,
+			));
+		else 		
+        	echo json_encode(array(
+				'success' => true
+			));
+	}
+
+	public function getStaff() {
+		$ID = $this->input->post('ID');
+
+		$this->db->select('*');
+		$this->db->where('ID', $ID);
+		$this->db->from('tblstaffs');
+		$data = $this->db->get()->row_array();
+
+		if ($data == null) {
+			echo json_encode(array(
+				'success' => false
+			));
+			return;
+		}
+
+		echo json_encode(array(
+			'success' => true,
+			'data' => $data
+		));
+	}
+
+	public function updateStaff() {
+		$date = time();
+        $avatar = "";
+
+		$ID = $this->input->post('ID');
+		
+		$this->db->select('*');
+		$this->db->where('ID', $ID);
+		$this->db->from('tblstaffs');
+		$patient_data = $this->db->get()->row_array();
+
+		if ($patient_data == null)
+		{
+			echo json_encode(array(
+				'success' => false
+			));
+
+			return;
+		}
+
+		$resource_data = array(
+			'Name' => $this->input->post('Name'),		
+			'Description' => $this->input->post('Description')		
+		);
+
+        if (!empty($_FILES["Attach"]["name"])) {
+            $config['upload_path'] = 'assets/images/staffs/';
+            $config['allowed_types'] = 'jpg|png|gif';
+            $config['overwrite'] = true;
+            $config['file_name'] = 'form'.$date;
+            $this->load->library('upload', $config);
+
+            if (!$this->upload->do_upload('Attach')) {
+                $error =  $this->upload->display_errors();
+                echo json_encode(array('message' => $error, 'success' => false));
+                return;
+            }
+            $data = $this->upload->data();
+            $avatar = $data['file_name'];
+		}		
+		
+		if ($avatar != '') {
+			if (!empty($patient_data['Attach']) && file_exists('assets/images/staffs/'.$patient_data['Attach']))
+			unlink('assets/images/staffs/'.$patient_data['Attach']);
+
+			$resource_data['Attach'] = $avatar;
+		}
+
+		
+		$this->db->where('ID', $ID);
+		$this->db->update('tblstaffs', $resource_data);
+
+		$returnedID = $this->db->affected_rows();
+
+		if ($returnedID == 0)
+			echo json_encode(array(
+				'success' => false,
+			));
+		else 		
+        	echo json_encode(array(
+				'success' => true
+			));
+	}
+
+	public function deleteStaff() {
+		$ID = $this->input->post('ID');
+
+		$this->db->select('*');
+		$this->db->where('ID', $ID);
+		$this->db->from('tblstaffs');
+		$data = $this->db->get()->row_array();
+
+		if ($data == null)
+		{
+			echo json_encode(array(
+				'success' => false
+			));
+
+			return;
+		}
+
+		if (!empty($data['Attach']) && file_exists('assets/images/staffs/'.$data['Attach']))
+			unlink('assets/images/staffs/'.$data['Attach']);
+
+		$this->db->where('ID', $ID);
+		$this->db->delete('tblstaffs');
 
 		echo json_encode(array(
 			'success' => true

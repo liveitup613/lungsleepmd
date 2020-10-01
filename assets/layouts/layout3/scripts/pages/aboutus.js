@@ -35,6 +35,7 @@ jQuery(document).ready(function() {
 });
 
 var editedID = 0;
+var type='Staff';
 $('#btnUpdate').click(function() {
     $.ajax({
         url : base_url + 'api/about-us/update',
@@ -57,6 +58,36 @@ $('#btnUpdate').click(function() {
     })
 });
 
+$('#btnAddNewStaff').click(function() {
+    $('#AddNewModal').modal('show');
+});
+
+$('#btnAddNew').click(function() {
+    if (!$('#addNewForm').valid())
+        return;
+
+    $.ajax({
+		url: base_url + "api/staff/add",
+		method: "POST",
+		data: new FormData(document.getElementById('addNewForm')),
+		contentType: false,
+		cache: false,
+		processData: false,
+		dataType: "json",
+		success: function (res) {
+			if (res.success == true) {
+                document.location.reload();
+            }
+            else {
+                showErrorToastr('Add New ' + $('#inputType').val());
+            }
+        },
+        error: function (err) {
+            showErrorToastr('Add New ' + $('#inputType').val());
+        }
+	});
+})
+
 $('#btnAddNewAssociation').click(function() {
     $('#inputType').val('Association');
     $('#filePortfolio').click();
@@ -71,6 +102,8 @@ $('#btnAddNewCertification').click(function() {
     $('#inputType').val('Certification');
     $('#filePortfolio').click();
 });
+
+
 
 $('#filePortfolio').change(function() {
     console.log('image selected');
@@ -99,22 +132,25 @@ $('#filePortfolio').change(function() {
 
 function deleteAssociation(ID) {
     editedID = ID;
+    type = 'Association';
     $('#deleteModal').modal('show');
 }
 
 function deleteAffiliation(ID) {
     editedID = ID;
+    type = 'Affiliation';
     $('#deleteModal').modal('show');
 }
 
 function deleteCerfication(ID) {
     editedID = ID;
+    type='Certification';
     $('#deleteModal').modal('show');
 }
 
 $('#btnDeleteModalYes').click(function() {
     $.ajax({
-        url : base_url + 'api/resource/delete',
+        url : base_url + (type=='Staff' ? 'api/staff/delete' : 'api/resource/delete'),
         type: 'post',
         data: {
             ID : editedID
@@ -126,4 +162,67 @@ $('#btnDeleteModalYes').click(function() {
             showErrorToastr('Delete Resource');
         }
     })
-})
+});
+
+function editStaff(ID) {
+    editedID = ID;
+
+    $.ajax({
+        url: base_url + 'api/staff/get',
+        type: 'post',
+        data : {
+            ID: editedID
+        },
+        success: function(res) {
+            var data = JSON.parse(res);            
+
+            if (data.success == false) {
+                showErrorToastr('Get Staff');
+                return;
+            }
+
+            data = data.data;
+            $('#NameEdit').val(data.Name);
+            $('#DescriptionEdit').val(data.Description);
+
+            $('#EditModal').modal('show');
+        },
+        error: function(err) {
+            showErrorToastr('Get Staff');
+        }
+    });
+}
+
+$('#btnUpdateStaff').click(function() {
+    if (!$('#editForm').valid())
+        return;
+
+    $('#editedID').val(editedID);
+    
+    $.ajax({
+        url: base_url + "api/staff/update",
+        method: "POST",
+        data: new FormData(document.getElementById('editForm')),
+        contentType: false,
+        cache: false,
+        processData: false,
+        dataType: "json",
+        success: function (res) {
+            if (res.success == true) {
+                document.location.reload();
+            }
+            else {
+                showErrorToastr('Update Staff');
+            }
+        },
+        error: function (err) {
+            showErrorToastr('Update Staff');
+        }
+    });
+});
+
+function deleteStaff(ID) {
+    editedID = ID;
+    $('#deleteModal').modal('show');
+    type = 'Staff';
+}

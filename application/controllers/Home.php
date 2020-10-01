@@ -147,6 +147,10 @@ class Home extends CI_Controller {
 			$data[$type.'s'] = $this->db->get()->result_array();
 		}
 
+		$this->db->select('*');
+		$this->db->from('tblstaffs');
+		$data['staffs'] = $this->db->get()->result_array();
+
 		$this->load->view('fe/aboutUs', $data);
 	}
 

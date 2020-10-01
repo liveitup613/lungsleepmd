@@ -739,7 +739,7 @@
     }
 
     .staff {
-        max-width: 250px;
+        width: 250px;
         border-radius: 5px;
         height: 300px;
         background-position: center;

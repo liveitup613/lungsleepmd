@@ -721,3 +721,76 @@
             min-height: 200px;
         }
     }
+
+    .staff-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .staff-box {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 32px 0px;
+    }
+
+    .staff {
+        max-width: 250px;
+        border-radius: 5px;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .staff-info {
+        background-color: white;            
+        min-height: 300px;
+        border-radius: 5px;     
+        margin-top: 238px;
+    }
+    
+    .staff:hover .staff-info {
+        margin-top: 150px;
+        transition: all .5s ease-in-out;
+    }
+
+    .staff-name {
+        font-size: 20px;
+        font-weight: 600;
+        color: #00A1FF;
+        text-align: center;
+        padding: 16px;        
+    }
+
+    .staff-desc {
+        padding: 8px;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        color: black;
+    }
+
+    @media only screen and (max-width : 1374px) {
+        .staff-box {
+            width: 33.33%;
+        }
+    }
+
+    @media only screen and (max-width : 1070px) {
+        .staff-box {
+            width: 50%;
+        }
+    }
+
+    @media only screen and (max-width : 670px) {
+        .staff-box {
+            width: 100%;
+        }
+    }
+

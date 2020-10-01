@@ -285,6 +285,68 @@
                                     </div> <!-- .et_pb_section -->
                                    <!-- END BLOGS -->
 
+                                    <!-- BEGIN MEDICAL STAFF -->
+                                    <div class="et_pb_section et_pb_section_4 et_pb_with_background et_section_regular et_had_animation"
+										style="background-color: #f0f5f5!important;">
+										<div class="et_pb_row et_pb_row_5">
+											<div
+												class="et_pb_column et_pb_column_4_4 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough et-last-child">
+												<div
+													class="et_pb_module et_pb_text et_pb_text_8 mc_heading  et_pb_text_align_left et_pb_bg_layout_light">
+													<div class="et_pb_text_inner">														
+														<h2>Meet Our Staff</h2>
+													</div>
+												</div> <!-- .et_pb_text -->
+												<div
+													class="et_pb_module et_pb_divider et_pb_divider_3 mc_divider et_pb_divider_position_ et_pb_space">
+													<div class="et_pb_divider_internal"></div>
+												</div>
+											</div> <!-- .et_pb_column -->
+										</div> <!-- .et_pb_row -->										
+                                        <div class="et_pb_row et_pb_row_7">
+                                            <div class='staff-container'>
+                                                <div class='staff-box'>
+                                                    <div class='staff' style='background-image: url(<?php echo base_url("assets/frontend/images/medicus25.jpg");?>)'>
+                                                        <div class='staff-info'>
+                                                            <div class='staff-name'>Jessica Mathway</div>
+                                                            <div class='staff-desc'>Here is the description for Jessica Mathway</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class='staff-box'>
+                                                    <div class='staff' style='background-image: url(<?php echo base_url("assets/frontend/images/medicus25.jpg");?>)'>
+                                                        <div class='staff-info'>
+                                                            <div class='staff-name'>Jessica Mathway</div>
+                                                            <div class='staff-desc'>Here is the description for Jessica Mathway</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class='staff-box'>
+                                                    <div class='staff' style='background-image: url(<?php echo base_url("assets/frontend/images/medicus25.jpg");?>)'>
+                                                        <div class='staff-info'>
+                                                            <div class='staff-name'>Jessica Mathway</div>
+                                                            <div class='staff-desc'>Here is the description for Jessica Mathway</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class='staff-box'>
+                                                    <div class='staff' style='background-image: url(<?php echo base_url("assets/frontend/images/medicus25.jpg");?>)'>
+                                                        <div class='staff-info'>
+                                                            <div class='staff-name'>Jessica Mathway</div>
+                                                            <div class='staff-desc'>Here is the description for Jessica Mathway</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+										</div> <!-- .et_pb_row -->
+
+
+									</div> <!-- .et_pb_section -->
+                                    <!-- END MEDICAL STAFF -->
+
                                 </div><!-- .et_builder_inner_content -->
                             </div><!-- .et-l -->
                         </div> <!-- .entry-content -->

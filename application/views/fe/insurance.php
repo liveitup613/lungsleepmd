@@ -53,7 +53,7 @@
                                             <div class="service-container">
                                                 <div class='content'>
                                                     <div class='service-quote'>
-                                                        <h4>Epignosis Specialty Practice accpets only selective insurance and cash payments which include the following, please call confirm.</h4>
+                                                        <h4>Epignosis Specialty Practice accpets only selective insurance and cash payments which include the following, please call to confirm. Our biller is TruBill Management Services and they can be contacted at 1-844-814-5747 </h4>
                                                     </div>
                                                     <div class='insurance-box'>
                                                         <?php 
